@@ -19,9 +19,10 @@ WordCamp Tokyo 2023 ウェブサイト用カスタム CSS 開発のためのプ�
 
 * Local https://localwp.com/
 * wp-env
+* docker
 
-など、各自が普段使い慣れている環境で OK です。  
-マルチサイト化**せず**に、通常の WordPress のローカル環境を構築してください。  
+など、各自が普段使い慣れている環境で OK です。
+マルチサイト化**せず**に、通常の WordPress のローカル環境を構築してください。
 今回使用するテーマは、TwentyTwentyThree です。
 
 ### 必要なプラグインを管理画面からインストールして有効化する
@@ -30,17 +31,18 @@ WordCamp Tokyo 2023 ウェブサイト用カスタム CSS 開発のためのプ�
 * Jetpack
 * WordPress インポートツール
 
-### WCJ2021 CSS をGitHubからダウンロードしてインストール、有効化する
+### 2023-wctokyo-styles.css を GitHub からダウンロードしてインストール、有効化する
 
 https://github.com/wctokyo/2023-wctokyo-styles
 
-このプラグインです。  
-上記 Get started の 1. 2. の手順でインストールします。  
+このプラグインです。
+上記 Get started の 1. 2. の手順でインストールします。
 有効化すると、アドミンバーの色がデフォルトから変わります。
 
 ### WordCamp.org Post Types をインストールして有効化する
 
 本家の https://github.com/WordPress/wordcamp.org からそのまま持ってきた状態だと有効化したときにエラーが出るので、WordCamp Tokyo の別リポジトリに用意したものをインストールしてください。
+.zip でダウンロードしたものをインストール・有効化するのが一番手取り早いと思います。
 
 https://github.com/wctokyo/2023__wc-post-types
 
@@ -48,5 +50,6 @@ https://github.com/wctokyo/2023__wc-post-types
 
 ### 本番サイトから記事データを移植
 
-* 本番サイトの「ツール > エクスポート」からすべてのコンテンツをダウンロード。 https://japan.wordcamp.org/2021/wp-admin/export.php
+* 本番サイトの「ツール > エクスポート」からすべてのコンテンツをダウンロード。 https://tokyo.wordcamp.org/2023/wp-admin/export.php
 * ローカル環境の「ツール > インポート > インポーターの実行」で、ダウンロードしたファイルをインポート。
+* インポート時にエラーが出ますが、いったんエラーは無視してインポートすれば OK です。
