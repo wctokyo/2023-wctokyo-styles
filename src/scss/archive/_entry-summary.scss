@@ -1,0 +1,28 @@
+/**
+ * archive / entry-summary
+ */
+
+.archive.category {
+  .c-entry-summary__body {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .c-entry-summary__header {
+    margin-bottom: 0;
+  }
+
+  .c-entry-summary__meta {
+    margin-top: 0;
+    margin-bottom: 0.45rem;
+
+    .c-meta {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+
+  .c-meta__item.c-meta__item--author {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+/**
+ * variables
+ */
+
+$primary: #315bc2;
+$secondary: #db6b31;
+$neutral: #fffdf8;
+$additional: #34302e;
+$text: $additional;
+$alt: $neutral;
+$font: "Inter var","Noto Sans JP","Hiragino Kaku Gothic Pro",sans-serif;
+$font-serif: "Inter var","Noto Serif JP","Hiragino Kaku Gothic Pro",serif;
+
+$top_padding: 26px;
+
+$breakpoints: ('sp': 'screen and (max-width: 480px)', //スマートフォン ブレイクポイント
+	'pc': 'screen and (max-width: 767px)', //一般PC ブレイクポイント
+	'wide': 'screen and (min-width: 1440px)' //幅大モニター
+) !default;
+
+@mixin mq($breakpoint: pc) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+$key_height: 660px;
+$wide_keyheight: calc(100vw / 1440 * 700);
+$sp_keyheight: 600px;
+
+// $page_headerheight: 300px;
+$page_headerheight: calc(100vw / 1200 * 300);

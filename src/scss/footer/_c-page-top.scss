@@ -1,0 +1,23 @@
+/**
+ * footer / c-page-top
+ */
+.c-page-top {
+  a {
+    border: 2px solid var(--accent-color);
+    transition: 0.2s ease-out;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      filter: brightness(100%);
+    }
+
+    a:hover {
+      background-color: lighten(#fff101, 15%);
+
+      svg path {
+        fill: var(--accent-color);
+      }
+    }
+  }
+}

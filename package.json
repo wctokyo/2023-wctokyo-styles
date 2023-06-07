@@ -1,0 +1,29 @@
+{
+  "name": "2023-wctokyo-styles",
+  "version": "0.0.1",
+  "description": "css development environment for WordCamp Tokyo 2023",
+  "main": "index.js",
+  "author": "WordCamp Tokyo 2023 website development team",
+  "license": "GPL-3.0",
+  "scripts": {
+    "css": "sass src/scss/:dist/ --style compressed",
+    "autoprefixer": "postcss --use autoprefixer --no-map dist/*.css -d dist/",
+    "build": "npm run css && npm run autoprefixer",
+    "watch": "onchange 'src/**/**/*.scss' -e '**/*.DS_Store' -- npm run build"
+  },
+  "dependencies": {
+    "@wordpress/browserslist-config": "^5.17.0",
+    "autoprefixer": "^10.4.14",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.62.1"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+  "volta": {
+    "node": "18.16.0",
+    "npm": "9.6.7"
+  }
+}

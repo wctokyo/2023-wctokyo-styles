@@ -1,0 +1,12 @@
+/**
+ * footer / c-fluid-container
+ */
+
+.l-footer-widget-area {
+  .c-fluid-container {
+    @media (min-width: calc(1240px + 1.8rem)) {
+      max-width: calc(1240px + 1.8rem);
+      margin: 0 auto;
+    }
+  }
+}

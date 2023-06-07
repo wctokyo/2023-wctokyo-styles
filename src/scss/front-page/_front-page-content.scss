@@ -1,0 +1,33 @@
+/**
+ * front-page / front-page-content
+ */
+
+// トップページ コンテンツエリア
+.p-section-front-page-content {
+  padding-top: 0;
+}
+
+// トップページ ヒーローイメージ
+.top-hero-image {
+  min-height: calc(100svh - 47px);
+
+  @media (min-width: 40rem) {
+    min-height: calc(100svh - 52px);
+  }
+
+  @media (min-width: 64rem) {
+    min-height: calc(100svh - 64px);
+  }
+}
+
+// ブロークングリッド
+.smb-section-break-the-grid__header {
+  background: var(--bg-gird);
+  padding: 5px;
+}
+
+@media (min-width: 40rem) {
+  .smb-section-break-the-grid__header {
+    padding: 20px;
+  }
+}
