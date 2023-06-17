@@ -40,11 +40,11 @@
     $wp--preset--color--primary: $wp--preset--color--wc23-azure;
     $wp--preset--color--secondary: $wp--preset--color--wc23-azure;
     $wp--preset--color--base: $wp--preset--color--wc-23-jackolantern;
+    $--wp--style--global--content-size: 920px;
+    $--wp--style--global--wide-size: 1130px;
 
 body {
     margin: 0 !important;
-    --wp--style--global--content-size: 920px !important;
-    --wp--style--global--wide-size: 1130px !important;
 }
 
 .wp-site-blocks > .alignleft {
@@ -94,13 +94,13 @@ body .is-layout-constrained > .aligncenter {
 }
 
 body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-    max-width: --wp--style--global--content-size !important;
+    max-width: $--wp--style--global--content-size !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
 body .is-layout-constrained > .alignwide {
-    max-width: --wp--style--global--wide-size !important;
+    max-width: $--wp--style--global--wide-size !important;
 }
 
 body .is-layout-flex {
