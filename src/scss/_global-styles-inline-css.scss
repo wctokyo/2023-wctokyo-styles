@@ -23,6 +23,19 @@
     border: 0 !important;
 }
 
+.admin-bar [class*="teaser-"]{
+    outline: 1px solid red;
+}
+.admin-bar [class*="teaser-"]::before{
+    content: "ティザーサイト固有のclass";
+    background: red;
+    font-size: .8em;
+    display: block;
+    padding: .2em 1em;
+    line-height: 1;
+    left: 0;
+    top: 0;
+}
 body {
     margin: 0 !important;
     padding: 0 !important;
