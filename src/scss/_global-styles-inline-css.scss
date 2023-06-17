@@ -26,11 +26,6 @@ $--wp--preset--color--wc-23-emerald: #1E756D;
     border: 0 !important;
 }
 
-// FIXME: デバッグ用。不要になったらコメントアウト。
-.wp-admin [class*="teaser-"]{
-    outline: 1px dashed red;
-}
-
 body {
     margin: 0 !important;
     padding: 0 !important;

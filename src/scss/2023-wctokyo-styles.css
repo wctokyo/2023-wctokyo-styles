@@ -13,10 +13,6 @@
   border: 0 !important;
 }
 
-.wp-admin [class*=teaser-] {
-  outline: 1px dashed red;
-}
-
 body {
   margin: 0 !important;
   padding: 0 !important;
@@ -69,6 +65,10 @@ body {
 }
 
 body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  max-width: 1130px !important;
+}
+
+body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull):not(.alignwide)) {
   max-width: 920px !important;
 }
 
@@ -203,6 +203,10 @@ body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alig
 /**
  * WordCamp Tokyo 2023 customize styles
  */
+.admin-bar [class*=teaser-] {
+  outline: 1px dashed red;
+}
+
 .teaser-home--kv {
   background-image: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/3a67484d9866fd628437157b55fdbfd0f1a60102/images/main_bg.svg);
   background-repeat: no-repeat;
