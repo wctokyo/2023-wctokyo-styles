@@ -61,3 +61,7 @@ body {
     max-width: none !important;
     width: 100% !important;
 }
+
+body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){
+    max-width: 920px !important;
+}
