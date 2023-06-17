@@ -55,9 +55,7 @@ add_action( 'after_setup_theme', function() {
 
 
 add_action( 'init', 'themeslug_register_block_styles' );
-
 function themeslug_register_block_styles() {
-
 }
 
 register_block_style(

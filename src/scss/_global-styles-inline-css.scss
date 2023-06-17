@@ -1,469 +1,52 @@
 
-    $wp--preset--color--black: #000000 !important;
-    $wp--preset--color--cyan-bluish-gray: #abb8c3 !important;
-    $wp--preset--color--white: #ffffff !important;
-    $wp--preset--color--pale-pink: #f78da7 !important;
-    $wp--preset--color--vivid-red: #cf2e2e !important;
-    $wp--preset--color--luminous-vivid-orange: #ff6900 !important;
-    $wp--preset--color--luminous-vivid-amber: #fcb900 !important;
-    $wp--preset--color--light-green-cyan: #7bdcb5 !important;
-    $wp--preset--color--vivid-green-cyan: #00d084 !important;
-    $wp--preset--color--pale-cyan-blue: #8ed1fc !important;
-    $wp--preset--color--vivid-cyan-blue: #0693e3 !important;
-    $wp--preset--color--vivid-purple: #9b51e0 !important;
-    $wp--preset--color--wc-23-darkgrey: rgb(131, 12, 8) !important;
-    $wp--preset--color--wc-23-black: #231815 !important;
-    $wp--preset--color--wc-23-milk: #F3EEE8 !important;
-    $wp--preset--color--wc23-azure: #4041E4 !important;
-    $wp--preset--color--wc-23-pumpkin: #F5B444 !important;
-    $wp--preset--color--wc-23-jackolantern: #573531 !important;
-    $wp--preset--color--wc-23-emerald: #1E756D !important;
-    $wp--preset--font-size--small: 12px !important;
-    $wp--preset--font-size--medium: 16px !important;
-    $wp--preset--font-size--large: 20px !important;
-    $wp--preset--font-size--x-large: 32px !important;
-    $wp--preset--font-size--xx-large: 64px !important;
-    $wp--preset--font-family--noto-sans: 'Noto Sans JP', sans-serif !important;
-    $wp--preset--font-family--josefin-font: 'Josefin Sans', sans-serif !important;
-    $wp--preset--spacing--20: 0.44rem !important;
-    $wp--preset--spacing--30: 0.67rem !important;
-    $wp--preset--spacing--40: 1rem !important;
-    $wp--preset--spacing--50: 1.5rem !important;
-    $wp--preset--spacing--60: 2rem !important;
-    $wp--preset--spacing--70: 3.38rem !important;
-    $wp--preset--spacing--80: 5.06rem !important;
-    $wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2) !important;
-    $wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4) !important;
-    $wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2) !important;
-    $wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1) !important;
-    $wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1) !important;
-    $wp--preset--color--primary: $wp--preset--color--wc23-azure;
-    $wp--preset--color--secondary: $wp--preset--color--wc23-azure;
-    $wp--preset--color--base: $wp--preset--color--wc-23-jackolantern;
+    $--wp--preset--font-family--noto-sans: 'Noto Sans JP', sans-serif;
+    $--wp--preset--font-family--josefin-font: 'Josefin Sans', sans-serif;
     $--wp--style--global--content-size: 920px;
     $--wp--style--global--wide-size: 1130px;
+    $--wp--preset--color--wc-23-darkgrey: rgb(131, 12, 8);
+	$--wp--preset--color--wc-23-black: #231815;
+	$--wp--preset--color--wc-23-milk: #F3EEE8;
+	$--wp--preset--color--wc-23-azure: #4041E4;
+	$--wp--preset--color--wc-23-pumpkin: #F5B444;
+	$--wp--preset--color--wc-23-jackolantern: #573531;
+	$--wp--preset--color--wc-23-emerald: #1E756D;
+
 
 body {
     margin: 0 !important;
+    padding: 0 !important;
+    font-size: 16px;
+    font-family: $--wp--preset--font-family--noto-sans;
+    line-height: 1.8;
+    background-color: $--wp--preset--color--wc-23-milk;
+    color: $--wp--preset--color--wc-23-black;
 }
-
-.wp-site-blocks > .alignleft {
-    float: left !important;
-    margin-right: 2em !important;
-}
-
-.wp-site-blocks > .alignright {
-    float: right !important;
-    margin-left: 2em !important;
-}
-
-.wp-site-blocks > .aligncenter {
-    justify-content: center !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-:where(.is-layout-flex) {
-    gap: 0.5em !important;
-}
-
-body .is-layout-flow > .alignleft {
-    float: left !important;
-    margin-inline-start: 0 !important;margin-inline-end: 2em !important;}
-
-body .is-layout-flow > .alignright {
-    float: right !important;
-    margin-inline-start: 2em !important;margin-inline-end: 0 !important;}
-
-body .is-layout-flow > .aligncenter {
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-body .is-layout-constrained > .alignleft {
-    float: left !important;
-    margin-inline-start: 0 !important;margin-inline-end: 2em !important;}
-
-body .is-layout-constrained > .alignright {
-    float: right !important;
-    margin-inline-start: 2em !important;margin-inline-end: 0 !important;}
-
-body .is-layout-constrained > .aligncenter {
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-    max-width: $--wp--style--global--content-size !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-body .is-layout-constrained > .alignwide {
-    max-width: $--wp--style--global--wide-size !important;
-}
-
-body .is-layout-flex {
-    display: flex !important;
-}
-
-body .is-layout-flex {
-    flex-wrap: wrap !important;
-    align-items: center !important;
-}
-
-body .is-layout-flex > * {
-    margin: 0 !important;
-}
-
-body {
-    background-color: $wp--preset--color--wc23-azure !important;
-    color: $wp--preset--color--wc23-azure !important;
-    font-family: $wp--preset--font-family--noto-sans !important;
-    font-size: $wp--preset--font-size--medium !important;
-    line-height: 1.8 !important;
-    padding-top: $wp--preset--spacing--40 !important;
-    padding-right: $wp--preset--spacing--30 !important;
-    padding-bottom: $wp--preset--spacing--40 !important;
-    padding-left: $wp--preset--spacing--30 !important;
-}
-
-a:where(:not(.wp-element-button)) {
-    color: $wp--preset--color--wc23-azure !important;
-    text-decoration: underline !important;
-}
-
-a:where(:not(.wp-element-button)):hover {
-    text-decoration: none !important;
-}
-
-a:where(:not(.wp-element-button)):focus {
-    text-decoration: underline dashed !important;
-}
-
-a:where(:not(.wp-element-button)):active {
-    color: $wp--preset--color--secondary !important;
-    text-decoration: none !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400 !important;
-    line-height: 1.4 !important;
-}
-
-h1 {
-    font-size: 3.625rem !important;
-    line-height: 1.2 !important;
-}
-
-h2 {
-    font-size: clamp(2.625rem, calc(2.625rem + ((1vw - 0.48rem) * 8.4135)), 3.25rem) !important;
-    line-height: 1.2 !important;
-}
-
-h3 {
-    font-size: $wp--preset--font-size--x-large !important;
-}
-
-h4 {
-    font-size: $wp--preset--font-size--large !important;
-}
-
-h5 {
-    font-size: $wp--preset--font-size--medium !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-}
-
-h6 {
-    font-size: $wp--preset--font-size--medium !important;
-    text-transform: uppercase !important;
-}
-
-.wp-element-button, .wp-block-button__link {
-    background-color: $wp--preset--color--primary !important;
-    border-radius: 40px !important;
-    border-width: 0 !important;
-    color: $wp--preset--color--wc23-azure !important;
-    font-family: inherit !important;
-    font-size: inherit !important;
-    line-height: inherit !important;
-    padding: calc(0.667em + 2px) calc(1.333em + 2px) !important;
-    text-decoration: none !important;
-}
-
-.wp-element-button:visited, .wp-block-button__link:visited {
-    color: $wp--preset--color--wc23-azure !important;
-}
-
-.wp-element-button:hover, .wp-block-button__link:hover {
-    background-color: $wp--preset--color--wc23-azure !important;
-    color: $wp--preset--color--base !important;
-}
-
-.wp-element-button:focus, .wp-block-button__link:focus {
-    background-color: $wp--preset--color--wc23-azure !important;
-    color: $wp--preset--color--base !important;
-}
-
-.wp-element-button:active, .wp-block-button__link:active {
-    background-color: $wp--preset--color--secondary !important;
-    color: $wp--preset--color--base !important;
-}
-
-.has-black-color {
-    color: $wp--preset--color--black !important;
-}
-
-.has-cyan-bluish-gray-color {
-    color: $wp--preset--color--cyan-bluish-gray !important;
-}
-
-.has-white-color {
-    color: $wp--preset--color--white !important;
-}
-
-.has-pale-pink-color {
-    color: $wp--preset--color--pale-pink !important;
-}
-
-.has-vivid-red-color {
-    color: $wp--preset--color--vivid-red !important;
-}
-
-.has-luminous-vivid-orange-color {
-    color: $wp--preset--color--luminous-vivid-orange !important;
-}
-
-.has-luminous-vivid-amber-color {
-    color: $wp--preset--color--luminous-vivid-amber !important;
-}
-
-.has-light-green-cyan-color {
-    color: $wp--preset--color--light-green-cyan !important;
-}
-
-.has-vivid-green-cyan-color {
-    color: $wp--preset--color--vivid-green-cyan !important;
-}
-
-.has-pale-cyan-blue-color {
-    color: $wp--preset--color--pale-cyan-blue !important;
-}
-
-.has-vivid-cyan-blue-color {
-    color: $wp--preset--color--vivid-cyan-blue !important;
-}
-
-.has-vivid-purple-color {
-    color: $wp--preset--color--vivid-purple !important;
-}
-
-.has-wc-23-darkgrey-color {
-    color: $wp--preset--color--wc-23-darkgrey !important;
-}
-
-.has-wc-23-black-color {
-    color: $wp--preset--color--wc-23-black !important;
-}
-
-.has-wc-23-milk-color {
-    color: $wp--preset--color--wc-23-milk !important;
+// TTTのフォントの DM SANS をさも josefin Snasのように扱う
+.has-dm-sans-font-family{
+    font-family: $--wp--preset--font-family--josefin-font !important;
 }
 
-.has-wc-23-azure-color {
-    color: $wp--preset--color--wc23-azure !important;
-}
-
-.has-wc-23-pumpkin-color {
-    color: $wp--preset--color--wc-23-pumpkin !important;
-}
-
-.has-wc-23-jackolantern-color {
-    color: $wp--preset--color--wc-23-jackolantern !important;
-}
-
-.has-wc-23-emerald-color {
-    color: $wp--preset--color--wc-23-emerald !important;
-}
-
-.has-black-background-color {
-    background-color: $wp--preset--color--black !important;
-}
-
-.has-cyan-bluish-gray-background-color {
-    background-color: $wp--preset--color--cyan-bluish-gray !important;
-}
-
-.has-white-background-color {
-    background-color: $wp--preset--color--white !important;
-}
-
-.has-pale-pink-background-color {
-    background-color: $wp--preset--color--pale-pink !important;
-}
-
-.has-vivid-red-background-color {
-    background-color: $wp--preset--color--vivid-red !important;
-}
-
-.has-luminous-vivid-orange-background-color {
-    background-color: $wp--preset--color--luminous-vivid-orange !important;
-}
-
-.has-luminous-vivid-amber-background-color {
-    background-color: $wp--preset--color--luminous-vivid-amber !important;
-}
-
-.has-light-green-cyan-background-color {
-    background-color: $wp--preset--color--light-green-cyan !important;
-}
-
-.has-vivid-green-cyan-background-color {
-    background-color: $wp--preset--color--vivid-green-cyan !important;
-}
-
-.has-pale-cyan-blue-background-color {
-    background-color: $wp--preset--color--pale-cyan-blue !important;
-}
-
-.has-vivid-cyan-blue-background-color {
-    background-color: $wp--preset--color--vivid-cyan-blue !important;
-}
-
-.has-vivid-purple-background-color {
-    background-color: $wp--preset--color--vivid-purple !important;
-}
-
-.has-wc-23-darkgrey-background-color {
-    background-color: $wp--preset--color--wc-23-darkgrey !important;
-}
-
-.has-wc-23-black-background-color {
-    background-color: $wp--preset--color--wc-23-black !important;
-}
-
-.has-wc-23-milk-background-color {
-    background-color: $wp--preset--color--wc-23-milk !important;
-}
-
-.has-wc-23-azure-background-color {
-    background-color: $wp--preset--color--wc23-azure !important;
-}
-
-.has-wc-23-pumpkin-background-color {
-    background-color: $wp--preset--color--wc-23-pumpkin !important;
-}
-
-.has-wc-23-jackolantern-background-color {
-    background-color: $wp--preset--color--wc-23-jackolantern !important;
-}
-
-.has-wc-23-emerald-background-color {
-    background-color: $wp--preset--color--wc-23-emerald !important;
-}
-
-.has-black-border-color {
-    border-color: $wp--preset--color--black !important;
-}
-
-.has-cyan-bluish-gray-border-color {
-    border-color: $wp--preset--color--cyan-bluish-gray !important;
-}
-
-.has-white-border-color {
-    border-color: $wp--preset--color--white !important;
-}
-
-.has-pale-pink-border-color {
-    border-color: $wp--preset--color--pale-pink !important;
-}
-
-.has-vivid-red-border-color {
-    border-color: $wp--preset--color--vivid-red !important;
-}
-
-.has-luminous-vivid-orange-border-color {
-    border-color: $wp--preset--color--luminous-vivid-orange !important;
-}
-
-.has-luminous-vivid-amber-border-color {
-    border-color: $wp--preset--color--luminous-vivid-amber !important;
-}
-
-.has-light-green-cyan-border-color {
-    border-color: $wp--preset--color--light-green-cyan !important;
-}
-
-.has-vivid-green-cyan-border-color {
-    border-color: $wp--preset--color--vivid-green-cyan !important;
-}
-
-.has-pale-cyan-blue-border-color {
-    border-color: $wp--preset--color--pale-cyan-blue !important;
-}
-
-.has-vivid-cyan-blue-border-color {
-    border-color: $wp--preset--color--vivid-cyan-blue !important;
-}
-
-.has-vivid-purple-border-color {
-    border-color: $wp--preset--color--vivid-purple !important;
-}
-
-.has-wc-23-darkgrey-border-color {
-    border-color: $wp--preset--color--wc-23-darkgrey !important;
-}
-
-.has-wc-23-black-border-color {
-    border-color: $wp--preset--color--wc-23-black !important;
-}
-
-.has-wc-23-milk-border-color {
-    border-color: $wp--preset--color--wc-23-milk !important;
-}
-
-.has-wc-23-azure-border-color {
-    border-color: $wp--preset--color--wc23-azure !important;
-}
 
-.has-wc-23-pumpkin-border-color {
-    border-color: $wp--preset--color--wc-23-pumpkin !important;
+.has-small-font-size{
+    font-size: 12px;
 }
-
-.has-wc-23-jackolantern-border-color {
-    border-color: $wp--preset--color--wc-23-jackolantern !important;
-}
-
-.has-wc-23-emerald-border-color {
-    border-color: $wp--preset--color--wc-23-emerald !important;
-}
-
-
-.has-small-font-size {
-    font-size: $wp--preset--font-size--small !important;
+.has-medium-font-size{
+    font-size: 16px;
 }
-
-.has-medium-font-size {
-    font-size: $wp--preset--font-size--medium !important;
-}
-
-.has-large-font-size {
-    font-size: $wp--preset--font-size--large !important;
+.has-large-font-size{
+    font-size: 20px;
 }
-
-.has-x-large-font-size {
-    font-size: $wp--preset--font-size--x-large !important;
+.has-x-large-font-size{
+    font-size: 32px;
 }
-
-.has-xx-large-font-size {
-    font-size: $wp--preset--font-size--xx-large !important;
+.has-xx-large-font-size{
+    font-size: 64px;
 }
 
-.has-noto-sans-font-family {
-    font-family: $wp--preset--font-family--noto-sans !important;
+.alignwide{
+    max-width: 1130px !important;
 }
-
-.has-josefin-font-font-family {
-    font-family: $wp--preset--font-family--josefin-font !important;
+.alignfull{
+    max-width: none !important;
+    width: 100% !important;
 }
