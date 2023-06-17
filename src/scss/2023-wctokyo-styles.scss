@@ -18,6 +18,12 @@
 @use "timetable";
 
 
+// FIXME: デバッグ用。不要になったらコメントアウト。
+.admin-bar [class*="teaser-"]{
+    outline: 1px dashed red;
+}
+
+
 // NOTE: home
 .teaser-home{
     // NOTE: home kv
