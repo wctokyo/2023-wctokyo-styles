@@ -13,7 +13,7 @@
   border: 0 !important;
 }
 
-.admin-bar [class*=teaser-] {
+.wp-admin [class*=teaser-] {
   outline: 1px dashed red;
 }
 
@@ -207,5 +207,15 @@ body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alig
   background-image: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/3a67484d9866fd628437157b55fdbfd0f1a60102/images/main_bg.svg);
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.wp-block-button .wp-block-button__link {
+  transition: all ease-in-out 0.2s;
+}
+
+.wp-block-button:hover .wp-block-button__link {
+  filter: brightness(0.7);
+  mix-blend-mode: multiply;
+  transition: all ease-in-out 0.2s;
 }
 /*# sourceMappingURL=2023-wctokyo-styles.css.map */
