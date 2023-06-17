@@ -27,7 +27,7 @@ $--wp--preset--color--wc-23-emerald: #1E756D;
 }
 
 // FIXME: デバッグ用。不要になったらコメントアウト。
-.admin-bar [class*="teaser-"]{
+.wp-admin [class*="teaser-"]{
     outline: 1px dashed red;
 }
 
@@ -78,5 +78,9 @@ body {
 }
 
 body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){
+    max-width: 1130px !important;
+}
+
+body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull):not(.alignwide)){
     max-width: 920px !important;
 }
