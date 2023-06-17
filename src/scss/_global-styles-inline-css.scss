@@ -122,11 +122,7 @@ body .is-layout-constrained>.aligncenter {
     margin-right: auto !important;
 }
 
-body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-    max-width: $--wp--style--global--content-size;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
+
 
 body .is-layout-constrained>.alignwide {
     max-width: $--wp--style--global--wide-size;
