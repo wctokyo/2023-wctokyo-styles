@@ -1,16 +1,19 @@
+// NOTE: theme.json が自動出力する CSS変数がなぜか使えないので、Sass変数に変換したものと、最低限必要なクラスをこちらに移植。
 
-    $--wp--preset--font-family--noto-sans: 'Noto Sans JP', sans-serif;
-    $--wp--preset--font-family--josefin-font: 'Josefin Sans', sans-serif;
-    $--wp--style--global--content-size: 920px;
-    $--wp--style--global--wide-size: 1130px;
-    $--wp--preset--color--wc-23-darkgrey: rgb(131, 12, 8);
-	$--wp--preset--color--wc-23-black: #231815;
-	$--wp--preset--color--wc-23-milk: #F3EEE8;
-	$--wp--preset--color--wc-23-azure: #4041E4;
-	$--wp--preset--color--wc-23-pumpkin: #F5B444;
-	$--wp--preset--color--wc-23-jackolantern: #573531;
-	$--wp--preset--color--wc-23-emerald: #1E756D;
 
+$--wp--preset--font-family--noto-sans: 'Noto Sans JP', sans-serif;
+$--wp--preset--font-family--josefin-font: 'Josefin Sans', sans-serif;
+$--wp--style--global--content-size: 920px;
+$--wp--style--global--wide-size: 1130px;
+$--wp--preset--color--wc-23-darkgrey: rgb(131, 12, 8);
+$--wp--preset--color--wc-23-black: #231815;
+$--wp--preset--color--wc-23-milk: #F3EEE8;
+$--wp--preset--color--wc-23-azure: #4041E4;
+$--wp--preset--color--wc-23-pumpkin: #F5B444;
+$--wp--preset--color--wc-23-jackolantern: #573531;
+$--wp--preset--color--wc-23-emerald: #1E756D;
+
+// NOTE: これはスクリーンリーダーの人向けのクラス。
 .sr-only {
     position: absolute !important;
     width: 1px !important;
@@ -23,8 +26,9 @@
     border: 0 !important;
 }
 
+// FIXME: デバッグ用。不要になったらコメントアウト。
 .admin-bar [class*="teaser-"]{
-    outline: 1px solid red;
+    outline: 1px dashed red;
 }
 
 body {
@@ -41,6 +45,9 @@ body {
     font-family: $--wp--preset--font-family--josefin-font !important;
 }
 
+.home .entry-content{
+    margin: 0 !important;
+}
 
 .has-small-font-size{
     font-size: 12px !important;
@@ -60,10 +67,14 @@ body {
 
 .alignwide{
     max-width: 1130px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 .alignfull{
     max-width: none !important;
     width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){
