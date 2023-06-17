@@ -16,3 +16,11 @@
 @use "cta";
 @use "sponsor";
 @use "timetable";
+
+.teaser-home{
+    &--kv{
+        background-image: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/3a67484d9866fd628437157b55fdbfd0f1a60102/images/main_bg.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
