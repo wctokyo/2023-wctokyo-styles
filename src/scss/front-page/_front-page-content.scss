@@ -32,34 +32,96 @@
   }
 }
 
-//kv
-.teaser-home--kv{
-  padding: 232px 0 194px !important;
-  background-repeat: repeat-x;
-  background-size: auto 100%;
+
+.teaser{
+  &-heading-subtext{
+    position: relative;
+    padding-left: 40px;
+    &:before{
+      content: '';
+      background: $--wp--preset--color--wc-23-white;
+      width: 32px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+  &-home{
+    //kv
+    &--kv{
+      padding: 170px 0 194px !important;
+      background-size: auto 100%;
+      &--text{
+        text-shadow: 2px 2px 0 $--wp--preset--color--wc-23-milk, -2px 2px 0 $--wp--preset--color--wc-23-milk, 2px -2px 0 $--wp--preset--color--wc-23-milk, -2px -2px 0 $--wp--preset--color--wc-23-milk;
+      }
+      &--info{
+        align-self: auto;
+      }
+    }
+
+  //What Is WordCamp?
+    &--about{
+      position: relative;
+      padding: 0 !important;
+      &:before{
+        content: '';
+        background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/what_bg-top.svg") repeat-x bottom right / auto 100%;
+        width: 100vw;
+        height: 286px;
+        position: absolute;
+        top: -286px;
+        right: 0;
+        z-index: 0;
+      }
+      &:after{
+        content: '';
+        background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/what_bg-bottom.svg") repeat-x top right / auto 100%;
+        width: 100vw;
+        height: 148px;
+        position: absolute;
+        right: 0;
+        z-index: 0;
+      }
+      &--content{
+        &--column{
+          position: relative;
+          z-index: 2;
+        }
+        &--mark{
+          position: absolute;
+          right: 0;
+          bottom: -18px;
+          z-index: 1;
+        }
+      }
+    }
+
+    &--abstruct{
+      padding: 152px 0 24px;
+    }
+    &--latest{
+      padding: 0 0 ;
+    }
+    &--sponsors{
+
+    }
+
+  }
 }
 
-//What Is WordCamp?
-.teaser-home--about{
-  position: relative;
-  padding: 0 !important;
-  &:before{
-    content: '';
-    background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/what_bg-top.svg") repeat-x bottom right / auto 100%;
-    width: 100vw;
-    height: 286px;
-    position: absolute;
-    top: -286px;
-    right: 0;
-    z-index: 2;
-  }
-  &:after{
-    content: '';
-    background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/what_bg-bottom.svg") repeat-x top right / auto 100%;
-    width: 100vw;
-    height: 148px;
-    position: absolute;
-    right: 0;
-    z-index: 2;
+.wp-block-buttons{
+  &.is-style-outline{
+    a{
+      position: relative;
+      font-size: 20px;
+      &::after{
+        content: '▶';
+        font-size: 14px;
+        position: absolute;
+        right: 22px;
+      }
+    }
   }
 }
