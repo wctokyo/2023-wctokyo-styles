@@ -2,6 +2,7 @@
  * front-page / front-page-content
  */
 @use '../global-styles-inline-css' as g;
+@use '../_variables' as v;
 
 // トップページ コンテンツエリア
 .p-section-front-page-content {
@@ -77,16 +78,45 @@
     }
   }
   &-home{
-    //kv
+    // NOTE: home kv
     &--kv{
       padding: 170px 0 194px !important;
+      background-image: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/3a67484d9866fd628437157b55fdbfd0f1a60102/images/main_bg.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
       background-size: auto 100%;
+      @include v.mq(){
+        padding: 10% 3% 20% !important;
+        background-size: 160% auto;
+      }
       &--text{
         text-shadow: 2px 2px 0 g.$wp--preset--color--wc-23-milk, -2px 2px 0 g.$wp--preset--color--wc-23-milk, 2px -2px 0 g.$wp--preset--color--wc-23-milk, -2px -2px 0 g.$wp--preset--color--wc-23-milk;
       }
       &--info{
         &.wp-block-column.wp-block-column-is-layout-flow{
           align-self: auto;
+          @include v.mq(){
+            padding-left: 10%;
+            position: relative;
+          }
+        }
+      }
+      &--logo{
+        @include v.mq(){
+          img{
+            width: 80%;
+          }
+        }
+      }
+      &--wapuu{
+        @include v.mq(){
+          position: absolute;
+          right: 5%;
+          bottom: 35%;
+          text-align: right;
+          img{
+            width: 25vw;
+          }
         }
       }
     }
