@@ -1,18 +1,18 @@
 // NOTE: theme.json が自動出力する CSS変数がなぜか使えないので、Sass変数に変換したものと、最低限必要なクラスをこちらに移植。
 
 
-$--wp--preset--font-family--noto-sans: 'Noto Sans JP', sans-serif;
-$--wp--preset--font-family--josefin-font: 'Josefin Sans', sans-serif;
-$--wp--style--global--content-size: 920px;
-$--wp--style--global--wide-size: 1130px;
-$--wp--preset--color--wc-23-darkgrey: rgb(131, 12, 8);
-$--wp--preset--color--wc-23-black: #231815;
-$--wp--preset--color--wc-23-milk: #F3EEE8;
-$--wp--preset--color--wc-23-azure: #4041E4;
-$--wp--preset--color--wc-23-pumpkin: #F5B444;
-$--wp--preset--color--wc-23-jackolantern: #573531;
-$--wp--preset--color--wc-23-emerald: #1E756D;
-$--wp--preset--color--wc-23-white: #ffffff;
+$wp--preset--font-family--noto-sans: 'Noto Sans JP', sans-serif;
+$wp--preset--font-family--josefin-font: 'Josefin Sans', sans-serif;
+$wp--style--global--content-size: 920px;
+$wp--style--global--wide-size: 1130px;
+$wp--preset--color--wc-23-darkgrey: rgb(131, 12, 8);
+$wp--preset--color--wc-23-black: #231815;
+$wp--preset--color--wc-23-milk: #F3EEE8;
+$wp--preset--color--wc-23-azure: #4041E4;
+$wp--preset--color--wc-23-pumpkin: #F5B444;
+$wp--preset--color--wc-23-jackolantern: #573531;
+$wp--preset--color--wc-23-emerald: #1E756D;
+$wp--preset--color--wc-23-white: #ffffff;
 
 // NOTE: これはスクリーンリーダーの人向けのクラス。
 .sr-only {
@@ -31,14 +31,14 @@ body {
     margin: 0 !important;
     padding: 0 !important;
     font-size: 16px !important;
-    font-family: $--wp--preset--font-family--noto-sans;
+    font-family: $wp--preset--font-family--noto-sans;
     line-height: 1.8;
-    background-color: $--wp--preset--color--wc-23-milk;
-    color: $--wp--preset--color--wc-23-black;
+    background-color: $wp--preset--color--wc-23-milk;
+    color: $wp--preset--color--wc-23-black;
 }
 // TTTのフォントの DM SANS をさも josefin Snasのように扱う
 .has-dm-sans-font-family{
-    font-family: $--wp--preset--font-family--josefin-font !important;
+    font-family: $wp--preset--font-family--josefin-font !important;
 }
 
 .home .entry-content{
