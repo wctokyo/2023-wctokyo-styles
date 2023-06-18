@@ -126,15 +126,17 @@
           z-index: 1;
         }
         &--link{
-          .wp-block-buttons{
-            position: relative;
-            font-size: 20px;
-            display: block;
-            &::after{
-              content: '▶';
-              font-size: 14px;
-              position: absolute;
-              right: 22px;
+          .is-style-outline{
+            a{
+              position: relative;
+              font-size: 20px;
+              display: block;
+              &::after{
+                content: '▶';
+                font-size: 14px;
+                position: absolute;
+                right: 22px;
+              }
             }
           }
         }
@@ -172,6 +174,10 @@
       &--content{
         padding: 115px 0;
         &--column{
+          position: relative;
+          z-index: 2;
+          justify-content: center;
+          flex-wrap: wrap;
           .wp-block-column{
             background: g.$wp--preset--color--wc-23-white;
             border-radius: 4px;
