@@ -148,7 +148,27 @@
       padding: 0 0 ;
     }
     &--sponsors{
-
+      position: relative;
+      padding: 0 !important;
+      &:before{
+        content: '';
+        background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/sponsor_bg-top.svg") repeat-x bottom right / auto 100%;
+        width: 100vw;
+        height: 174px;
+        position: absolute;
+        top: -174px;
+        right: 0;
+        z-index: 0;
+      }
+      &:after{
+        content: '';
+        background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/sponsor_bg-bottom.svg") repeat-x top left / auto 100%;
+        width: 100vw;
+        height: 148px;
+        position: absolute;
+        left: 0;
+        z-index: 0;
+      }
     }
 
   }
@@ -162,10 +182,10 @@
     border-radius: 4px;
     a{
       text-decoration: none;
-      padding: 4px;
       display: flex;
       align-items: center;
       justify-content: center;
+      color: g.$wp--preset--color--wc-23-black;
       &:before{
         content: '';
         width: 10px;
