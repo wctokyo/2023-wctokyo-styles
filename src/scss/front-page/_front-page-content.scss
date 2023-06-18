@@ -160,6 +160,12 @@
           right: 0;
           bottom: -18px;
           z-index: 1;
+          @include v.mq(){
+            bottom: -1.2vw;
+            img{
+              width: 50vw;
+            }
+          }
         }
         &--link{
           .is-style-outline{
@@ -233,6 +239,12 @@
           left: 0;
           bottom: -18px;
           z-index: 1;
+          @include v.mq(){
+            bottom: -1.2vw;
+            img{
+              width: 50vw;
+            }
+          }
         }
       }
     }
@@ -292,6 +304,6 @@
 .common--footer{
   background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/footer_bg.svg) repeat-x center bottom / auto 100%;
   @include v.mq(){
-    background-size: 160% auto;
+    background-size: 260% auto;
   }
 }
