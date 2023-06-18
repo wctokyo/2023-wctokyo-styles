@@ -120,6 +120,7 @@
             a{
               position: relative;
               font-size: 20px;
+              display: block;
               &::after{
                 content: '▶';
                 font-size: 14px;
