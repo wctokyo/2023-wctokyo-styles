@@ -39,7 +39,7 @@
     padding-left: 40px;
     &:before{
       content: '';
-      background: --wp--preset--color--wc-23-white;
+      background: var(--wp--preset--color--wc-23-white);
       width: 32px;
       height: 1px;
       position: absolute;
@@ -54,10 +54,12 @@
       padding: 170px 0 194px !important;
       background-size: auto 100%;
       &--text{
-        text-shadow: 2px 2px 0 --wp--preset--color--wc-23-milk, -2px 2px 0 --wp--preset--color--wc-23-milk, 2px -2px 0 --wp--preset--color--wc-23-milk, -2px -2px 0 --wp--preset--color--wc-23-milk;
+        text-shadow: 2px 2px 0 var(--wp--preset--color--wc-23-milk), -2px 2px 0 var(--wp--preset--color--wc-23-milk), 2px -2px 0 var(--wp--preset--color--wc-23-milk), -2px -2px 0 var(--wp--preset--color--wc-23-milk);
       }
       &--info{
-        align-self: auto;
+        &.wp-block-column.wp-block-column-is-layout-flow{
+          align-self: auto;
+        }
       }
     }
 
