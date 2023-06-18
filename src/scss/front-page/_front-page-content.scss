@@ -96,7 +96,6 @@
         &.wp-block-column.wp-block-column-is-layout-flow{
           align-self: auto;
           @include v.mq(){
-            padding-left: 10%;
             position: relative;
           }
         }
@@ -104,7 +103,7 @@
       &--logo{
         @include v.mq(){
           img{
-            width: 80%;
+            width: 65vw;
           }
         }
       }
@@ -112,7 +111,7 @@
         @include v.mq(){
           position: absolute;
           right: 5%;
-          bottom: 35%;
+          bottom: 25%;
           text-align: right;
           img{
             width: 25vw;
@@ -134,6 +133,10 @@
         top: -286px;
         right: 0;
         z-index: 0;
+        @include v.mq(){
+          height: 28vw;
+          top: -28vw;
+        }
       }
       &:after{
         content: '';
@@ -143,6 +146,9 @@
         position: absolute;
         right: 0;
         z-index: 0;
+        @include v.mq(){
+          height: 14vw;
+        }
       }
       &--content{
         &--column{
@@ -193,6 +199,10 @@
         top: -174px;
         right: 0;
         z-index: 0;
+        @include v.mq(){
+          height: 17vw;
+          top: -17vw;
+        }
       }
       &:after{
         content: '';
@@ -202,6 +212,9 @@
         position: absolute;
         left: 0;
         z-index: 0;
+        @include v.mq(){
+          height: 15vw;
+        }
       }
       &--content{
         padding: 115px 0;
@@ -278,4 +291,7 @@
 
 .common--footer{
   background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/footer_bg.svg) repeat-x center bottom / auto 100%;
+  @include v.mq(){
+    background-size: 160% auto;
+  }
 }
