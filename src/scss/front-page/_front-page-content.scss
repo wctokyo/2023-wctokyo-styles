@@ -36,17 +36,34 @@
 
 .teaser{
   &-heading-subtext{
-    position: relative;
-    padding-left: 40px;
-    &:before{
-      content: '';
-      background: g.$wp--preset--color--wc-23-white;
-      width: 32px;
-      height: 1px;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
+    > span{
+      position: relative;
+      padding-left: 40px;
+      &:before{
+        content: '';
+        width: 32px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+      &.white-line{
+        &::before{
+          background: g.$wp--preset--color--wc-23-white;
+        }
+      }
+      &.black-line{
+        &::before{
+          background: g.$wp--preset--color--wc-23-black;
+        }
+      }
+    }
+    &.center{
+      text-align: center;
+    }
+    &.right{
+      text-align: right;
     }
   }
   &-home{
@@ -98,6 +115,20 @@
           bottom: -18px;
           z-index: 1;
         }
+        &--link{
+          .wp-block-buttons{
+            a{
+              position: relative;
+              font-size: 20px;
+              &::after{
+                content: '▶';
+                font-size: 14px;
+                position: absolute;
+                right: 22px;
+              }
+            }
+          }
+        }
       }
     }
 
@@ -114,17 +145,3 @@
   }
 }
 
-.wp-block-buttons{
-  &.is-style-outline{
-    a{
-      position: relative;
-      font-size: 20px;
-      &::after{
-        content: '▶';
-        font-size: 14px;
-        position: absolute;
-        right: 22px;
-      }
-    }
-  }
-}
