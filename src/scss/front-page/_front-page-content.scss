@@ -1,6 +1,7 @@
 /**
  * front-page / front-page-content
  */
+@use '../global-styles-inline-css' as g;
 
 // トップページ コンテンツエリア
 .p-section-front-page-content {
@@ -39,7 +40,7 @@
     padding-left: 40px;
     &:before{
       content: '';
-      background: var(--wp--preset--color--wc-23-white);
+      background: g.$wp--preset--color--wc-23-white;
       width: 32px;
       height: 1px;
       position: absolute;
@@ -54,7 +55,7 @@
       padding: 170px 0 194px !important;
       background-size: auto 100%;
       &--text{
-        text-shadow: 2px 2px 0 var(--wp--preset--color--wc-23-milk), -2px 2px 0 var(--wp--preset--color--wc-23-milk), 2px -2px 0 var(--wp--preset--color--wc-23-milk), -2px -2px 0 var(--wp--preset--color--wc-23-milk);
+        text-shadow: 2px 2px 0 g.$wp--preset--color--wc-23-milk, -2px 2px 0 g.$wp--preset--color--wc-23-milk, 2px -2px 0 g.$wp--preset--color--wc-23-milk, -2px -2px 0 g.$wp--preset--color--wc-23-milk;
       }
       &--info{
         &.wp-block-column.wp-block-column-is-layout-flow{
