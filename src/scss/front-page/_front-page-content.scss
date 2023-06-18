@@ -45,7 +45,7 @@
   padding: 0 !important;
   &:before{
     content: '';
-    background: url("https://github.com/wctokyo/2023-wctokyo-styles/blob/22496ba4eba71665736146133607e39adf85ab0d/images/what_bg-top.svg") repeat-x bottom right / auto 100%;
+    background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/what_bg-top.svg") repeat-x bottom right / auto 100%;
     width: 100vw;
     height: 286px;
     position: absolute;
@@ -55,7 +55,7 @@
   }
   &:after{
     content: '';
-    background: url("https://github.com/wctokyo/2023-wctokyo-styles/blob/22496ba4eba71665736146133607e39adf85ab0d/images/what_bg-bottom.svg") repeat-x top right / auto 100%;
+    background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/what_bg-bottom.svg") repeat-x top right / auto 100%;
     width: 100vw;
     height: 148px;
     position: absolute;
