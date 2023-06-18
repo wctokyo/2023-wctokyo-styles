@@ -154,3 +154,48 @@
   }
 }
 
+//新着情報
+
+.post{
+  .taxonomy-category{
+    width: 122px;
+    border-radius: 4px;
+    a{
+      text-decoration: none;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:before{
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+//募集
+.category-recruitment{
+  .taxonomy-category{
+    border: 1px solid g.$wp--preset--color--wc-23-pumpkin;
+    a{
+      &:before{
+        background: g.$wp--preset--color--wc-23-pumpkin;
+      }
+    }
+  }
+}
+//お知らせ
+.category-news{
+  .taxonomy-category{
+    border: 1px solid g.$wp--preset--color--wc-23-emerald;
+    a{
+      &:before{
+        background: g.$wp--preset--color--wc-23-emerald;
+      }
+    }
+  }
+}
