@@ -190,12 +190,10 @@
         padding-top: 118px;
       }
     }
-
   }
 }
 
 //新着情報
-
 .post{
   .taxonomy-category{
     width: 122px;
@@ -238,4 +236,8 @@
       }
     }
   }
+}
+
+.common--footer{
+  background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/footer_bg.svg) repeat-x center bottom / auto 100%;
 }
