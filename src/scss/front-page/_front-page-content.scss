@@ -153,9 +153,13 @@
         }
       }
       &--content{
+        @include v.mq(){
+          padding: 0 3%;
+        }
         &--column{
           position: relative;
           z-index: 2;
+          flex-direction: row-reverse;
         }
         &--mark{
           position: absolute;
@@ -170,6 +174,9 @@
           }
         }
         &--link{
+          @include v.mq(){
+            justify-content: center;
+          }
           .is-style-outline{
             a{
               position: relative;
@@ -191,13 +198,22 @@
 
     &--abstruct{
       padding: 152px 0 24px;
+      @include v.mq(){
+        padding: 15% 3% 2%;
+      }
     }
     &--latest{
       padding: 0 0 302px;
+      @include v.mq(){
+        padding: 0 3% 30%;
+      }
     }
     &--sponsors{
       position: relative;
       padding: 0 !important;
+      @include v.mq(){
+        padding: 0 3% !important;
+      }
       &:before{
         content: '';
         background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/sponsor_bg-top.svg") repeat-x bottom right / auto 100%;
@@ -253,6 +269,9 @@
     &--contact{
       &--content{
         padding-top: 118px;
+        @include v.mq(){
+          padding: 12% 3% 0 !important;
+        }
       }
     }
   }
