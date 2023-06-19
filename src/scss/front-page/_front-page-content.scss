@@ -137,7 +137,7 @@
         z-index: 0;
         @include v.mq(){
           height: 28vw;
-          top: -27.9vw;
+          top: -27.8vw;
         }
       }
       &:after{
@@ -150,6 +150,8 @@
         z-index: 0;
         @include v.mq(){
           height: 14vw;
+          bottom: -13.8vw;
+          background-position-x: -65%;
         }
       }
       &--content{
@@ -237,7 +239,7 @@
         z-index: 0;
         @include v.mq(){
           height: 17vw;
-          top: -16.9vw;
+          top: -16.8vw;
         }
       }
       &:after{
@@ -250,6 +252,7 @@
         z-index: 0;
         @include v.mq(){
           height: 15vw;
+          bottom: -14.8vw;
         }
       }
       &--content{
