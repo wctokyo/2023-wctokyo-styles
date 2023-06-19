@@ -35,6 +35,9 @@ body {
     line-height: 1.8;
     background-color: $wp--preset--color--wc-23-milk;
     color: $wp--preset--color--wc-23-black;
+    @include v.mq(){
+        font-size: 14px !important;
+    }
 }
 // TTTのフォントの DM SANS をさも josefin Snasのように扱う
 .has-dm-sans-font-family{
@@ -47,18 +50,33 @@ body {
 
 .has-small-font-size{
     font-size: 12px !important;
+    @include v.mq(){
+        font-size: 10px !important;
+    }
 }
 .has-medium-font-size{
     font-size: 16px !important;
+    @include v.mq(){
+        font-size: 14px !important;
+    }
 }
 .has-large-font-size{
     font-size: 20px !important;
+    @include v.mq(){
+        font-size: 16px !important;
+    }
 }
 .has-x-large-font-size{
     font-size: 32px !important;
+    @include v.mq(){
+        font-size: 24px !important;
+    }
 }
 .has-xx-large-font-size{
     font-size: 64px !important;
+    @include v.mq(){
+        font-size: 48px !important;
+    }
 }
 
 .alignwide{
