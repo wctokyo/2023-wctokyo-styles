@@ -160,6 +160,14 @@
           position: relative;
           z-index: 2;
           flex-direction: row-reverse;
+          @include v.mq(){
+            gap: 40px 40px !important;
+          }
+          .is-style-rounded{
+            @include v.mq(){
+              width: 50%;
+            }
+          }
         }
         &--place{
           @include v.mq(){
@@ -330,5 +338,12 @@
   background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/footer_bg.svg) repeat-x center bottom / auto 100%;
   @include v.mq(){
     background-size: 260% auto;
+  }
+  .wp-block-image{
+    img{
+      @include v.mq(){
+        width: 80%;
+      }
+    }
   }
 }
