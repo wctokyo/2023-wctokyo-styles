@@ -161,6 +161,11 @@
           z-index: 2;
           flex-direction: row-reverse;
         }
+        &--place{
+          @include v.mq(){
+            border-left: none !important;
+          }
+        }
         &--mark{
           position: absolute;
           right: 0;
