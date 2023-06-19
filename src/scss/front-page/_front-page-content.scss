@@ -137,7 +137,7 @@
         z-index: 0;
         @include v.mq(){
           height: 28vw;
-          top: -28vw;
+          top: -27.9vw;
         }
       }
       &:after{
@@ -159,7 +159,7 @@
         &--column{
           position: relative;
           z-index: 2;
-          flex-direction: reverse;
+          flex-direction: row-reverse;
           @include v.mq(){
             gap: 40px 40px !important;
           }
@@ -237,7 +237,7 @@
         z-index: 0;
         @include v.mq(){
           height: 17vw;
-          top: -17vw;
+          top: -16.9vw;
         }
       }
       &:after{
