@@ -171,11 +171,6 @@
             }
           }
         }
-        &--place{
-          @include v.mq(){
-            border-left: none !important;
-          }
-        }
         &--mark{
           position: absolute;
           right: 0;
@@ -214,6 +209,11 @@
       padding: 152px 0 24px;
       @include v.mq(){
         padding: 15% 3% 2%;
+      }
+      &--place{
+        @include v.mq(){
+          border-left: none !important;
+        }
       }
     }
     &--latest{
