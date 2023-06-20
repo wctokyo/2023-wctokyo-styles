@@ -125,7 +125,10 @@
   //What Is WordCamp?
     &--about{
       position: relative;
-      padding: 0 !important;
+      padding: 0 0 90px !important;
+      .teaser-heading-subtext{
+        margin-bottom: 40px;
+      }
       &:before{
         content: '';
         background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/what_bg-top.svg") repeat-x bottom right / auto 100%;
@@ -147,6 +150,7 @@
         height: 148px;
         position: absolute;
         right: 0;
+        bottom: -148px;
         z-index: 0;
         @include v.mq(){
           height: 14vw;
@@ -184,6 +188,7 @@
           }
         }
         &--link{
+          margin-top: 32px;
           @include v.mq(){
             justify-content: center;
           }
@@ -210,6 +215,9 @@
       @include v.mq(){
         padding: 15% 3% 2%;
       }
+      .teaser-heading-subtext{
+        margin-bottom: 48px;
+      }
       &--place{
         @include v.mq(){
           border-left: none !important;
@@ -221,12 +229,27 @@
       @include v.mq(){
         padding: 0 3% 30%;
       }
+      .teaser-heading-subtext{
+        margin-bottom: 40px;
+      }
+      &--about{
+        padding: 40px 0;
+      }
+      &--list{
+        margin-bottom: 32px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
     }
     &--sponsors{
       position: relative;
       padding: 0 !important;
       @include v.mq(){
         padding: 0 3% !important;
+      }
+      .teaser-heading-subtext{
+        margin-bottom: 40px;
       }
       &:before{
         content: '';
@@ -257,6 +280,9 @@
       }
       &--content{
         padding: 115px 0;
+        .teaser-heading-subtext{
+          margin-bottom: 40px;
+        }
         &--column{
           position: relative;
           z-index: 2;
