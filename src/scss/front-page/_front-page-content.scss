@@ -211,9 +211,9 @@
     }
 
     &--abstruct{
-      padding: 152px 0 24px;
+      padding: 152px 0 120px;
       @include v.mq(){
-        padding: 15% 3% 2%;
+        padding: 15% 3% 12%;
       }
       .teaser-heading-subtext{
         margin-bottom: 48px;
