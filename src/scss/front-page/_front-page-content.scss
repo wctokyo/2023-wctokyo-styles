@@ -188,7 +188,7 @@
           }
         }
         &--link{
-          margin-top: 32px;
+          margin-block-start: 32px !important;
           @include v.mq(){
             justify-content: center;
           }
@@ -280,9 +280,6 @@
       }
       &--content{
         padding: 115px 0;
-        .teaser-heading-subtext{
-          margin-bottom: 40px;
-        }
         &--column{
           position: relative;
           z-index: 2;
@@ -308,6 +305,9 @@
       }
     }
     &--contact{
+      .teaser-heading-subtext{
+        margin-bottom: 40px;
+      }
       &--content{
         padding-top: 118px;
         @include v.mq(){
