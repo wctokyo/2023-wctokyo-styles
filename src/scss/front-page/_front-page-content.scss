@@ -253,7 +253,7 @@
         &:last-of-type{
           margin-bottom: 0;
         }
-        .wp-container-21.wp-container-21{
+        &.wp-container-21.wp-container-21{
           @include v.mq(){
             gap: 10px;
           }
