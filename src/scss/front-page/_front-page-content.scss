@@ -403,3 +403,12 @@
     }
   }
 }
+
+
+/**
+ * スポンサー応募フォームのボタンと飾りの画像が被るのを回避するユーティリティクラス
+ */
+.hidden-top-sponsor-btn {
+  position: relative;
+  z-index: 2;
+}
