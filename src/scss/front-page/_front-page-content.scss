@@ -89,6 +89,13 @@
         padding: 10% 3% 20% !important;
         background-size: 160% auto;
       }
+      &--content{
+        position: relative;
+        padding-bottom: 120px;
+        @include v.mq(){
+          padding-bottom: 0;
+        }
+      }
       &--text{
         text-shadow: 2px 2px 0 g.$wp--preset--color--wc-23-milk, -2px 2px 0 g.$wp--preset--color--wc-23-milk, 2px -2px 0 g.$wp--preset--color--wc-23-milk, -2px -2px 0 g.$wp--preset--color--wc-23-milk;
       }
@@ -109,10 +116,17 @@
         }
       }
       &--wapuu{
+        position: absolute;
+        top: -150px;
+        right: 30px;
+        @include v.mq(pc){
+          img{
+            width: 40%;
+          }
+        }
         @include v.mq(){
-          position: absolute;
-          right: 5%;
-          top: 30%;
+          right: 0;
+          top: 10%;
           text-align: right;
           z-index: 1;
           img{
