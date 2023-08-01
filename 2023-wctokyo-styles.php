@@ -49,6 +49,16 @@ add_action( 'admin_head', 'local_adminbar' );
 add_action( 'wp_head', 'local_adminbar' );
 
 
+/**
+ * その他 WordCamp サイトのカスタマイズ用ファイル
+ *
+ * GitHub https://github.com/WordPress/wordcamp.org の public_html/wp-content/mu-plugins からファイルを取得し一部流用
+ */
+
+// mu-plugins/wcorg-misc.php から一部読み込み.
+require_once WCTOKYO_2023_STYLES_PATH . '/mu/wcorg-misc.php';
+
+
 // プラグインディレクトリのtheme.jsonでテーマのtheme.jsonを上書きするコードを教えてください。のGoogle Bardの答え
 add_action( 'after_setup_theme', function() {
 	$theme_json = file_get_contents( get_stylesheet_directory() . '/theme.json' );
