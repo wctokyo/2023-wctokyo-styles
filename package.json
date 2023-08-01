@@ -6,7 +6,10 @@
   "author": "WordCamp Tokyo 2023 website development team",
   "license": "GPL-3.0",
   "scripts": {
-    "css": "sass src/scss/:dist/ --style compressed",
+    "css:wordcamp": "sass src/scss/:dist/ --style compressed",
+    "css:fonts": "sass src/fonts-css/:dist/ --style expanded",
+    "css:add": "sass src/add-css/:dist/ --style expanded",
+    "css": "npm run css:fonts && npm run css:wordcamp && npm run css:add",
     "autoprefixer": "postcss --use autoprefixer --no-map dist/*.css -d dist/",
     "build": "npm run css && npm run autoprefixer",
     "watch": "onchange 'src/**/**/*.scss' -e '**/*.DS_Store' -- npm run build"
