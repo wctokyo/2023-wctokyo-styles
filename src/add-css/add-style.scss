@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+.home .wp-site-blocks {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.wp-site-blocks {
+	padding-bottom: 0 !important;
+}
+
+article {
+	line-height: 1.8;
+}
+
+/* トップページ ticket 20230726 */
+.teaser-home--tickets--buttons {
+	padding: 50px 0;
+}
+
+@media (min-width: 782px) {
+	.teaser-home--tickets--buttons {
+    padding: 80px 0;
+  }
+}
+
+
+/* トップページ ABOUT 20230726 */
+.teaser-home--abstruct.teaser-home--info {
+	margin-top: 0;
+}
+
+.teaser-home--latest.teaser-home--news {
+  padding: 60px 0 302px !important;
+}
+
+@media screen and (max-width: 781px) {
+  .teaser-home--latest.teaser-home--news {
+    padding: 15% 3% 30% !important;
+  }
+}
+
+/* トップページ ABOUT・NEWS 20230726*/
+.teaser-home--abstruct.teaser-home--info,
+.teaser-home--abstruct.teaser-home--news {
+    padding: 60px 0 120px;
+}
+
+@media screen and (max-width: 781px) {
+  .teaser-home--abstruct.teaser-home--info,
+  .teaser-home--abstruct.teaser-home--news {
+    padding: 15% 3% 12%;
+  }
+}
+
+/* チケットページ 20230723 */
+.page-slug-tickets .tix-tickets-list thead tr {
+	color: white;
+	background: black;
+}
+
+.page-slug-tickets .tix-tickets-list tbody .tix-column-description {
+	height: 53px;
+	background: #eee;
+}
+
+.page-slug-tickets .tix-column-remaining,
+.page-slug-tickets .tix-column-quantity {
+	min-width: 40px;
+}
+
+.page-slug-tickets td.tix-column-price,
+.page-slug-tickets td.tix-column-remaining,
+.page-slug-tickets td.tix-column-quantity {
+	text-align: center;
+}
+
+@media (min-width: 425px) {
+	.page-slug-tickets .tix_tickets_table {
+		width: 100%;
+	}
+}
+
+/* チケット情報登録 20230723 */
+.page-slug-tickets .tix-column-per-ticket {
+	text-align: center;
+}
+
+.page-slug-tickets .tix-attendee-form .tix-right,
+.page-slug-tickets .tix-attendee-form .tix-left {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #999;
+}
+
+.page-slug-tickets .tix-attendee-form .tix-row-health-advisory .tix-right,
+.page-slug-tickets .tix-attendee-form .tix-row-health-advisory .tix-left {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.page-slug-tickets .tix-attendee-form .tix-right {
+	text-align: right;
+	vertical-align: middle;
+}
+
+.tix-submit {
+	float: none;
+	text-align: left;
+}
+
+#tix .tix-wide-tab {
+	width: calc(100% - 20px);
+}
+
+#tix .tix-submit .tix-checkout-button {
+	background: #c2e7ff;
+	border: 1px solid #777;
+}
+
+@media (min-width: 768px) {
+	.page-slug-tickets .tix-attendee-form .tix-right {
+		text-align: left;
+	}
+
+	.page-slug-tickets .tix-attendee-form .tix-right,
+	.page-slug-tickets .tix-attendee-form .tix-left {
+		width: 50%;
+	}
+
+	.tix-submit {
+		float: right;
+		text-align: right;
+	}
+
+	#tix .tix-wide-tab {
+		width: 150%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.page-slug-tickets .tix-attendee-form input[type="text"],
+	.page-slug-tickets .tix-attendee-form input[type="email"],
+	.page-slug-tickets .tix-attendee-form input[type="url"] {
+		font-size: 16px;
+	}
+
+	.page-slug-tickets .tix-attendee-form .tix-left {
+		width: calc(60% - 20px);
+		padding-right: 20px;
+	}
+
+	.page-slug-tickets .tix-attendee-form .tix-right {
+		width: 40%;
+	}
+}
+
+/* 参加者一覧 20230726 */
+#tix-attendees {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto !important;
+		float: none !important;
+  }
+  .avatar {
+    float: none !important;
+    width: 90% !important;
+    max-width: 150px;
+    height: auto !important;
+    border-radius: 100vh;
+  }
+  .tix-field {
+    display: flex !important;
+    column-gap: 4px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0 !important;
+    max-width: 100%;
+    word-break: break-all;
+  }
+}
