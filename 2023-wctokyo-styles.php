@@ -28,11 +28,13 @@ define( 'WCTOKYO_2023_STYLES_PATH', untrailingslashit( plugin_dir_path( __FILE__
  * Enqueue custom styles
  */
 function enqueue_wctokyo2023_custom_styles() {
-	$time     = filemtime( WCTOKYO_2023_STYLES_PATH . '/dist/2023-wctokyo-styles.css' );
-	$time_add = filemtime( WCTOKYO_2023_STYLES_PATH . '/dist/add-style.css' );
+	$time_fonts = filemtime( WCTOKYO_2023_STYLES_PATH . '/dist/fonts.css' );
+	$time_style = filemtime( WCTOKYO_2023_STYLES_PATH . '/dist/2023-wctokyo-styles.css' );
+	$time_add   = filemtime( WCTOKYO_2023_STYLES_PATH . '/dist/add-style.css' );
 
-	wp_enqueue_style( '2023__wctokyo-styles', WCTOKYO_2023_STYLES_URL . '/dist/2023-wctokyo-styles.css', array( 'wcb_shortcodes' ), $time );
-	wp_enqueue_style( '2023__add-styles', WCTOKYO_2023_STYLES_URL . '/dist/add-style.css', array( '2023__wctokyo-styles' ), $time );
+	wp_enqueue_style( '2023__fonts-styles', WCTOKYO_2023_STYLES_URL . '/dist/fonts.css', array( 'wcb_shortcodes' ), $time_fonts );
+	wp_enqueue_style( '2023__wctokyo-styles', WCTOKYO_2023_STYLES_URL . '/dist/2023-wctokyo-styles.css', array( '2023__fonts-styles' ), $time_style );
+	wp_enqueue_style( '2023__add-styles', WCTOKYO_2023_STYLES_URL . '/dist/add-style.css', array( '2023__wctokyo-styles' ), $time_add );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_wctokyo2023_custom_styles' );
 
