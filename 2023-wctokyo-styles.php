@@ -81,3 +81,8 @@ register_block_style(
 );
 
 
+//Twenty TwentyテーマにあるインラインCSSを削除
+add_action( 'wp_enqueue_scripts', function() {
+    $styles = wp_styles();
+    $styles->add_data( 'twentytwenty-style', 'after', array() );
+}, 20 );
