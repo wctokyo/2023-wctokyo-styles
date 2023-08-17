@@ -187,3 +187,44 @@ article {
     word-break: break-all;
   }
 }
+
+/**
+ * タイムテーブル 20230817
+ *
+ * ティザーサイトでのみ有効にするスタイル
+ */
+.page-slug-timetable {
+  .wp-block-post-content {
+    .has-slug-lunch-time,
+    .has-slug-break-time1,
+    .has-slug-break-time2,
+    .has-slug-break-time3 {
+      background: #ccc;
+    }
+
+    h4.wordcamp-schedule__session-title {
+      cursor: text;
+
+      a:where(:not(.wp-element-button)) {
+        color: #231815;
+        pointer-events: none;
+      }
+
+      .wcb-session-favourite-icon {
+        display: none !important;
+      }
+    }
+  }
+
+  .wordcamp-schedule__session-speakers {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  @supports (display:grid) {
+    body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session.is-spanning-some-tracks {
+        text-align: left !important;
+    }
+  }
+}
