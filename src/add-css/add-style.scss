@@ -223,7 +223,7 @@ article {
 
 @media screen and (min-width: 550px) {
   @supports (display:grid) {
-    body:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) {
+    body.page-slug-timetable:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) {
       .wordcamp-schedule__time-slot-header {
         background-color: #eff1f4 !important;
       }
