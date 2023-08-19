@@ -1,3 +1,105 @@
 /**
  * global-nav / global-nav
  */
+ @use '../global-styles-inline-css' as g;
+ @use '../_variables' as v;
+
+.wp-block-navigation{
+    width: 1147px;
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 0;
+    justify-content: center;
+    &-item{
+        min-width: 148px;
+        display: block;
+        position: relative;
+        .wp-block-navigation-item__content{
+            &.wp-block-navigation-item__content{
+                padding: 20px 10px;
+                width: 100%;
+                text-align: center;
+                color: g.$wp--preset--color--wc-23-jackolantern;
+                &:hover{
+                    text-decoration: none;
+                    background: rgba(g.$wp--preset--color--wc-23-jackolantern, .95);
+                    color: g.$wp--preset--color--wc-23-white;
+                }
+            }
+            .wp-block-navigation-item__label{
+                color: g.$wp--preset--color--wc-23-jackolantern;
+            }
+            &:hover{
+                .wp-block-navigation-item__label{
+                    color: g.$wp--preset--color--wc-23-white;
+                }
+            }
+        }
+        &:hover{
+            background: rgba(g.$wp--preset--color--wc-23-jackolantern, .95);
+            color: g.$wp--preset--color--wc-23-white;
+            text-decoration: none;
+            .wp-block-navigation-item__content{
+                color: g.$wp--preset--color--wc-23-white;
+            }
+            .wp-block-navigation__submenu-icon{
+                svg{
+                    path{
+                        stroke: g.$wp--preset--color--wc-23-white;
+                    }
+                }
+            }
+        }
+    }
+    .wp-block-navigation__submenu-icon{
+        background: transparent;
+        position: absolute;
+        right: 12px;
+        top: 40%;
+        width: 14px;
+        height: 14px;
+        svg{
+            width: 14px;
+            height: 14px;
+            path{
+                stroke: g.$wp--preset--color--wc-23-jackolantern;
+            }
+        }
+    }
+    .has-child{
+        &:not(.open-on-click){
+            &:hover{
+                .wp-block-navigation__submenu-container{
+                    &.wp-block-navigation-submenu{
+                        min-width: 148px;
+                        background: rgba(g.$wp--preset--color--wc-23-jackolantern, .8);
+                        border: none;
+                        border-radius: 0 0 10px 10px;
+                        left: 0;
+                        border-top: 1px solid g.$wp--preset--color--wc-23-white;
+                        .wp-block-navigation-item{
+                            border-bottom: 1px solid g.$wp--preset--color--wc-23-white;
+                            &:last-of-type{
+                                border-bottom: none;
+                                border-radius: 0 0 10px 10px;
+                            }
+                            .wp-block-navigation-item__content{
+                                color: g.$wp--preset--color--wc-23-white;
+                                justify-content: center;
+                                padding: 15px 10px;
+                                &:hover{
+                                    border-radius: 0 0 10px 10px;
+                                }
+                                .wp-block-navigation-item__label{
+                                    color: g.$wp--preset--color--wc-23-white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
