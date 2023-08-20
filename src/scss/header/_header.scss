@@ -4,7 +4,9 @@
  @use '../global-styles-inline-css' as g;
  @use '../_variables' as v;
 
-.page{
+.page,
+.blog,
+.single{
     .wp-site-blocks{
         padding-top: 0;
     }
