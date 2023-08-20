@@ -23,6 +23,10 @@
         @media screen and (max-width: 1200px){
             min-width: 80px;
         }
+        @include v.mq(){
+            min-width: inherit;
+            width: 100%;
+        }
         .wp-block-navigation-item__content{
             &.wp-block-navigation-item__content{
                 padding: 20px 10px;
@@ -31,6 +35,9 @@
                 color: g.$wp--preset--color--wc-23-jackolantern;
                 @media screen and (max-width: 1200px){
                     padding: 10px 5px;
+                }
+                @include v.mq(){
+                    text-align: left;
                 }
                 &:hover{
                     text-decoration: none;
@@ -48,9 +55,15 @@
             }
         }
         &.wp-block-navigation-submenu{
+            @include v.mq(){
+                padding: 0;
+            }
             .wp-block-navigation-item__content{
                 @media screen and (max-width: 1200px){
                     margin-right: 15px;
+                }
+                @include v.mq(){
+                    margin-right: 0;
                 }
             }
         }
@@ -60,6 +73,9 @@
             text-decoration: none;
             .wp-block-navigation-item__content{
                 color: g.$wp--preset--color--wc-23-white;
+                @include v.mq(){
+                    color: g.$wp--preset--color--wc-23-jackolantern;
+                }
             }
             .wp-block-navigation__submenu-icon{
                 svg{
@@ -109,11 +125,24 @@
                         @media screen and (max-width: 1200px){
                             min-width: 120px;
                         }
+                        @include v.mq(){
+                            min-width: inherit;
+                            width: 100%;
+                            border-radius: 0;
+                            border-top: none;
+                            padding: 0;
+                        }
                         .wp-block-navigation-item{
                             border-bottom: 1px solid g.$wp--preset--color--wc-23-white;
+                            @include v.mq(){
+                                border-bottom: none;
+                            }
                             &:last-of-type{
                                 border-bottom: none;
                                 border-radius: 0 0 10px 10px;
+                                @include v.mq(){
+                                    border-radius: 0;
+                                }
                             }
                             .wp-block-navigation-item__content{
                                 color: g.$wp--preset--color--wc-23-white;
@@ -122,11 +151,26 @@
                                 @media screen and (max-width: 1200px){
                                     padding: 6px 5px;
                                 }
+                                @include v.mq(){
+                                    color: g.$wp--preset--color--wc-23-jackolantern;
+                                    justify-content: flex-start;
+                                    padding: 4% 6%;
+                                }
                                 &:hover{
                                     border-radius: 0 0 10px 10px;
+                                    @include v.mq(){
+                                        border-radius: 0;
+                                    }
+                                    .wp-block-navigation-item__label{
+                                        color: g.$wp--preset--color--wc-23-white;
+                                        
+                                    }
                                 }
                                 .wp-block-navigation-item__label{
                                     color: g.$wp--preset--color--wc-23-white;
+                                    @include v.mq(){
+                                        color: g.$wp--preset--color--wc-23-jackolantern;
+                                    }
                                 }
                             }
                         }
@@ -135,36 +179,39 @@
             }
         }
     }
+    
 
     //ハンバーガー　閉じてる時
-    .wp-block-navigation__responsive-container-open{
-        @include v.mq(){
-            display: block;
-            background: g.$wp--preset--color--wc-23-jackolantern;
-            width: 55px;
-            height: 55px;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            border-radius: 4px;
-            z-index: 2;
-            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
-            svg{
-                width: 30px;
-                height: 30px;
-                margin: 0 auto;
-                path{
-                    stroke: g.$wp--preset--color--wc-23-white;
-                    fill: g.$wp--preset--color--wc-23-white;
-                }
-            }
-            &:after{
-                content: 'MENU';
+    .wp-block-navigation__responsive-container{
+        &-open{
+            @include v.mq(){
                 display: block;
-                text-align: center;
-                font-family: 'Noto Sants' serif;
-                font-weight: bold;
-                color: g.$wp--preset--color--wc-23-white;
+                background: g.$wp--preset--color--wc-23-jackolantern;
+                width: 55px;
+                height: 55px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                border-radius: 4px;
+                z-index: 2;
+                box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+                svg{
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 auto;
+                    path{
+                        stroke: g.$wp--preset--color--wc-23-white;
+                        fill: g.$wp--preset--color--wc-23-white;
+                    }
+                }
+                &:after{
+                    content: 'MENU';
+                    display: block;
+                    text-align: center;
+                    font-family: 'Noto Sants' serif;
+                    font-weight: bold;
+                    color: g.$wp--preset--color--wc-23-white;
+                }
             }
         }
     }
@@ -182,6 +229,17 @@
                     padding-top: calc(3rem + 32px);
                     .wp-block-navigation__container{
                         border-top: 1px solid g.$wp--preset--color--wc-23-spgnav_line;
+                    }
+                    .has-child{
+                        .wp-block-navigation__submenu-container{
+                            padding: 0;
+                            min-width: 100%;
+                        }
+                    } 
+                    .wp-block-navigation-item__content{
+                        padding: 4% 6%;
+                        width: 88%;
+                        border-bottom: 1px solid g.$wp--preset--color--wc-23-spgnav_line;
                     }
                 }
             }
