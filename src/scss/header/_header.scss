@@ -4,6 +4,12 @@
  @use '../global-styles-inline-css' as g;
  @use '../_variables' as v;
 
+.page{
+    .wp-site-blocks{
+        padding-top: 0;
+    }
+}
+
  .wp-block-template-part{
     width: 100%;
     background: rgba(g.$wp--preset--color--wc-23-milk, .8);
