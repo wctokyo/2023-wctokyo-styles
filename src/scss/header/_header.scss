@@ -9,4 +9,7 @@
     background: rgba(g.$wp--preset--color--wc-23-milk, .8);
     position: fixed;
     z-index: 10;
+    @include v.mq(pc){
+        background: transparent;
+    }
  }
