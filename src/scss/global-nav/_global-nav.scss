@@ -5,7 +5,7 @@
  @use '../_variables' as v;
 
 .header{
-    &.wp-block-navigation{
+    .wp-block-navigation{
         width: 1147px;
         margin: 0 auto;
         font-family: 'Manrope', sans-serif;
