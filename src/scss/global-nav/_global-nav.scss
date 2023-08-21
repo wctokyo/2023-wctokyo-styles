@@ -4,7 +4,7 @@
  @use '../global-styles-inline-css' as g;
  @use '../_variables' as v;
 
-.header{
+// .header_box{
     .wp-block-navigation{
         width: 1147px;
         margin: 0 auto;
@@ -218,7 +218,7 @@
         }
     }
 
-}
+// }
 // ハンバーガー開いてるとき
 .has-modal-open{
     .wp-block-navigation__responsive-container{
