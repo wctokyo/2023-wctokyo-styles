@@ -234,3 +234,20 @@ article {
     }
   }
 }
+
+/**
+ * スポンサーページ 20230822
+ *
+ * ティザーサイトでの緊急対応
+ */
+.page-slug-sponsors {
+  .wordcamp-sponsors {
+    padding-left: 0;
+  }
+
+  @media (min-width: 400px) and (max-width: 782px) {
+    img.wordcamp-image__featured-image {
+      object-fit: contain;
+    }
+  }
+}
