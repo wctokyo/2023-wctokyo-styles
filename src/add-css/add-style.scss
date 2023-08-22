@@ -245,9 +245,7 @@ article {
     padding-left: 0;
   }
 
-  @media (min-width: 400px) and (max-width: 782px) {
-    img.wordcamp-image__featured-image {
-      object-fit: contain;
-    }
+  img.wordcamp-image__featured-image {
+    object-fit: contain;
   }
 }
