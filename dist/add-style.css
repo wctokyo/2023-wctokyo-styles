@@ -208,3 +208,56 @@ article {
     }
   }
 }
+/**
+ * スポンサーページ 20230822
+ *
+ * ティザーサイトでの緊急対応
+ */
+.page-slug-sponsors .wordcamp-sponsors {
+  padding-left: 0;
+}
+.page-slug-sponsors img.wordcamp-image__featured-image {
+  object-fit: contain;
+}
+
+/**
+ * お知らせ一覧 ページネーション 20230831
+ *
+ * ティザーサイトでの緊急対応
+ */
+.wp-block-query-pagination-numbers .page-numbers {
+  align-items: center;
+  display: inline-flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  margin: 0 2px;
+  text-decoration: none;
+  vertical-align: top;
+  width: 40px;
+  background-color: #e67823;
+  transition: 0.2s ease-in-out;
+  border-radius: 4px;
+}
+.wp-block-query-pagination-numbers .page-numbers.current {
+  background-color: #4041e4;
+  color: #fff;
+  border-radius: 0;
+}
+
+.wp-block-query-pagination-previous,
+.wp-block-query-pagination-next {
+  text-decoration: underline !important;
+}
+
+@media (hover: hover) {
+  .wp-block-query-pagination-numbers a.page-numbers:hover {
+    background-color: #f5b444;
+    text-decoration: none !important;
+  }
+  .wp-block-query-pagination-previous:hover,
+  .wp-block-query-pagination-next:hover {
+    text-decoration: none !important;
+  }
+}
