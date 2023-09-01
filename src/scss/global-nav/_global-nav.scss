@@ -21,7 +21,7 @@
     .wp-block-navigation-item{
         &.wp-block-navigation-link,
         &.wp-block-navigation-submenu{
-            min-width: 148px;
+            min-width: 162px;
             display: block;
             position: relative;
             @media screen and (max-width: 1200px){
@@ -166,7 +166,7 @@
                                     }
                                     .wp-block-navigation-item__label{
                                         color: g.$wp--preset--color--wc-23-white;
-                                        
+
                                     }
                                 }
                                 .wp-block-navigation-item__label{
@@ -238,7 +238,7 @@
                             padding: 0;
                             min-width: 100%;
                         }
-                    } 
+                    }
                     .wp-block-navigation-item__content{
                         padding: 4% 6%;
                         width: 88%;
