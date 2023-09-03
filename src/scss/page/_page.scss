@@ -1,0 +1,10 @@
+/**
+ * 固定ページ
+ */
+
+@use '../_global-styles-inline-css' as g;
+@use '../_variables' as v;
+
+.under_mv{
+    background: g.$wp--preset--color--wc-23-milk url(/images/under/header_bg.svg) center center / contain;
+}
