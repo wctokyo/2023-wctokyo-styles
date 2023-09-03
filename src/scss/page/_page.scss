@@ -4,7 +4,33 @@
 
 @use '../_global-styles-inline-css' as g;
 @use '../_variables' as v;
+@use '../_mixins' as m;
 
 .under_mv{
-    background: g.$wp--preset--color--wc-23-milk url(/images/under/header_bg.svg) center center / contain;
+    background: g.$wp--preset--color--wc-23-milk url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/header_bg.svg) top center / cover;
+    padding: 65px 0;
+    &_box{
+        &:before{
+            content: '';
+            @include m.abs_top-center();
+            background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/wapuu.svg) no-repeat top center / contain;
+            height: 358px;
+            width: 72vw;
+        }
+        min-height: 358px;
+        position: relative;
+        padding: 65px 0;
+    }
+    &_ttl{
+        margin: 0 auto 24px;
+        img{
+            margin: 0 auto;
+            display: block;
+            height: 160px;
+        }
+    }
+    &_date{
+        font-size: 30px;
+        line-height: 128%;
+    }
 }
