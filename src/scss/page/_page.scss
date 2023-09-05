@@ -26,11 +26,22 @@
         img{
             margin: 0 auto;
             display: block;
-            height: 160px;
+            width: 29.861111vw;
+            // height: 160px;
         }
     }
     &_date{
-        font-size: 30px;
+        font-size: max(30px, 16px);
         line-height: 128%;
+    }
+}
+
+.page{
+    &_contents{
+        background: g.$wp--preset--color--wc-23-emerald;
+        &::before{
+            content: '';
+            background: url() repeat-x;
+        }
     }
 }
