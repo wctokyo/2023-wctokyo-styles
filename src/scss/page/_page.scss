@@ -40,15 +40,29 @@
     &_contents{
         background: g.$wp--preset--color--wc-23-emerald;
         position: relative;
+        margin: 0 auto;
         &::before{
             content: '';
-            background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/main-top_bg.svg) repeat-x bottom center / auto 100%;
+            background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/main-top_bg.svg) repeat-x bottom right / auto 100%;
             width: 100vw;
-            height: 210px;
+            height: 208px;
             position: absolute;
-            top: -120px;
-            left: 0;
+            top: -140px;
+            right: 0;
             display: block;
+        }
+        &:after{
+            content: '';
+            background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/main-bottom_bg.svg) repeat-x bottom right / auto 100%;
+            width: 100vw;
+            height: 208px;
+            position: absolute;
+            bottom: -120px;
+            right: 0;
+            display: block;
+        }
+        &-box{
+            margin: 0 auto;
         }
     }
 }
