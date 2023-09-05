@@ -63,6 +63,37 @@
         }
         &-box{
             margin: 0 auto;
+            &:before{
+                content: '';
+                background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/mark-top.svg) no-repeat top right / contain;
+                width: 282px;
+                height: 429px;
+                position: absolute;
+                top: -80px;
+                right: 0;
+                display: block;
+                z-index: 1;
+            }
+            &:after{
+                content: '';
+                background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/mark-bottom.svg) no-repeat bottom left / contain;
+                width: 497px;
+                height: 474px;
+                position: absolute;
+                bottom: -50px;
+                left: 0;
+                display: block;
+                z-index: 1;
+            }
+            .contents_box{
+                width: 920px;
+                margin: 0 auto;
+                background: g.$wp--preset--color--wc-23-white;
+                border-radius: 50px;
+                position: relative;
+                z-index: 2;
+                padding: 48px 90px;
+            }
         }
     }
 }
