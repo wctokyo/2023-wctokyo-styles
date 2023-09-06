@@ -93,6 +93,26 @@
                 position: relative;
                 z-index: 2;
                 padding: 48px 90px;
+                h1{
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: g.$wp--preset--color--wc-23-jackolantern;
+                    display: flex;
+                    margin: 0 0 32px;
+                    text-align: left;
+                    &::before{
+                        content: '';
+                        background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/h1.svg) no-repeat center center / contain;
+                        width: 36px;
+                        height: 42px;
+                    }
+                }
+                .wp-block-post-date{
+                    font-size: 14px;
+                }
+                .wp-block-post-featured-image{
+                    margin-bottom: 30px;
+                }
             }
         }
     }
