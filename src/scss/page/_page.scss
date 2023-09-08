@@ -165,13 +165,14 @@
                     border-radius: 50vh;
                     position: relative;
                     padding: 16px 42px;
+                    z-index: 2;
                     &::before{
                         content: '';
                         background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/h4_left.svg) no-repeat center center / contain;
                         width: 46px;
                         height: 38px;
                         position: absolute;
-                        left: 0;
+                        left: 4vh;
                         top: 0;
                     }
                     &::after{
@@ -180,8 +181,27 @@
                         width: 51px;
                         height: 50px;
                         position: absolute;
-                        right: 0;
+                        right: 4vh;
                         bottom: 0;
+                    }
+                }
+                p{
+                    margin-bottom: 40px;
+                }
+                a{
+                    color: g.$wp--preset--color--wc-23-azure;
+                    text-decoration: underline;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                ol{
+                    li{
+                        &::marker{
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
                     }
                 }
                 strong{
@@ -190,18 +210,85 @@
                         content: '';
                         background: g.$wp--preset--color--wc-23-pumpkin;
                         width: 103%;
-                        height: 80%;
+                        height: 50%;
                         position: absolute;
-                        bottom: -4px;
+                        bottom: -2px;
                         left: -1.5%;
                         z-index: -1;
+                    }
+                }
+                table{
+                    thead{
+                        border: none;
+                    }
+                    th,td{
+                        min-width: 185px;
+                        padding: 20px 16px 16px;
+                    }
+                    th{
+                        background: g.$wp--preset--color--wc-23-emerald;
+                        color: g.$wp--preset--color--wc-23-white;
+                        font-weight: bold;
+                        text-align: center;
+                        border: 1px solid g.$wp--preset--color--wc-23-white;
+                    }
+                    td{
+                        border: 1px solid g.$wp--preset--color--wc-23-gray;
+                        color: g.$wp--preset--color--wc-23-black;
+                        background: g.$wp--preset--color--wc-23-white;
                     }
                 }
                 .wp-block-post-date{
                     font-size: 14px;
                 }
+                .taxonomy-category{
+                    position: relative;
+                    padding-left: 30px;
+                    &:before{
+                        content: '';
+                        background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/category.svg) no-repeat center center / contain;
+                        width: 20px;
+                        height: 16px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: g.$wp--preset--color--wc-23-black;
+                        font-size: 14px;
+                    }
+                }
                 .wp-block-post-featured-image{
-                    margin-bottom: 30px;
+                    margin: 20px 0 30px;
+                }
+                .wp-block-buttons{
+                    .wp-block-button{
+                        &__link{
+                            background: g.$wp--preset--color--wc-23-orange !important;
+                            border-radius: 50vh;
+                            color: g.$wp--preset--color--wc-23-white;
+                            text-align: center;
+                            font-weight: bold;
+                            padding: 15px 40px;
+                            min-width: 340px;
+                            text-decoration: none;
+                            filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.25));
+                            position: relative;
+                            &:hover{
+                                background: g.$wp--preset--color--wc-23-pumpkin !important;
+                                opacity: 1;
+                                filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.25));
+                            }
+                            &:after{
+                                content: '▶';
+                                @include m.abs_top();
+                                right: 15px;
+                                font-size: 14px;
+                                color: g.$wp--preset--color--wc-23-white;
+                            }
+                        }
+                    }
                 }
             }
         }
