@@ -97,14 +97,104 @@
                     font-size: 32px;
                     font-weight: bold;
                     color: g.$wp--preset--color--wc-23-jackolantern;
-                    display: flex;
                     margin: 0 0 32px;
                     text-align: left;
+                    position: relative;
+                    padding-left: 52px;
                     &::before{
                         content: '';
                         background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/h1.svg) no-repeat center center / contain;
                         width: 36px;
                         height: 42px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+                h2{
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: g.$wp--preset--color--wc-23-jackolantern;
+                    margin: 0 0 40px;
+                    text-align: left;
+                    display: flex;
+                    position: relative;
+                    padding-left: 74px;
+                    &::before{
+                        content: '';
+                        background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/h2.svg) no-repeat center center / contain;
+                        width: 66px;
+                        height: 42px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        bottom: -6px;
+                        left: 0;
+                        width: 100%;
+                        height: 4px;
+                        background: g.$wp--preset--color--wc-23-emerald;
+                    }
+                }
+                h3{
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: g.$wp--preset--color--wc-23-jackolantern;
+                    margin: 0 0 38px;
+                    text-align: left;
+                    position: relative;
+                    padding-left: 70px;
+                    &::before{
+                        content: '';
+                        background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/h3.svg) no-repeat center center / contain;
+                        width: 54px;
+                        height: 40px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+                h4{
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: g.$wp--preset--color--wc-23-white;
+                    background: g.$wp--preset--color--wc-23-emerald;
+                    border-radius: 50vh;
+                    position: relative;
+                    padding: 16px 42px;
+                    &::before{
+                        content: '';
+                        background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/h4_left.svg) no-repeat center center / contain;
+                        width: 46px;
+                        height: 38px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                    &::after{
+                        content: '';
+                        background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/h4_right.svg) no-repeat center center / contain;
+                        width: 51px;
+                        height: 50px;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+                strong{
+                    position: relative;
+                    &::after{
+                        content: '';
+                        background: g.$wp--preset--color--wc-23-pumpkin;
+                        width: 103%;
+                        height: 80%;
+                        position: absolute;
+                        bottom: -4px;
+                        left: -1.5%;
+                        z-index: -1;
                     }
                 }
                 .wp-block-post-date{
