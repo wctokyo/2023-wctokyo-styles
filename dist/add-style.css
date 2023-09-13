@@ -236,14 +236,14 @@ article {
   text-decoration: none;
   vertical-align: top;
   width: 40px;
-  background-color: #e67823;
+  background-color: transparent;
   transition: 0.2s ease-in-out;
+  border: 1px solid #573531;
   border-radius: 4px;
 }
 .wp-block-query-pagination-numbers .page-numbers.current {
-  background-color: #4041e4;
+  background-color: #573531;
   color: #fff;
-  border-radius: 0;
 }
 
 .wp-block-query-pagination-previous,
@@ -253,7 +253,8 @@ article {
 
 @media (hover: hover) {
   .wp-block-query-pagination-numbers a.page-numbers:hover {
-    background-color: #f5b444;
+    background-color: #573531;
+    color: #fff;
     text-decoration: none !important;
   }
   .wp-block-query-pagination-previous:hover,
