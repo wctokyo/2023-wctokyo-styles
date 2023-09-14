@@ -267,6 +267,7 @@ article {
  *
  * 公開向け対応
  */
+.single-wcb_speaker .entry-content + div,
 .single-wcb_speaker .wp-block-post-date {
   display: none;
 }
