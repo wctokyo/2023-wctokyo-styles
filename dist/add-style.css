@@ -299,3 +299,59 @@ article {
     padding-left: 2rem;
   }
 }
+
+/**
+ * セッション詳細ページ 20230914
+ *
+ * 公開向け対応
+ */
+.single-wcb_session .entry-content + div,
+.single-wcb_session .wp-block-post-date {
+  display: none;
+}
+.single-wcb_session .speaker-group .wp-block-columns {
+  gap: 4rem;
+}
+.single-wcb_session .speaker-panel figure {
+  text-align: center;
+}
+.single-wcb_session .speaker-panel figure > img {
+  border-radius: 100vh;
+}
+.single-wcb_session .speaker-panel h3 {
+  text-align: center;
+  margin-top: 0.75rem;
+}
+.single-wcb_session .session-role-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.single-wcb_session .session-role {
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 100vh;
+}
+.single-wcb_session .session-role.role-speaker {
+  background-color: #289e93;
+}
+.single-wcb_session .session-role.role-facilitator {
+  background-color: #eb9451;
+}
+.single-wcb_session .session-role.role-panelist {
+  background-color: #6d6dea;
+}
+.single-wcb_session .session-speakers,
+.single-wcb_session #session-speaker-names,
+.single-wcb_session .wp-block-template-part .wp-block-columns {
+  display: none;
+}
+@media (min-width: 48.875rem) {
+  .single-wcb_session .session-role {
+    font-size: 12px;
+  }
+}

@@ -345,3 +345,76 @@ article {
     }
   }
 }
+
+/**
+ * セッション詳細ページ 20230914
+ *
+ * 公開向け対応
+ */
+.single-wcb_session {
+  .entry-content + div,
+  .wp-block-post-date {
+    display: none;
+  }
+
+  .speaker-group {
+    .wp-block-columns {
+      gap: 4rem;
+    }
+  }
+
+  .speaker-panel {
+    figure {
+      text-align: center;
+
+      > img {
+        border-radius: 100vh;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      margin-top: 0.75rem;
+    }
+  }
+
+  .session-role-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .session-role {
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 100vh;
+
+    &.role-speaker {
+      background-color: #289e93;
+    }
+
+    &.role-facilitator {
+      background-color: #eb9451;
+    }
+
+    &.role-panelist {
+      background-color: #6d6dea;
+    }
+  }
+
+  .session-speakers,
+  #session-speaker-names,
+  .wp-block-template-part .wp-block-columns {
+    display: none;
+  }
+
+  @media (min-width: 48.875rem) {
+    .session-role {
+      font-size: 12px;
+    }
+  }
+}
