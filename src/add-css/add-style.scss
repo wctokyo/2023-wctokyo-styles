@@ -300,7 +300,7 @@ article {
 }
 
 /**
- * スピーカー詳細ページ
+ * スピーカー詳細ページ 20230914
  *
  * 公開向け対応
  */
@@ -317,13 +317,16 @@ article {
     }
 
     .speaker-image {
-      border-radius: 100vh;
       margin-top: 3rem;
+
+      img {
+        border-radius: 100vh;
+      }
     }
   }
 
   @media (min-width:  64rem) {
-    .entry-content {
+    .speaker-pattern {
       display: flex;
       flex-wrap: wrap;
 
