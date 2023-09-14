@@ -298,3 +298,47 @@ article {
     text-decoration: none !important;
   }
 }
+
+/**
+ * スピーカー詳細ページ
+ *
+ * 公開向け対応
+ */
+.single-wcb_speaker {
+  .wp-block-post-date {
+    display: none;
+  }
+
+  .entry-content {
+    margin-top: 3rem;
+
+    .speaker-avatar {
+      display: none;
+    }
+
+    .speaker-image {
+      border-radius: 100vh;
+      margin-top: 3rem;
+    }
+  }
+
+  @media (min-width:  64rem) {
+    .entry-content {
+      display: flex;
+      flex-wrap: wrap;
+
+      .speaker-image {
+        width: 40%;
+        margin: 0 !important;
+      }
+
+      >.wp-block-group {
+        width: 60%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding-left: 2rem;
+      }
+    }
+  }
+}
