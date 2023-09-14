@@ -263,7 +263,7 @@ article {
   }
 }
 /**
- * スピーカー詳細ページ
+ * スピーカー詳細ページ 20230914
  *
  * 公開向け対応
  */
@@ -277,19 +277,21 @@ article {
   display: none;
 }
 .single-wcb_speaker .entry-content .speaker-image {
-  border-radius: 100vh;
   margin-top: 3rem;
 }
+.single-wcb_speaker .entry-content .speaker-image img {
+  border-radius: 100vh;
+}
 @media (min-width: 64rem) {
-  .single-wcb_speaker .entry-content {
+  .single-wcb_speaker .speaker-pattern {
     display: flex;
     flex-wrap: wrap;
   }
-  .single-wcb_speaker .entry-content .speaker-image {
+  .single-wcb_speaker .speaker-pattern .speaker-image {
     width: 40%;
     margin: 0 !important;
   }
-  .single-wcb_speaker .entry-content > .wp-block-group {
+  .single-wcb_speaker .speaker-pattern > .wp-block-group {
     width: 60%;
     display: flex;
     flex-flow: column;
