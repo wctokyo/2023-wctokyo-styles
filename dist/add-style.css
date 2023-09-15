@@ -179,9 +179,14 @@ article {
  * ティザーサイトでのみ有効にするスタイル
  */
 .page-slug-timetable .wp-block-post-content .has-slug-lunch-time,
+.page-slug-timetable .wp-block-post-content .has-slug-after-party-open {
+  background: #e7e7e7;
+}
 .page-slug-timetable .wp-block-post-content .has-slug-break-time1,
 .page-slug-timetable .wp-block-post-content .has-slug-break-time2,
-.page-slug-timetable .wp-block-post-content .has-slug-break-time3 {
+.page-slug-timetable .wp-block-post-content .has-slug-break-time3,
+.page-slug-timetable .wp-block-post-content .has-slug-close,
+.page-slug-timetable .wp-block-post-content .has-slug-close-2 {
   background: #ccc;
 }
 .page-slug-timetable .wp-block-post-content h4.wordcamp-schedule__session-title {
@@ -446,4 +451,29 @@ div.sharedaddy h3.sd-title::before {
 .wp-block-group.teaser-home--sponsors--content,
 .teaser-home--latest--about .wp-block-post .wp-block-columns .wp-block-column > .wp-block-group {
   padding-top: 0 !important;
+}
+
+/**
+ * タイムテーブル 20230915
+ *
+ * テストページに反映しているスタイル
+ * 公開時に要書き換え
+ */
+.page-slug-test-timetable .timetable-nav {
+  margin-bottom: 4rem !important;
+}
+.page-slug-test-timetable .timetable-nav .wp-block-button__link {
+  min-width: auto !important;
+}
+.page-slug-test-timetable .wordcamp-schedule__date {
+  display: none !important;
+}
+@media (min-width: 601px) {
+  .page-slug-test-timetable .wordcamp-schedule__column-header {
+    color: #fff;
+    background-color: #686868 !important;
+  }
+  .page-slug-test-timetable .wordcamp-schedule__column-header + .wordcamp-schedule__column-header {
+    border-left: 1px solid #fbfbfc;
+  }
 }
