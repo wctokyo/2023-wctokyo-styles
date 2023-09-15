@@ -7,14 +7,14 @@
 @use '../_mixins' as m;
 
 .under_mv{
-    background: g.$wp--preset--color--wc-23-milk url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/header_bg.svg) top center / cover;
+    background: g.$wp--preset--color--wc-23-milk url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/header_bg.svg) no-repeat top center / cover;
     padding: 65px 0;
     margin-bottom: 40px;
     @include v.mq(wide){
         background-size: 120% auto;
     }
     @include v.mq(){
-        background: g.$wp--preset--color--wc-23-milk url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/header_bg_sp.svg) top center;
+        background: g.$wp--preset--color--wc-23-milk url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/header_bg_sp.svg) no-repeat top center / cover;
         padding: 8% 0;
         margin-bottom: 4%;
     }
@@ -27,7 +27,8 @@
             width: 72vw;
             @include v.mq(){
                 height: 34.375vw;
-                width: 98vw;
+                width: 95vw;
+                top: 48%;
             }
         }
         min-height: 358px;
