@@ -359,3 +359,23 @@ article {
     font-size: 12px;
   }
 }
+
+/**
+ * footer 共有 20230915
+ *
+ * jetpack が出力しているスタイル
+ */
+div.sharedaddy {
+  margin-top: 60px;
+}
+div.sharedaddy h3.sd-title::before {
+  width: 54px !important;
+  margin-top: -17px;
+  margin-bottom: 0 !important;
+}
+@media screen and (max-width: 600px) {
+  div.sharedaddy h3.sd-title::before {
+    width: 27px !important;
+    margin-top: -4px;
+  }
+}
