@@ -313,7 +313,17 @@
                         text-decoration: none;
                     }
                 }
+                ul{
+                    margin-bottom: 32px;
+                    @include v.mq(){
+                        margin-bottom: 4%;
+                    }
+                }
                 ol{
+                    margin-bottom: 32px;
+                    @include v.mq(){
+                        margin-bottom: 4%;
+                    }
                     li{
                         &::marker{
                             font-family: 'Josefin Sans', sans-serif;
