@@ -275,6 +275,17 @@ article {
 .single-wcb_speaker .entry-content {
   margin-top: 3rem;
 }
+.single-wcb_speaker .entry-content .wp-block-group.speaker-pattern {
+  padding-top: 0 !important;
+  margin-bottom: 3rem;
+}
+.single-wcb_speaker .entry-content .wp-block-group.speaker-pattern .wp-block-group {
+  padding-top: 0 !important;
+}
+.single-wcb_speaker .entry-content .wp-block-group.speaker-pattern .wp-block-group > p {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 .single-wcb_speaker .entry-content .speaker-avatar {
   display: none;
 }
@@ -283,6 +294,20 @@ article {
 }
 .single-wcb_speaker .entry-content .speaker-image img {
   border-radius: 100vh;
+}
+.single-wcb_speaker .entry-content #speaker-session-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0;
+}
+.single-wcb_speaker .entry-content #speaker-session-names li {
+  border: 1px solid #4041e4;
+  border-radius: 100vh;
+}
+.single-wcb_speaker .entry-content #speaker-session-names li a {
+  text-decoration: none;
+  padding: 2px 12px;
 }
 @media (min-width: 64rem) {
   .single-wcb_speaker .speaker-pattern {
