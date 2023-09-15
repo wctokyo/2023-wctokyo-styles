@@ -362,6 +362,7 @@
                     font-style: italic;
                     position: relative;
                     z-index: 2;
+                    border: none;
                     @include v.mq(){
                         padding: 40px 25px;
                     }
