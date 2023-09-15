@@ -191,7 +191,7 @@
                     font-size: 32px;
                     font-weight: bold;
                     color: g.$wp--preset--color--wc-23-jackolantern;
-                    margin: 0 0 40px;
+                    margin: 20px 0 40px;
                     text-align: left;
                     display: flex;
                     position: relative;
@@ -201,7 +201,7 @@
                         font-size: 18px;
                         padding-left: 48px !important;
                         // padding-left: 48px;
-                        margin-bottom: 4%;
+                        margin: 2% 0 4%;
                     }
                     &::before{
                         content: '';
