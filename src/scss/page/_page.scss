@@ -195,7 +195,7 @@
                     text-align: left;
                     display: flex;
                     position: relative;
-                    padding-left: 74px;
+                    padding: 0 0 0 74px !important;
                     @include v.mq(){
                         font-size: 18px;
                         padding-left: 48px;
