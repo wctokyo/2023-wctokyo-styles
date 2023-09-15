@@ -313,6 +313,9 @@ article {
 .single-wcb_session .speaker-group .wp-block-columns {
   gap: 4rem;
 }
+.single-wcb_session .speaker-group .wp-block-columns + .wp-block-columns {
+  margin-top: 4rem;
+}
 .single-wcb_session .speaker-panel figure {
   text-align: center;
 }

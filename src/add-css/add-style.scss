@@ -361,6 +361,10 @@ article {
   .speaker-group {
     .wp-block-columns {
       gap: 4rem;
+
+      + .wp-block-columns {
+        margin-top: 4rem;
+      }
     }
   }
 
