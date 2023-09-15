@@ -97,6 +97,7 @@
         }
         &-box{
             margin: 0 auto;
+            padding: 0 !important;
             &.is-layout-constrained,
             &.wp-block-group{
                 max-width: 1100px !important;
