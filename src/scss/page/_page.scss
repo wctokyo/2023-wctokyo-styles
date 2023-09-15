@@ -64,6 +64,7 @@
         background: g.$wp--preset--color--wc-23-emerald;
         position: relative;
         margin: 0 auto 200px;
+        padding: 0 !important;
         @include v.mq(){
             margin-bottom: 20%;
         }
