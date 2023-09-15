@@ -64,7 +64,7 @@
         background: g.$wp--preset--color--wc-23-emerald;
         position: relative;
         margin: 0 auto 200px;
-        padding: 0 !important;
+        // padding: 0 !important;
         @include v.mq(){
             margin-bottom: 20%;
         }
@@ -98,7 +98,7 @@
         }
         &-box{
             margin: 0 auto;
-            padding: 0 !important;
+            // padding: 0 !important;
             &.is-layout-constrained,
             &.wp-block-group{
                 max-width: 1100px !important;
@@ -195,10 +195,12 @@
                     text-align: left;
                     display: flex;
                     position: relative;
-                    padding: 0 0 0 74px !important;
+                    padding-left: 74px;
+                    // padding: 0 0 0 74px !important;
                     @include v.mq(){
                         font-size: 18px;
-                        padding-left: 48px !important;
+                        // padding-left: 48px !important;
+                        padding-left: 48px;
                         margin-bottom: 4%;
                     }
                     &::before{
