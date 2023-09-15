@@ -256,7 +256,7 @@
                         }
                     }
                 }
-                h4{
+                h4:not(.wordcamp-schedule__session-title){
                     font-size: 18px;
                     font-weight: bold;
                     color: g.$wp--preset--color--wc-23-white;
@@ -283,7 +283,7 @@
                             width: 32px;
                             height: 27px;
                         }
-                        
+
                     }
                     &::after{
                         content: '';
