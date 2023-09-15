@@ -9,6 +9,9 @@
 .single{
     .wp-site-blocks{
         padding-top: 0;
+        .wp-block-template-part{
+            margin-block-start: 0;
+        }
     }
 }
 
