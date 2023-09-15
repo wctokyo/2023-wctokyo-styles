@@ -229,7 +229,7 @@
                         }
                     }
                 }
-                h3{
+                h3:not(.wordcamp-schedule__time-slot-header){
                     font-size: 24px;
                     font-weight: bold;
                     color: g.$wp--preset--color--wc-23-jackolantern;
