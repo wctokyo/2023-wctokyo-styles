@@ -29,3 +29,19 @@
   justify-content: center;
   align-items: center;
 }
+
+
+@mixin abs_top-center() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@mixin abs_top() {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

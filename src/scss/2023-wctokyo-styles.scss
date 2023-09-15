@@ -11,6 +11,7 @@
 @use "footer";
 
 @use "front-page";
+@use "page";
 @use "archive";
 
 @use "cta";
@@ -29,6 +30,6 @@
 }
 .wp-block-button:hover .wp-block-button__link{
     filter: brightness(0.7);
-	mix-blend-mode: multiply;
+    mix-blend-mode: multiply;
     transition: all ease-in-out .2s;
 }
