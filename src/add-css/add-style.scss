@@ -314,6 +314,20 @@ article {
   .entry-content {
     margin-top: 3rem;
 
+    .wp-block-group.speaker-pattern {
+      padding-top: 0 !important;
+      margin-bottom: 3rem;
+
+      .wp-block-group {
+        padding-top: 0 !important;
+
+        >p {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+      }
+    }
+
     .speaker-avatar {
       display: none;
     }
@@ -323,6 +337,23 @@ article {
 
       img {
         border-radius: 100vh;
+      }
+    }
+
+    #speaker-session-names {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-left: 0;
+
+      li {
+        border: 1px solid #4041e4;
+        border-radius: 100vh;
+
+        a {
+          text-decoration: none;
+          padding: 2px 12px;
+        }
       }
     }
   }
