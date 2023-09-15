@@ -253,6 +253,11 @@
                             height: 20px;
                         }
                     }
+                    &.sd-title{
+                        &:before{
+                            content: none;
+                        }
+                    }
                 }
                 h4{
                     font-size: 18px;
