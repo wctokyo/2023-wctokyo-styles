@@ -196,9 +196,15 @@ article {
 .page-slug-timetable {
   .wp-block-post-content {
     .has-slug-lunch-time,
+    .has-slug-after-party-open {
+      background: #e7e7e7;
+    }
+
     .has-slug-break-time1,
     .has-slug-break-time2,
-    .has-slug-break-time3 {
+    .has-slug-break-time3,
+    .has-slug-close,
+    .has-slug-close-2 {
       background: #ccc;
     }
 
@@ -522,4 +528,36 @@ div.sharedaddy {
 .wp-block-group.teaser-home--sponsors--content,
 .teaser-home--latest--about .wp-block-post .wp-block-columns .wp-block-column>.wp-block-group {
   padding-top: 0 !important;
+}
+
+/**
+ * タイムテーブル 20230915
+ *
+ * テストページに反映しているスタイル
+ * 公開時に要書き換え
+ */
+// .page-slug-timetable {
+.page-slug-test-timetable {
+  .timetable-nav {
+    margin-bottom: 4rem !important;
+
+    .wp-block-button__link {
+      min-width: auto !important;
+    }
+  }
+
+  .wordcamp-schedule__date {
+    display: none !important;
+  }
+
+  @media (min-width: 601px) {
+    .wordcamp-schedule__column-header {
+      color: #fff;
+      background-color: #686868 !important;
+
+      +.wordcamp-schedule__column-header {
+        border-left: 1px solid #fbfbfc;
+      }
+    }
+  }
 }
