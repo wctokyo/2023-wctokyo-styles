@@ -386,7 +386,7 @@ article {
   .session-role-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+		justify-content: center;
     list-style-type: none;
     padding-left: 0;
     gap: 0.5rem;
@@ -409,11 +409,10 @@ article {
     &.role-panelist {
       background-color: #6d6dea;
     }
-  }
+	}
 
   .session-speakers,
-  #session-speaker-names,
-  .wp-block-template-part .wp-block-columns {
+  #session-speaker-names {
     display: none;
   }
 
@@ -427,21 +426,60 @@ article {
 /**
  * footer 共有 20230915
  *
- * jetpack が出力しているスタイル
+ * jetpack が出力しているスタイルに対応
  */
 div.sharedaddy {
   margin-top: 60px;
 
-  h3.sd-title::before {
-    width: 54px !important;
-    margin-top: -17px;
-    margin-bottom: 0 !important;
+  h3.sd-title {
+    padding-left: 0 !important;
   }
 
-  @media screen and (max-width: 600px) {
-    h3.sd-title::before {
-      width: 27px !important;
-      margin-top: -4px;
-    }
+	h3.sd-title::before {
+		display: none !important;
+	}
+}
+
+/**
+ * タイムテーブル 20230915
+ *
+ * スタイルの修正
+ */
+.page-slug-timetable {
+  .wordcamp-schedule__date {
+    display: none !important;
   }
+
+	.page_contents-box .contents_box h3 {
+		padding-left: 14px !important;
+	}
+
+	.page_contents-box .contents_box h3::before {
+		display: none !important;
+	}
+}
+
+/**
+ * 緊急対応
+ *
+ * .wp-block-group の padding-top
+ */
+
+/**
+ * 共通パーツ
+ */
+.wp-block-group.common--footer,
+.wp-block-group.common--footer--copyright {
+	padding-top: 0 !important;
+}
+
+/**
+ * トップページ
+ */
+.wp-block-group.teaser-home--about--content,
+.wp-block-group.teaser-home--about--content,
+.wp-block-group.teaser-home--abstruct--content,
+.wp-block-group.teaser-home--sponsors--content,
+.teaser-home--latest--about .wp-block-post .wp-block-columns .wp-block-column>.wp-block-group {
+  padding-top: 0 !important;
 }
