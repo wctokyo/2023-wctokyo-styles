@@ -208,6 +208,7 @@ article {
       a:where(:not(.wp-element-button)) {
         color: #231815;
         pointer-events: none;
+        text-decoration: none;
       }
 
       .wcb-session-favourite-icon {

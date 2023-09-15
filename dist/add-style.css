@@ -190,6 +190,7 @@ article {
 .page-slug-timetable .wp-block-post-content h4.wordcamp-schedule__session-title a:where(:not(.wp-element-button)) {
   color: #231815;
   pointer-events: none;
+  text-decoration: none;
 }
 .page-slug-timetable .wp-block-post-content h4.wordcamp-schedule__session-title .wcb-session-favourite-icon {
   display: none !important;
