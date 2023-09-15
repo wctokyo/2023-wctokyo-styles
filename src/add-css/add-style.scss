@@ -390,7 +390,13 @@ article {
     display: none;
   }
 
-  .speaker-group {
+  .wp-block-group.group-track {
+    padding-top: 0 !important;
+  }
+
+  .wp-block-group.speaker-group {
+    padding-top: 0 !important;
+
     .wp-block-columns {
       gap: 4rem;
 
@@ -400,7 +406,9 @@ article {
     }
   }
 
-  .speaker-panel {
+  .wp-block-group.speaker-panel {
+    padding-top: 0 !important;
+
     figure {
       text-align: center;
 
@@ -445,7 +453,7 @@ article {
 
   .session-speakers,
   #session-speaker-names {
-    display: none;
+    display: none !important;
   }
 
   @media (min-width: 48.875rem) {
