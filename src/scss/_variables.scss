@@ -14,7 +14,7 @@ $font-serif: "Inter var","Noto Serif JP","Hiragino Kaku Gothic Pro",serif;
 $top_padding: 26px;
 
 $breakpoints: ('sp': 'screen and (max-width: 480px)', //スマートフォン ブレイクポイント
-	'pc': 'screen and (max-width: 600px)', //一般PC ブレイクポイント
+	'pc': 'screen and (max-width: 599px)', //一般PC ブレイクポイント
 	// 'wide': 'screen and (min-width: 1440px)' //幅大モニター
 	'wide': 'screen and (max-width: 1100px)'
 ) !default;
