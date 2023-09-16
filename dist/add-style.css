@@ -560,7 +560,7 @@ div.sharedaddy h3.sd-title::before {
 }
 @media (min-width: 601px) {
   .page-slug-test-timetable .wordcamp-schedule__session-title + p {
-    margin-bottom: 1em;
+    margin-bottom: 1em !important;
   }
 }
 @media (min-width: 1240px) {
