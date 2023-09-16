@@ -445,12 +445,12 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
- * 緊急対応
+ * 緊急対応 20230915
  *
  * .wp-block-group の padding-top
  */
 /**
- * 共通パーツ
+ * 共通パーツ 20230915
  */
 .wp-block-group.common--footer,
 .wp-block-group.common--footer--copyright {
@@ -458,7 +458,7 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
- * トップページ
+ * トップページ 20230915
  */
 .wp-block-group.teaser-home--about--content,
 .wp-block-group.teaser-home--about--content,
@@ -469,39 +469,14 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
- * タイムテーブル 20230915
- *
- * テストページに反映しているスタイル
- * 公開時に要書き換え
- */
-.page-slug-test-timetable .timetable-nav {
-  margin-bottom: 4rem !important;
-}
-.page-slug-test-timetable .timetable-nav .wp-block-button__link {
-  min-width: auto !important;
-}
-.page-slug-test-timetable .wordcamp-schedule__date {
-  display: none !important;
-}
-@media (min-width: 601px) {
-  .page-slug-test-timetable .wordcamp-schedule__column-header {
-    color: #fff;
-    background-color: #686868 !important;
-  }
-  .page-slug-test-timetable .wordcamp-schedule__column-header + .wordcamp-schedule__column-header {
-    border-left: 1px solid #fbfbfc;
-  }
-}
-
-/**
- * チケットページ チケット購入テーブルのスタイル
+ * チケットページ チケット購入テーブルのスタイル 20230916
  */
 .page-slug-tickets .tix_tickets_table.tix-tickets-list th, .page-slug-tickets .tix_tickets_table.tix-tickets-list td {
   min-width: auto;
 }
 
 /**
- * チケット購入ボタン
+ * チケット購入ボタン 20230916
  *
  * スタイルの反映
  */
@@ -529,10 +504,67 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
- * スマホナビゲーション 子要素のスタイル
+ * スマホナビゲーション 子要素のスタイル 20230916
  */
 .has-modal-open li.has-child .wp-block-navigation-submenu li a {
   padding: 4% 6% 4% 14% !important;
   width: 80% !important;
   background-color: #e1d5c6;
+}
+
+/**
+ * タイムテーブル 20230916
+ *
+ * テストページに反映しているスタイル
+ * 公開時に要書き換え
+ */
+.page-slug-test-timetable .timetable-nav {
+  margin-bottom: 4rem !important;
+}
+.page-slug-test-timetable .timetable-nav .wp-block-button__link {
+  min-width: auto !important;
+}
+.page-slug-test-timetable .wordcamp-schedule__date {
+  display: none !important;
+}
+.page-slug-test-timetable .wp-block-post-content .has-slug-lunch-time,
+.page-slug-test-timetable .wp-block-post-content .has-slug-after-party-open {
+  background: #e7e7e7;
+}
+.page-slug-test-timetable .wp-block-post-content .has-slug-break-time1,
+.page-slug-test-timetable .wp-block-post-content .has-slug-break-time2,
+.page-slug-test-timetable .wp-block-post-content .has-slug-break-time3,
+.page-slug-test-timetable .wp-block-post-content .has-slug-close,
+.page-slug-test-timetable .wp-block-post-content .has-slug-close-2 {
+  background: #ccc;
+}
+@media (min-width: 550px) {
+  .page-slug-test-timetable .wordcamp-schedule__column-header {
+    color: #fff;
+    padding: 10px 5px !important;
+    margin: 0;
+  }
+  .page-slug-test-timetable .wordcamp-schedule__column-header + .wordcamp-schedule__column-header {
+    border-left: 1px solid #fbfbfc;
+  }
+  .page-slug-test-timetable .wordcamp-schedule.session-area .wordcamp-schedule__column-header {
+    background-color: #1e756d !important;
+  }
+  .page-slug-test-timetable .wordcamp-schedule.mingle-area .wordcamp-schedule__column-header {
+    background-color: #4041e4 !important;
+  }
+  .page-slug-test-timetable .wordcamp-schedule__time-slot-header {
+    min-width: auto;
+    background-color: #eff1f4 !important;
+  }
+}
+@media (min-width: 601px) {
+  .page-slug-test-timetable .wordcamp-schedule__session-title + p {
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 1240px) {
+  .page-slug-test-timetable .wordcamp-schedule__column-header {
+    font-size: 0.875em;
+  }
 }
