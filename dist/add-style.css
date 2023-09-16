@@ -494,6 +494,13 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
+ * チケットページ チケット購入テーブルのスタイル
+ */
+.page-slug-tickets .tix_tickets_table.tix-tickets-list th, .page-slug-tickets .tix_tickets_table.tix-tickets-list td {
+  min-width: auto;
+}
+
+/**
  * チケット購入ボタン
  *
  * スタイルの反映
@@ -505,10 +512,10 @@ div.sharedaddy h3.sd-title::before {
   text-align: center;
   font-weight: bold;
   padding: 15px 40px;
-  min-width: 340px;
   text-decoration: none;
   filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.25));
   position: relative;
+  margin-right: 10px;
 }
 
 .tix_tickets_table.tix-tickets-list + p > input[type=submit]::after {

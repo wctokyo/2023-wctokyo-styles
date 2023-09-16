@@ -580,22 +580,32 @@ div.sharedaddy {
 }
 
 /**
+ * チケットページ チケット購入テーブルのスタイル
+ */
+.page-slug-tickets {
+  .tix_tickets_table.tix-tickets-list {
+    th, td {
+      min-width: auto;
+    }
+  }
+}
+
+/**
  * チケット購入ボタン
  *
  * スタイルの反映
  */
 .tix_tickets_table.tix-tickets-list + p > input[type="submit"] {
-
   background: #e67823 !important;
   border-radius: 100vh;
   color: #fff;
   text-align: center;
   font-weight: bold;
   padding: 15px 40px;
-  min-width: 340px;
   text-decoration: none;
   filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.25));
   position: relative;
+  margin-right: 10px;
 }
 
 .tix_tickets_table.tix-tickets-list + p > input[type="submit"]::after {
