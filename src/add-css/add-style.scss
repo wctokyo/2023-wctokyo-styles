@@ -1,5 +1,24 @@
 @charset "UTF-8";
 
+/**
+ * common class
+ */
+
+input[type="submit"] {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/**
+ * Home
+ */
 .home .wp-site-blocks {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
@@ -56,12 +75,10 @@ article {
 /* チケットページ 20230723 */
 .page-slug-tickets .tix-tickets-list thead tr {
 	color: white;
-	background: black;
 }
 
 .page-slug-tickets .tix-tickets-list tbody .tix-column-description {
 	height: 53px;
-	background: #eee;
 }
 
 .page-slug-tickets .tix-column-remaining,
@@ -557,6 +574,60 @@ div.sharedaddy {
 
       +.wordcamp-schedule__column-header {
         border-left: 1px solid #fbfbfc;
+      }
+    }
+  }
+}
+
+/**
+ * チケットページ チケット購入テーブルのスタイル
+ */
+.page-slug-tickets {
+  .tix_tickets_table.tix-tickets-list {
+    th, td {
+      min-width: auto;
+    }
+  }
+}
+
+/**
+ * チケット購入ボタン
+ *
+ * スタイルの反映
+ */
+.tix_tickets_table.tix-tickets-list + p > input[type="submit"] {
+  background: #e67823 !important;
+  border-radius: 100vh;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 40px;
+  text-decoration: none;
+  filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 0.25));
+  position: relative;
+  margin-right: 10px;
+}
+
+.tix_tickets_table.tix-tickets-list + p > input[type="submit"]::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/**
+ * スマホナビゲーション 子要素のスタイル
+ */
+.has-modal-open {
+  li.has-child {
+    .wp-block-navigation-submenu {
+      li a {
+        padding: 4% 6% 4% 14% !important;
+        width: 80% !important;
+        background-color: #e1d5c6;
       }
     }
   }
