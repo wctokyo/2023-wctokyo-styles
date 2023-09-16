@@ -580,12 +580,22 @@ div.sharedaddy {
 }
 
 /**
+ * チケットページ チケット購入テーブルのスタイル
+ */
+.page-slug-tickets {
+  .tix_tickets_table.tix-tickets-list {
+    th, td {
+      min-width: auto;
+    }
+  }
+}
+
+/**
  * チケット購入ボタン
  *
  * スタイルの反映
  */
 .tix_tickets_table.tix-tickets-list + p > input[type="submit"] {
-
   background: #e67823 !important;
   border-radius: 100vh;
   color: #fff;

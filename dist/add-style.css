@@ -494,6 +494,13 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
+ * チケットページ チケット購入テーブルのスタイル
+ */
+.page-slug-tickets .tix_tickets_table.tix-tickets-list th, .page-slug-tickets .tix_tickets_table.tix-tickets-list td {
+  min-width: auto;
+}
+
+/**
  * チケット購入ボタン
  *
  * スタイルの反映
