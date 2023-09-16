@@ -527,3 +527,12 @@ div.sharedaddy h3.sd-title::before {
   font-size: 14px;
   color: #fff;
 }
+
+/**
+ * スマホナビゲーション 子要素のスタイル
+ */
+.has-modal-open li.has-child .wp-block-navigation-submenu li a {
+  padding: 4% 6% 4% 14% !important;
+  width: 80% !important;
+  background-color: #e1d5c6;
+}
