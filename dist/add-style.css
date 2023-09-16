@@ -51,7 +51,6 @@ article {
 /* チケットページ 20230723 */
 .page-slug-tickets .tix-tickets-list thead tr {
   color: white;
-  background: black;
 }
 
 .page-slug-tickets .tix-tickets-list tbody .tix-column-description {
