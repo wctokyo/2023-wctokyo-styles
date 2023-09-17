@@ -645,22 +645,22 @@ div.sharedaddy h3.sd-title::before {
   display: none;
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1299 .wordcamp-schedule__session-speakers::after {
-  content: "スピーカー・パネリスト：浜野 哲明\aパネリスト：Toro_Unit / 占部 紘、Mike Schroder\aファシリテーター：三木 徹";
+  content: "スピーカー・パネリスト：浜野 哲明\aパネリスト：Toro_Unit / 占部 紘、Mike Schroder\aファシリテーター：Toru Miki";
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1301 .wordcamp-schedule__session-speakers::after {
   content: "スピーカー：岡本 秀高\a参加者によるグループディスカッション";
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1311 .wordcamp-schedule__session-speakers::after {
-  content: "スピーカー・パネリスト：石川 栄和\aパネリスト：了、アクツ ユミ\aファシリテーター：戸田 秀成";
+  content: "スピーカー・パネリスト：石川 栄和\aパネリスト：了、アクツ ユミ\aファシリテーター：Shusei Toda";
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1313 .wordcamp-schedule__session-speakers::after {
-  content: "スピーカー・パネリスト：遠藤 進悟\aパネリスト：小島 健司、川井 昌彦\aファシリテーター：コスギサヤカ";
+  content: "スピーカー・パネリスト：遠藤 進悟\aパネリスト：小島 健司、川井 昌彦\aファシリテーター：コスギ サヤカ";
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1315 .wordcamp-schedule__session-speakers::after {
-  content: "スピーカー・パネリスト：久野 晃司\aパネリスト：キタジマ タカシ、高見 新\aファシリテーター：齋木 弘樹";
+  content: "スピーカー・パネリスト：久野 晃司\aパネリスト：キタジマ タカシ、タカミ アラタ\aファシリテーター：齋木 弘樹";
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1317 .wordcamp-schedule__session-speakers::after {
-  content: "スピーカー・ファシリテーター：額賀 順子\aパネリスト：立花 明、三宅 伊都子、Ben Evans、津川 了";
+  content: "スピーカー・ファシリテーター：額賀 順子\aパネリスト：立花 明、三宅 伊都子、Ben、Ryo Tsugawa";
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1319 .wordcamp-schedule__session-speakers::after {
   content: "パネリスト：高野 直子、高橋 文樹\aファシリテーター：大串 肇";
