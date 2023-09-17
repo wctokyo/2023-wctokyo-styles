@@ -717,7 +717,7 @@ div.sharedaddy {
   .wp-block-post-content {
     .has-slug-lunch-time,
     .has-slug-after-party-open {
-      background: #e7e7e7;
+      background: #d1d7df;
     }
 
     .has-slug-break-time1,
@@ -725,7 +725,74 @@ div.sharedaddy {
     .has-slug-break-time3,
     .has-slug-close,
     .has-slug-close-2 {
-      background: #ccc;
+      background: #b3bcca;
+    }
+  }
+
+  .wordcamp-schedule__session-speakers::after {
+    display: block;
+    font-size: 14px;
+    background-color: #e0e4ea;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    padding: 0.5em 0.75em;
+    margin-top: 1em;
+  }
+
+  /** 開会式・閉会式 **/
+  #wordcamp-schedule__session-1297,
+  #wordcamp-schedule__session-1321 {
+    .wordcamp-schedule__session-speakers {
+      display: none;
+    }
+  }
+
+  /** WordPressコアやGutenbergでは今何が開発されているか **/
+  #wordcamp-schedule__session-1299 {
+    .wordcamp-schedule__session-speakers::after {
+      content: "スピーカー・パネリスト：浜野 哲明\Aパネリスト：Toro_Unit、Mike Schroder\Aファシリテーター：三木 徹";
+    }
+  }
+
+  /** 大規模言語モデルではじめる自動化 – LLMはWordPress制作・運用をどう変えるのか？ **/
+  #wordcamp-schedule__session-1301 {
+    .wordcamp-schedule__session-speakers::after {
+      content: "スピーカー：岡本 秀高\A参加者によるグループディスカッション";
+    }
+  }
+
+  /** これからのテーマ・プラグイン販売を考える **/
+  #wordcamp-schedule__session-1311 {
+    .wordcamp-schedule__session-speakers::after {
+      content: "スピーカー・パネリスト：石川 栄和\Aパネリスト：了、アクツ ユミ\Aファシリテーター：戸田 秀成";
+    }
+  }
+
+  /** 環境変化の激しいWordPressのメンテナンスをどう考えるか **/
+  #wordcamp-schedule__session-1313 {
+    .wordcamp-schedule__session-speakers::after {
+      content: "スピーカー・パネリスト：遠藤 進悟\Aパネリスト：小島 健司、川井 昌彦\Aファシリテーター：コスギサヤカ";
+    }
+  }
+
+  /** これからのWordPressテーマとの付き合い方 **/
+  #wordcamp-schedule__session-1315 {
+    .wordcamp-schedule__session-speakers::after {
+      content: "スピーカー・パネリスト：久野 晃司\Aパネリスト：キタジマ タカシ、高見 新\Aファシリテーター：齋木 弘樹";
+    }
+  }
+
+  /** 私たちが WordPress を使い続けられる理由 **/
+  #wordcamp-schedule__session-1317 {
+    .wordcamp-schedule__session-speakers::after {
+      content: "スピーカー・ファシリテーター：額賀 順子\Aパネリスト：立花 明、三宅 伊都子、Ben Evans、津川 了";
+    }
+  }
+
+  /** WordPressはいったいどこにいくのか 〜仕事・AI・サステナビリティ〜 **/
+  #wordcamp-schedule__session-1319 {
+    .wordcamp-schedule__session-speakers::after {
+      content: "パネリスト：高野 直子、高橋 文樹\Aファシリテーター：大串 肇";
     }
   }
 
