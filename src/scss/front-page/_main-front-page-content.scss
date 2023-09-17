@@ -43,9 +43,7 @@
     }
     .wapuu{
       &.wp-block-image{
-        transform: rotate(21.677deg);
-        width: 100%;
-        
+        margin: 0 auto;
         // @include v.mq(tab){
         //   padding-left: -6%;
         //   padding-bottom: 2%;
@@ -53,7 +51,7 @@
         img{
           height: 428px;
           display: block;
-          margin-left: auto;
+          margin: 0 auto;
           @include v.mq(tab){
             height: 300px;
           }
