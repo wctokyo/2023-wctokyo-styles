@@ -14,24 +14,23 @@
     content: '';
     position: absolute;
     top: 0;
-    
+    height: 100%;
+    width: 100%;
   }
   &:before{
-    background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/b74f2086d857c5d074baeea12e074f30af20ff9f/images/top-left_bg.svg) no-repeat top 0% left 45% / contain;
-    right: 65%;
-    height: 100%;
-    width: 45%;
-    @include v.mq(wide){
+    background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/b74f2086d857c5d074baeea12e074f30af20ff9f/images/top-left_bg.svg) no-repeat top right / auto 100%;
+    right: 68%;
+    @include v.mq(tab){
       background-image: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_87/images/top-left_bg-tab.svg);
+      right: 50%;
     }
   }
   &::after{
-    background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/b74f2086d857c5d074baeea12e074f30af20ff9f/images/top-right_bg.svg) no-repeat top 0% right 45% / contain;
-    left: 55%;
-    height: 100%;
-    width: 65%;
-    @include v.mq(wide){
+    background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/b74f2086d857c5d074baeea12e074f30af20ff9f/images/top-right_bg.svg) no-repeat top left /  auto 100%;
+    left: 68%;
+    @include v.mq(tab){
       background-image: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_87/images/top-right_bg-tab.svg);
+      left: 62%;
     }
   }
   &_box{
@@ -39,20 +38,23 @@
     z-index: 2;
     width: max(34.722222vw, 500px);
     margin: 0 auto;
-    @include v.mq(pc){
-      width: 35%;
+    @include v.mq(tab){
+      width: 32.5%;
     }
     .wapuu{
       &.wp-block-image{
         transform: rotate(21.677deg);
-        padding-left: 60px;
-        padding-bottom: 10px;
-        @include v.mq(pc){
-          padding-left: 0;
-        }
+        width: 100%;
+        
+        // @include v.mq(tab){
+        //   padding-left: -6%;
+        //   padding-bottom: 2%;
+        // }
         img{
           height: 428px;
-          @include v.mq(pc){
+          display: block;
+          margin-left: auto;
+          @include v.mq(tab){
             height: 300px;
           }
         }
@@ -61,6 +63,9 @@
     .logo{
       width: 340px;
       margin: -30px auto 18px;
+      @include v.mq(tab){
+        width: 95%;
+      }
     }
     .lead{
       font-size: 32px;

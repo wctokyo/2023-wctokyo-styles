@@ -15,6 +15,7 @@ $top_padding: 26px;
 
 $breakpoints: ('sp': 'screen and (max-width: 480px)', //スマートフォン ブレイクポイント
 	'pc': 'screen and (max-width: 599px)', //一般PC ブレイクポイント
+	'tab': 'screen and (max-width: 800px)',
 	// 'wide': 'screen and (min-width: 1440px)' //幅大モニター
 	'wide': 'screen and (max-width: 1100px)'
 ) !default;
