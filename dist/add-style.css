@@ -560,6 +560,39 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
+ * 投稿 post-meta のスタイル 20230917
+ */
+@media screen and (max-width: 600px) {
+  .single-post .wp-block-post-title + .wp-block-template-part > .wp-block-group {
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 0;
+  }
+}
+.single-post .page_contents-box .contents_box .wp-block-post-date {
+  margin-right: 0 !important;
+}
+.single-post .page_contents-box .contents_box .wp-block-post-date time {
+  font-family: josefin sans, sans-serif !important;
+  font-size: 16px !important;
+}
+@media screen and (max-width: 600px) {
+  .single-post .page_contents-box .contents_box .wp-block-post-date time {
+    font-size: 14px !important;
+  }
+}
+.single-post .page_contents-box .contents_box .taxonomy-category {
+  display: flex;
+}
+.single-post .page_contents-box .contents_box .wp-block-post-author-name.has-noto-sans-jp-font-family {
+  font-family: josefin sans, sans-serif !important;
+}
+.single-post .page_contents-box .contents_box .wp-block-post-author-name.has-noto-sans-jp-font-family::before {
+  font-family: josefin sans, sans-serif !important;
+  content: "posted by: ";
+}
+
+/**
  * タイムテーブル 20230916
  *
  * テストページに反映しているスタイル
