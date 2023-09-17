@@ -17,6 +17,58 @@ input[type="submit"] {
 }
 
 /**
+ * 【最重要】Heading の上マージンの修正
+ *
+ * 全体のバランスを要確認
+ */
+
+/**
+ * Heading level 2
+ */
+.page_contents-box .contents_box h2 {
+  margin: 60px 0 40px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .page_contents-box .contents_box h2 {
+      margin: 8% 0 4% !important;
+  }
+}
+
+/**
+ * Heading level 3
+ */
+.page_contents-box .contents_box h3:not(.wordcamp-schedule__time-slot-header) {
+  margin: 40px 0 30px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .page_contents-box .contents_box h3:not(.wordcamp-schedule__time-slot-header) {
+    margin: 8% 0 3% !important;
+  }
+  .page_contents-box .contents_box h3:not(.wordcamp-schedule__time-slot-header) + p {
+    margin-top: 1em !important;
+  }
+}
+
+/**
+ * Heading level 4 / 左パディング
+ */
+.page_contents-box .contents_box h4:not(.wordcamp-schedule__session-title) {
+  padding: 16px 42px 16px 80px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .page_contents-box .contents_box h4:not(.wordcamp-schedule__session-title) {
+    padding: 8px 32px;
+  }
+}
+
+/**
+ * ここまで
+ */
+
+/**
  * Home
  */
 .home .wp-site-blocks {
