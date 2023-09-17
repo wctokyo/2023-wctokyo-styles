@@ -70,6 +70,18 @@
             margin: 0 auto;
           }
         }
+        &_pc{
+          display: block;
+          @include v.mq(){
+            display: none;
+          }
+        }
+        &_sp{
+          display: none;
+          @include v.mq(){
+            display: block;
+          }
+        }
       }
     }
     .lead{
