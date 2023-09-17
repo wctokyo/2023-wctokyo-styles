@@ -51,17 +51,18 @@
       width: auto;
     }
     .img_box{
-      width: 340px;
-      margin: 0 auto;
+      width: 372px;
+      margin: 0 auto 12px;
       @include v.mq(tab){
         width: 249px;
       }
       @include v.mq(){
         width: 200px;
+        margin: 0 auto 18px;
       }
       .wapuu{
         &.wp-block-image{
-          margin: 0 auto 8px;
+          margin: 0 auto;
           width: 100%;
           img{
             display: block;
@@ -69,9 +70,6 @@
             margin: 0 auto;
           }
         }
-      }
-      .logo{
-        margin: 0 auto 18px;
       }
     }
     .lead{
