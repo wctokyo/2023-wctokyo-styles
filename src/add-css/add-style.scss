@@ -122,6 +122,14 @@ article {
   .teaser-home--abstruct.teaser-home--news {
     padding: 15% 3% 12%;
   }
+
+  .teaser-home--latest--about {
+    .wp-block-post {
+      .teaser-home--latest--list {
+        row-gap: 0.5rem !important;
+      }
+    }
+  }
 }
 
 /* チケットページ 20230723 */
