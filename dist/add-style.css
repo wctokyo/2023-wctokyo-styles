@@ -645,7 +645,7 @@ div.sharedaddy h3.sd-title::before {
   display: none;
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1299 .wordcamp-schedule__session-speakers::after {
-  content: "スピーカー・パネリスト：浜野 哲明\aパネリスト：Toro_Unit、Mike Schroder\aファシリテーター：三木 徹";
+  content: "スピーカー・パネリスト：浜野 哲明\aパネリスト：Toro_Unit / 占部 紘、Mike Schroder\aファシリテーター：三木 徹";
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1301 .wordcamp-schedule__session-speakers::after {
   content: "スピーカー：岡本 秀高\a参加者によるグループディスカッション";
