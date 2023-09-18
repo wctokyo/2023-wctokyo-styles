@@ -631,6 +631,16 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
+ * オーガナイザー一覧のスタイル 20230918
+ */
+.page-slug-organizers .wordcamp-post-list.wordcamp-organizers {
+  padding-left: 0;
+}
+.page-slug-organizers .wordcamp-organizer.wordcamp-organizers__post .wordcamp-image__avatar-container img {
+  border-radius: 100vh;
+}
+
+/**
  * タイムテーブル 20230916 - 20230918
  *
  * テストページに反映しているスタイル
