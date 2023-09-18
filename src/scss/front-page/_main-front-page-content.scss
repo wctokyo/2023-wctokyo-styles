@@ -1,0 +1,96 @@
+/**
+ * front-page / front-page-content
+ */
+@use '../global-styles-inline-css' as g;
+@use '../_variables' as v;
+
+.mainvisual{
+  overflow: hidden;
+  position: relative;
+  background-color: g.$wp--preset--color--wc-23-milk;
+  padding-bottom: 190px !important;
+  @include v.mq(){
+    padding-bottom: 100px !important;
+  }
+  &:before,
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  &:before{
+    background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/b74f2086d857c5d074baeea12e074f30af20ff9f/images/top-left_bg.svg) no-repeat top right / auto 100%;
+    right: 68%;
+    @include v.mq(tab){
+      background-image: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_87/images/top-left_bg-tab.svg);
+      right: 60%;
+    }
+    @include v.mq(){
+      right: 55%;
+    }
+  }
+  &::after{
+    background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/b74f2086d857c5d074baeea12e074f30af20ff9f/images/top-right_bg.svg) no-repeat top left /  auto 100%;
+    left: 71%;
+    @include v.mq(tab){
+      background-image: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_87/images/top-right_bg-tab.svg);
+      left: 65%;
+    }
+    @include v.mq(){
+      left: 58%;
+    }
+  }
+  &_box{
+    position: relative;
+    z-index: 2;
+    width: 460px;
+    margin: 0 auto;
+    @include v.mq(tab){
+      width: auto;
+    }
+    .img_box{
+      width: 372px;
+      margin: 0 auto 12px;
+      @include v.mq(tab){
+        width: 249px;
+      }
+      @include v.mq(){
+        width: 200px;
+        margin: 0 auto 18px;
+      }
+      .wapuu{
+        &.wp-block-image{
+          margin: 0 auto;
+          width: 100%;
+          img{
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+        &_pc{
+          display: block;
+          @include v.mq(){
+            display: none;
+          }
+        }
+        &_sp{
+          display: none;
+          @include v.mq(){
+            display: block;
+          }
+        }
+      }
+    }
+    .lead{
+      font-size: 32px;
+      line-height: 128%;
+      margin: 0;
+      @include v.mq(tab){
+        font-size: 20px;
+      }
+    }
+  }
+}
