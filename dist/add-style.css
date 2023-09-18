@@ -596,6 +596,14 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
+ * 登壇者・セッションのスタイル 20230918
+ */
+.single-wcb_speaker .wp-block-post-title + .wp-block-template-part,
+.single-wcb_session .wp-block-post-title + .wp-block-template-part {
+  display: none;
+}
+
+/**
  * タイムテーブル 20230916 - 20230918
  *
  * テストページに反映しているスタイル
