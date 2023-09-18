@@ -619,10 +619,10 @@ div.sharedaddy h3.sd-title::before {
   display: inline-block;
   font-style: normal;
   padding: 2px 8px;
-  color: #000 !important;
+  color: #fff !important;
   text-decoration: none !important;
   pointer-events: none;
-  background-color: #f0b07f;
+  background-color: #a31e36;
   border-radius: 4px;
 }
 
@@ -630,7 +630,7 @@ div.sharedaddy h3.sd-title::before {
 .single-wcb_session.postid-1297 .session-categories-links a,
 .single-wcb_session.postid-1321 .session-categories-links a,
 .single-wcb_session.postid-1319 .session-categories-links a {
-  background-color: #b0b0f4;
+  background-color: #1e756d;
 }
 
 /** 要事前申込 **/
@@ -759,14 +759,14 @@ div.sharedaddy h3.sd-title::before {
   font-style: normal;
   font-size: 12px;
   padding: 2px 8px;
-  color: #000;
-  background-color: #f0b07f;
+  color: #fff !important;
+  background-color: #a31e36;
   border-radius: 4px;
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1297 .wordcamp-schedule__session-category dd,
 .page-slug-test-timetable #wordcamp-schedule__session-1321 .wordcamp-schedule__session-category dd,
 .page-slug-test-timetable #wordcamp-schedule__session-1319 .wordcamp-schedule__session-category dd {
-  background-color: #b0b0f4;
+  background-color: #1e756d;
 }
 .page-slug-test-timetable #wordcamp-schedule__session-1338 .wordcamp-schedule__session-category dd {
   background-color: #e67823;
