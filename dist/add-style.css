@@ -596,7 +596,7 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
- * タイムテーブル 20230916
+ * タイムテーブル 20230916 - 20230918
  *
  * テストページに反映しているスタイル
  * 公開時に要書き換え
@@ -610,6 +610,11 @@ div.sharedaddy h3.sd-title::before {
   /** これからのWordPressテーマとの付き合い方 **/
   /** 私たちが WordPress を使い続けられる理由 **/
   /** WordPressはいったいどこにいくのか 〜仕事・AI・サステナビリティ〜 **/
+  /**
+   * 立ち見フラグのスタイル
+   */
+  /** 立ち見NG **/
+  /** 立ち見OK **/
 }
 .page-slug-test-timetable .timetable-nav {
   margin-bottom: 4rem !important;
@@ -694,4 +699,18 @@ div.sharedaddy h3.sd-title::before {
   .page-slug-test-timetable .wordcamp-schedule__column-header {
     font-size: 0.875em;
   }
+}
+.page-slug-test-timetable .wordcamp-schedule__session-category dd {
+  display: inline-block;
+  font-style: normal;
+  font-size: 12px;
+  padding: 2px 8px;
+  color: #000;
+  background-color: #f0b07f;
+  border-radius: 4px;
+}
+.page-slug-test-timetable #wordcamp-schedule__session-1297 .wordcamp-schedule__session-category dd,
+.page-slug-test-timetable #wordcamp-schedule__session-1321 .wordcamp-schedule__session-category dd,
+.page-slug-test-timetable #wordcamp-schedule__session-1319 .wordcamp-schedule__session-category dd {
+  background-color: #b0b0f4;
 }
