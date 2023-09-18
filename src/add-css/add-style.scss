@@ -17,6 +17,15 @@ input[type="submit"] {
 }
 
 /**
+ * ページ内リンクのスクロール量を調整
+ */
+@media (min-width: 601px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+}
+
+/**
  * 【最重要】Heading の上マージンの修正
  *
  * 全体のバランスを要確認
@@ -741,6 +750,21 @@ div.sharedaddy {
 .single-wcb_session.postid-1338 {
   .session-categories-links a {
     background-color: #e67823;
+  }
+}
+
+/**
+ * オーガナイザー一覧のスタイル 20230918
+ */
+.page-slug-organizers {
+  .wordcamp-post-list.wordcamp-organizers {
+    padding-left: 0;
+  }
+
+  .wordcamp-organizer.wordcamp-organizers__post {
+    .wordcamp-image__avatar-container img {
+      border-radius: 100vh;
+    }
   }
 }
 
