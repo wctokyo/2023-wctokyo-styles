@@ -618,6 +618,7 @@ div.sharedaddy h3.sd-title::before {
 .session-categories-links a {
   display: inline-block;
   font-style: normal;
+  font-size: 14px !important;
   padding: 2px 8px;
   color: #fff !important;
   text-decoration: none !important;
