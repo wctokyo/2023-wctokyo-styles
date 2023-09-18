@@ -615,6 +615,7 @@ div.sharedaddy h3.sd-title::before {
    */
   /** 立ち見NG **/
   /** 立ち見OK **/
+  /** 要事前申込 **/
 }
 .page-slug-test-timetable .timetable-nav {
   margin-bottom: 4rem !important;
@@ -713,4 +714,7 @@ div.sharedaddy h3.sd-title::before {
 .page-slug-test-timetable #wordcamp-schedule__session-1321 .wordcamp-schedule__session-category dd,
 .page-slug-test-timetable #wordcamp-schedule__session-1319 .wordcamp-schedule__session-category dd {
   background-color: #b0b0f4;
+}
+.page-slug-test-timetable #wordcamp-schedule__session-1338 .wordcamp-schedule__session-category dd {
+  background-color: #e67823;
 }
