@@ -17,6 +17,15 @@ input[type="submit"] {
 }
 
 /**
+ * ページ内リンクのスクロール量を調整
+ */
+@media (min-width: 601px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+}
+
+/**
  * 【最重要】Heading の上マージンの修正
  *
  * 全体のバランスを要確認
