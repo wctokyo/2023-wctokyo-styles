@@ -361,8 +361,15 @@ article {
   padding-top: 0 !important;
 }
 .single-wcb_speaker .entry-content .wp-block-group.speaker-pattern .wp-block-group > p {
+  margin-top: 1.5rem !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+@media (min-width: 64rem) {
+  .single-wcb_speaker .entry-content .wp-block-group.speaker-pattern .wp-block-group > p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
 }
 .single-wcb_speaker .entry-content .speaker-avatar {
   display: none;
@@ -380,6 +387,7 @@ article {
   padding-left: 0;
 }
 .single-wcb_speaker .entry-content #speaker-session-names li {
+  padding: 0 1rem;
   border: 1px solid #4041e4;
   border-radius: 100vh;
 }
@@ -413,6 +421,9 @@ article {
 .single-wcb_session .entry-content + div,
 .single-wcb_session .wp-block-post-date {
   display: none;
+}
+.single-wcb_session .entry-content > ul {
+  margin-top: 0 !important;
 }
 .single-wcb_session .wp-block-group.group-track {
   padding-top: 0 !important;

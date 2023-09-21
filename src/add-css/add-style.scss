@@ -414,8 +414,14 @@ article {
         padding-top: 0 !important;
 
         >p {
+          margin-top: 1.5rem !important;
           margin-left: 0 !important;
           margin-right: 0 !important;
+
+          @media (min-width:  64rem) {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+          }
         }
       }
     }
@@ -439,6 +445,7 @@ article {
       padding-left: 0;
 
       li {
+        padding: 0 1rem;
         border: 1px solid #4041e4;
         border-radius: 100vh;
 
@@ -480,6 +487,10 @@ article {
   .entry-content + div,
   .wp-block-post-date {
     display: none;
+  }
+
+  .entry-content > ul {
+    margin-top: 0 !important;
   }
 
   .wp-block-group.group-track {
