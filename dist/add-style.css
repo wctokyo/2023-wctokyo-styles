@@ -728,6 +728,30 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
+ * フロアマップページ 20230921
+ */
+.page-slug-floor-map figure {
+  text-align: center;
+}
+.page-slug-floor-map figure + p > strong {
+  background: none !important;
+}
+.page-slug-floor-map figure + p + ul {
+  margin-top: 0 !important;
+}
+.page-slug-floor-map figure + p + ul > li > ul {
+  margin-bottom: 0 !important;
+}
+@media (min-width: 600px) {
+  .page-slug-floor-map figure + p {
+    margin-bottom: 1rem !important;
+  }
+  .page-slug-floor-map figure + p + ul {
+    margin-bottom: 48px !important;
+  }
+}
+
+/**
  * リードチーム 開会式と閉会式のリンクを削除 20230921
  *
  * ファシリテートするセッションと紐づくまでの経過措置
