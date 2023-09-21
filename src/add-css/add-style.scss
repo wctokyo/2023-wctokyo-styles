@@ -933,3 +933,20 @@ div.sharedaddy {
     }
   }
 }
+
+/**
+ * タイムテーブル セッションメインスピーカーのみスタイル変更
+ */
+#wordcamp-schedule__session-1299,
+#wordcamp-schedule__session-1301,
+#wordcamp-schedule__session-1311,
+#wordcamp-schedule__session-1313,
+#wordcamp-schedule__session-1315,
+#wordcamp-schedule__session-1317 {
+  .wordcamp-schedule__session-speakers {
+    dd:first-of-type a {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}

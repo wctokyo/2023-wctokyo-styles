@@ -765,3 +765,16 @@ div.sharedaddy h3.sd-title::before {
 .postid-2812 .page_contents #speaker-session-names li:not(:first-child) {
   display: none;
 }
+
+/**
+ * タイムテーブル セッションメインスピーカーのみスタイル変更
+ */
+#wordcamp-schedule__session-1299 .wordcamp-schedule__session-speakers dd:first-of-type a,
+#wordcamp-schedule__session-1301 .wordcamp-schedule__session-speakers dd:first-of-type a,
+#wordcamp-schedule__session-1311 .wordcamp-schedule__session-speakers dd:first-of-type a,
+#wordcamp-schedule__session-1313 .wordcamp-schedule__session-speakers dd:first-of-type a,
+#wordcamp-schedule__session-1315 .wordcamp-schedule__session-speakers dd:first-of-type a,
+#wordcamp-schedule__session-1317 .wordcamp-schedule__session-speakers dd:first-of-type a {
+  font-size: 16px;
+  font-weight: 700;
+}
