@@ -912,6 +912,15 @@ div.sharedaddy {
 }
 
 /**
+ * ボランティアページ レイアウト崩れ修正 20230921
+ */
+.page-slug-volunteers {
+  .page_contents-box .contents_box ul {
+    margin-bottom: 0 !important;
+  }
+}
+
+/**
  * リードチーム 開会式と閉会式のリンクを削除 20230921
  *
  * ファシリテートするセッションと紐づくまでの経過措置
