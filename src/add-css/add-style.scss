@@ -275,60 +275,6 @@ article {
 }
 
 /**
- * タイムテーブル 20230817
- *
- * ティザーサイトでのみ有効にするスタイル
- */
-.page-slug-timetable {
-  .wp-block-post-content {
-    .has-slug-lunch-time,
-    .has-slug-after-party-open {
-      background: #e7e7e7;
-    }
-
-    .has-slug-break-time1,
-    .has-slug-break-time2,
-    .has-slug-break-time3,
-    .has-slug-close,
-    .has-slug-close-2 {
-      background: #ccc;
-    }
-
-    h4.wordcamp-schedule__session-title {
-      cursor: text;
-
-      a:where(:not(.wp-element-button)) {
-        color: #231815;
-        pointer-events: none;
-        text-decoration: none;
-      }
-
-      .wcb-session-favourite-icon {
-        display: none !important;
-      }
-    }
-  }
-
-  .wordcamp-schedule__session-speakers {
-    display: none !important;
-  }
-}
-
-@media screen and (min-width: 550px) {
-  @supports (display:grid) {
-    body.page-slug-timetable:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) {
-      .wordcamp-schedule__time-slot-header {
-        background-color: #eff1f4 !important;
-      }
-
-      .wordcamp-schedule__session.is-spanning-some-tracks {
-        text-align: left !important;
-      }
-    }
-  }
-}
-
-/**
  * スポンサーページ 20230822
  *
  * ティザーサイトでの緊急対応
@@ -584,25 +530,6 @@ div.sharedaddy {
 }
 
 /**
- * タイムテーブル 20230915
- *
- * スタイルの修正
- */
-.page-slug-timetable {
-  .wordcamp-schedule__date {
-    display: none !important;
-  }
-
-	.page_contents-box .contents_box h3 {
-		padding-left: 14px !important;
-	}
-
-	.page_contents-box .contents_box h3::before {
-		display: none !important;
-	}
-}
-
-/**
  * 緊急対応 20230915
  *
  * .wp-block-group の padding-top
@@ -783,11 +710,9 @@ div.sharedaddy {
 /**
  * タイムテーブル 20230916 - 20230918
  *
- * テストページに反映しているスタイル
- * 公開時に要書き換え
+ * 本公開向け
  */
-// .page-slug-timetable {
-.page-slug-test-timetable {
+.page-slug-timetable {
   .timetable-nav {
     margin-bottom: 4rem !important;
 
