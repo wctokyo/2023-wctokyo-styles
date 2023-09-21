@@ -922,15 +922,14 @@ div.sharedaddy {
 
 /**
  * リードチーム 開会式と閉会式のリンクを削除 20230921
- *
- * ファシリテートするセッションと紐づくまでの経過措置
  */
 .postid-2336,
 .postid-2812 {
   .page_contents {
-    .speaker-sessions,
     #speaker-session-names {
-      display: none;
+      li:not(:first-child) {
+        display: none;
+      }
     }
   }
 }
