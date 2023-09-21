@@ -489,6 +489,10 @@ article {
     display: none;
   }
 
+  .entry-content > ul {
+    margin-top: 0 !important;
+  }
+
   .wp-block-group.group-track {
     padding-top: 0 !important;
   }
