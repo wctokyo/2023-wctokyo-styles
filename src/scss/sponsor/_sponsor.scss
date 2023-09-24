@@ -18,7 +18,7 @@
         z-index: 0;
         @include v.mq(){
           height: 17vw;
-          top: -16.8vw;
+          top: -16.5vw;
         }
       }
       &:after{
@@ -37,6 +37,70 @@
     }
     &_box{
         position: relative;
+        &:before{
+            content: '';
+            background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_91/images/sponsor_mark-top.svg) no-repeat center center / contain;
+            width: 509px;
+            height: 487px;
+            position: absolute;
+            top: -110px;
+            right: 0;
+            z-index: 2;
+            @include v.mq(tab){
+                width: 35.347222vw;
+                height: 33.819444vw;
+                top: -25vw;
+            }
+        }
+        &:after{
+            content: '';
+            background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_91/images/sponsor_mark-bottom.svg) no-repeat center center / contain;
+            width: 513px;
+            height: 489px;
+            position: absolute;
+            bottom: -160px;
+            left: 0;
+            z-index: 2;
+            @include v.mq(tab){
+                width: 35.625vw;
+                height: 33.958333vw;
+                bottom: -18vw;
+            }
+        }
+        &-inner{
+            position: relative;
+            z-index: 5;
+            &:before{
+                content: '';
+                background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_91/images/trumpet.svg) no-repeat center center / contain;
+                width: 295px;
+                height: 426px;
+                position: absolute;
+                right: 3.680556vw;
+                top: -400px;
+                z-index: 1;
+                @include v.mq(tab){
+                    width: 26.6319443vw;
+                    height: 38.4583329vw;
+                    top: -38vw;
+                }
+            }
+            &:after{
+                content: '';
+                background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_91/images/cymbal.svg) no-repeat center center / contain;
+                width: 324px;
+                height: 387px;
+                position: absolute;
+                left: 5.555556vw;
+                bottom: -370px;
+                z-index: 1;
+                @include v.mq(tab){
+                    width: 29.25vw;
+                    height: 34.9375vw;
+                    bottom: -35vw;
+                }
+            }
+        }
     }
     &_ttl{
         text-align: center;
@@ -68,8 +132,8 @@
     }
     &_gold{
         margin: 0 auto 60px  !important;
+        padding: 0 20px;
         @include v.mq(){
-            padding: 0 20px;
             margin: 0 auto 30px  !important;
         }
         &-list{
@@ -94,8 +158,8 @@
     }
     &_silver{
         margin: 0 auto 60px  !important;
+        padding: 0 20px;
         @include v.mq(){
-            padding: 0 20px;
             margin: 0 auto 30px  !important;
         }
         &-list{
@@ -121,8 +185,8 @@
     &_bronze,
     &_lunch{
         margin: 0 auto 32px !important;
+        padding: 0 20px;
         @include v.mq(){
-            padding: 0 20px;
             margin: 0 auto 24px !important;
         }
         &-list{
