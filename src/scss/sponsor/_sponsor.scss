@@ -1,3 +1,148 @@
 /**
  * sponsor
  */
+ @use '../global-styles-inline-css' as g;
+ @use '../_variables' as v;
+ @use '../_mixins' as m;
+
+ .sponsors{
+    position: relative;
+    &:before{
+        content: '';
+        background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/sponsor_bg-top.svg") repeat-x bottom right / auto 100%;
+        width: 100vw;
+        height: 174px;
+        position: absolute;
+        top: -174px;
+        right: 0;
+        z-index: 0;
+        @include v.mq(){
+          height: 17vw;
+          top: -16.8vw;
+        }
+      }
+      &:after{
+        content: '';
+        background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_66/images/under/main-bottom_bg.svg) repeat-x bottom right / auto 100%;
+        width: 100vw;
+        height: 208px;
+        position: absolute;
+        bottom: -120px;
+        right: 0;
+        display: block;
+        @include v.mq(){
+            height: 18vw;
+            bottom: -10vw;
+        }
+    }
+    &_box{
+        position: relative;
+    }
+    &_ttl{
+        text-align: center;
+        color: g.$wp--preset--color--wc-23-white;
+        font-size: 32px;
+        position: relative;
+        @include v.mq(){
+            font-size: 22px;
+        }
+        &::before{
+            content: '';
+            @include m.abs-top();
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background: g.$wp--preset--color--wc-23-white;
+        }
+        .txt{
+            background: g.$wp--preset--color--wc-23-emerald;
+            margin: 0 auto;
+            display: inline-block;
+            padding: 0 40px;
+            position: relative;
+            z-index: 2;
+            @include v.mq(){
+                padding: 0 20px;
+            }
+        }
+    }
+    &_gold{
+        margin: 0 auto 60px  !important;
+        @include v.mq(){
+            padding: 0 20px;
+            margin: 0 auto 30px  !important;
+        }
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            @include v.mq(){
+                gap: 20px;
+                margin-top:10px;
+            }
+            > figure{
+                width: calc((100% - 40px)/2);
+                flex-basis: calc((100% - 40px)/2);
+                background: g.$wp--preset--color--wc-23-white;
+                @include v.mq(){
+                    width: calc((100% - 20px)/2);
+                    flex-basis: calc((100% - 20px)/2);
+                }
+            }
+        }
+    }
+    &_silver{
+        margin: 0 auto 60px  !important;
+        @include v.mq(){
+            padding: 0 20px;
+            margin: 0 auto 30px  !important;
+        }
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+            @include v.mq(){
+                gap: 20px;
+                margin-top:10px;
+            }
+            > figure{
+                width: calc((100% - 80px)/3);
+                flex-basis: calc((100% - 80px)/3);
+                background: g.$wp--preset--color--wc-23-white;
+                @include v.mq(){
+                    width: calc((100% - 40px)/3);
+                    flex-basis: calc((100% - 40px)/3);
+                }
+            }
+        }
+    }
+    &_bronze,
+    &_lunch{
+        margin: 0 auto 32px !important;
+        @include v.mq(){
+            padding: 0 20px;
+            margin: 0 auto 24px !important;
+        }
+        &-list{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            @include v.mq(){
+                gap: 20px;
+                margin-top:10px;
+            }
+            > figure{
+                width: calc((100% - 120px)/4);
+                flex-basis: calc((100% - 120px)/4);
+                background: g.$wp--preset--color--wc-23-white;
+                @include v.mq(){
+                    width: calc((100% - 60px)/4);
+                    flex-basis: calc((100% - 60px)/4);
+                }
+            }
+        }
+    }
+ }
