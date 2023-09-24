@@ -3,6 +3,65 @@
  */
 @use '../global-styles-inline-css' as g;
 @use '../_variables' as v;
+@use '../_mixins' as m;
+
+.main_ttl{
+  text-align: center;
+  &.white{
+    color: g.$wp--preset--color--wc-23-white;
+  }
+  &-en{
+    margin: 0;
+    font-size: 64px;
+    line-height: 128%;
+    @include v.mq(){
+      font-size: 32px;
+  }
+  }
+  &-sub{
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 128%;
+    @include v.mq(){
+      font-size: 16px;
+    }
+    .white-line{
+      position: relative;
+      padding-left: 40px;
+      @include v.mq(){
+        padding-left: 32px;
+      }
+      &:before{
+        content: '';
+        @include m.abs_top();
+        left: 0;
+        height: 1px;
+        background: g.$wp--preset--color--wc-23-white;
+        width: 32px;
+        margin-right: 8px;
+        @include v.mq(){
+          width: 24px;
+        }
+      }
+    }
+    .black-line{
+      position: relative;
+      padding-left: 40px;
+      &:before{
+        content: '';
+        @include m.abs_top();
+        left: 0;
+        height: 1px;
+        background: g.$wp--preset--color--wc-23-black;
+        width: 32px;
+        margin-right: 8px;
+        @include v.mq(){
+          width: 24px;
+        }
+      }
+    }
+  }
+}
 
 .mainvisual{
   overflow: hidden;
