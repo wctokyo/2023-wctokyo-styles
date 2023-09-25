@@ -775,3 +775,19 @@ div.sharedaddy h3.sd-title::before {
   font-size: 16px;
   font-weight: 700;
 }
+
+/**
+ * フロアマップ 注意書き
+ */
+.floor-notice p {
+  margin-bottom: 0 !important;
+}
+.floor-notice p > strong {
+  background: none !important;
+}
+.floor-notice ul {
+  margin-top: 0;
+}
+.floor-notice li > ul {
+  margin-bottom: 0 !important;
+}
