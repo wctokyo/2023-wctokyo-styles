@@ -340,8 +340,6 @@ article {
 
 /**
  * スピーカー詳細ページ 20230914
- *
- * 公開向け対応
  */
 .single-wcb_speaker {
   .entry-content + div,
@@ -426,8 +424,6 @@ article {
 
 /**
  * セッション詳細ページ 20230914
- *
- * 公開向け対応
  */
 .single-wcb_session {
   .entry-content + div,
@@ -439,7 +435,8 @@ article {
     margin-top: 0 !important;
   }
 
-  .wp-block-group.group-track {
+  .wp-block-group.group-track,
+  .wp-block-group.group-time {
     padding-top: 0 !important;
   }
 
