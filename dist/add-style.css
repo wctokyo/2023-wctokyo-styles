@@ -302,8 +302,6 @@ article {
 }
 /**
  * スピーカー詳細ページ 20230914
- *
- * 公開向け対応
  */
 .single-wcb_speaker .entry-content + div,
 .single-wcb_speaker .wp-block-post-date {
@@ -374,8 +372,6 @@ article {
 
 /**
  * セッション詳細ページ 20230914
- *
- * 公開向け対応
  */
 .single-wcb_session .entry-content + div,
 .single-wcb_session .wp-block-post-date {
@@ -384,7 +380,8 @@ article {
 .single-wcb_session .entry-content > ul {
   margin-top: 0 !important;
 }
-.single-wcb_session .wp-block-group.group-track {
+.single-wcb_session .wp-block-group.group-track,
+.single-wcb_session .wp-block-group.group-time {
   padding-top: 0 !important;
 }
 .single-wcb_session .wp-block-group.speaker-group {
