@@ -947,3 +947,24 @@ div.sharedaddy {
     }
   }
 }
+
+/**
+ * フロアマップ 注意書き
+ */
+.floor-notice {
+  p {
+    margin-bottom: 0 !important;
+  }
+
+  p > strong {
+    background: none !important;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+
+  li > ul {
+    margin-bottom: 0 !important;
+  }
+}
