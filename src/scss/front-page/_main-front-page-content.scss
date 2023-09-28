@@ -153,3 +153,38 @@
     }
   }
 }
+
+.linkarea{
+  overflow: hidden;
+  position: relative;
+  background-color: g.$wp--preset--color--wc-23-azure;
+  &:before{
+    content: '';
+    background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/08decca5304ebb62c6f389860994e2ea4ef0d38b/images/link_bg-top.svg") repeat-x bottom right / auto 100%;
+    width: 100vw;
+    height: 164px;
+    position: absolute;
+    top: -164px;
+    right: 0;
+    z-index: 0;
+    @include v.mq(){
+      height: 28vw;
+      top: -27.8vw;
+    }
+  }
+  &:after{
+    content: '';
+    background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/08decca5304ebb62c6f389860994e2ea4ef0d38b/images/link_bg-bottom.svg") repeat-x top right / auto 100%;
+    width: 100vw;
+    height: 148px;
+    position: absolute;
+    right: 0;
+    bottom: -148px;
+    z-index: 0;
+    @include v.mq(){
+      height: 14vw;
+      bottom: -13.8vw;
+      background-position-x: -65%;
+    }
+  }
+}
