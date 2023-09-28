@@ -67,9 +67,14 @@ input[type="submit"] {
   padding: 16px 42px 16px 80px !important;
 }
 
+.page_contents-box .contents_box h4:not(.wordcamp-schedule__session-title)::before,
+.page_contents-box .contents_box h4:not(.wordcamp-schedule__session-title)::after {
+    z-index: -1;
+}
+
 @media screen and (max-width: 600px) {
   .page_contents-box .contents_box h4:not(.wordcamp-schedule__session-title) {
-    padding: 8px 32px;
+    padding: 8px 32px !important;
   }
 }
 
@@ -966,5 +971,57 @@ div.sharedaddy {
 
   li > ul {
     margin-bottom: 0 !important;
+  }
+}
+
+/**
+ * メディアキットページ 20230928
+ */
+.page-slug-media-kit {
+  .media-download {
+    padding-bottom: 60px;
+  }
+
+  .media-logo {
+    margin-top: 40px;
+    max-width: 500px !important;
+  }
+
+  .media-group {
+    padding-top: 0 !important;
+    padding-left: 20px;
+    margin-top: 20px;
+
+    p {
+      margin-top: 0 !important;
+
+      strong {
+        background: none !important;
+      }
+    }
+  }
+
+  .media-wapuu-margin {
+    max-width: 400px !important;
+  }
+
+  .media-wapuu {
+    max-width: 210px !important;
+  }
+
+  @media (min-width: 600px) {
+    .media-anchor {
+      .wp-block-button__link {
+        min-width: auto !important;
+      }
+    }
+
+    .media-group {
+      margin-top: 25px;
+
+      p {
+        margin-bottom: 10px !important;
+      }
+    }
   }
 }
