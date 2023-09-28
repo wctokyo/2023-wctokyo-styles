@@ -835,3 +835,10 @@ div.sharedaddy h3.sd-title::before {
     margin-bottom: 10px !important;
   }
 }
+
+/**
+ * ページ内リンクの場合のボタンのアイコン 20230928
+ */
+.wp-block-button__link[href^="#"]::after {
+  content: "▼" !important;
+}

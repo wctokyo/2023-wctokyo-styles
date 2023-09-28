@@ -1025,3 +1025,10 @@ div.sharedaddy {
     }
   }
 }
+
+/**
+ * ページ内リンクの場合のボタンのアイコン 20230928
+ */
+.wp-block-button__link[href^='#']::after {
+  content: "▼" !important;
+}
