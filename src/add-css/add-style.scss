@@ -35,13 +35,19 @@ input[type="submit"] {
  * Heading level 2
  */
 .page_contents-box .contents_box h2 {
+  line-height: 1.5;
   margin: 60px 0 40px !important;
 }
 
 @media screen and (max-width: 600px) {
   .page_contents-box .contents_box h2 {
-      margin: 8% 0 4% !important;
+    line-height: 1.4;
+    margin: 8% 0 4% !important;
   }
+}
+
+.page_contents-box .contents_box h2::before {
+  top: 5px !important;
 }
 
 /**
