@@ -491,6 +491,26 @@
                         width: 100%;
                     }
                 }
+                .post-list{
+                    .taxonomy-category{
+                        padding-left: 0;
+                        &:before{
+                            content: none;
+                        }
+                    }
+                    h2{
+                        padding: 0 !important;
+                        margin: 10px 0 0 0 !important;
+                        &:before,
+                        &:after{
+                            content: none;
+                        }
+                        a{
+                            color: g.$wp--preset--color--wc-23-black;
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
         }
     }
