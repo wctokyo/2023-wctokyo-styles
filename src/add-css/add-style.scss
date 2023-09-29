@@ -17,6 +17,13 @@ input[type="submit"] {
 }
 
 /**
+ * ページ内スクロール
+ */
+html {
+	scroll-behavior: smooth;
+}
+
+/**
  * ページ内リンクのスクロール量を調整
  */
 @media (min-width: 601px) {
