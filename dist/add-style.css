@@ -875,3 +875,15 @@ div.sharedaddy h3.sd-title::before {
 .single-post .taxonomy-category.wp-block-post-terms {
   display: none !important;
 }
+
+/**
+ * 下層ページヘッダーロゴへリンク付与 20230929
+ */
+.under_mv_box::before {
+  z-index: 1;
+}
+
+.under_mv_box .under_mv_ttl {
+  position: relative;
+  z-index: 2;
+}
