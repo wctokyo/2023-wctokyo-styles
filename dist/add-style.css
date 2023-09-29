@@ -77,6 +77,16 @@ input[type=submit] {
   }
 }
 /**
+ * サイト全体の footer のスタイル
+ */
+.common--footer .wp-block-navigation-item__label {
+  color: #573531 !important;
+}
+.common--footer .wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor svg {
+  fill: #573531 !important;
+}
+
+/**
  * ここまで
  */
 /**
