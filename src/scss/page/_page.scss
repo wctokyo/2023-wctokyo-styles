@@ -517,6 +517,11 @@
                     .wp-block-query-pagination-next{
                         color: g.$wp--preset--color--wc-23-jackolantern;
                     }
+                    .page-numbers{
+                        &.current{
+                            color: g.$wp--preset--color--wc-23-white;
+                        }
+                    }
                 }
             }
         }
