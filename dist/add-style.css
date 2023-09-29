@@ -858,3 +858,20 @@ div.sharedaddy h3.sd-title::before {
 .wp-block-button__link[href^="#"]::after {
   content: "▼" !important;
 }
+
+/**
+ * カテゴリーのリンクを削除 20230929
+ */
+.teaser-home--latest--about .taxonomy-category.wp-block-post-terms {
+  pointer-events: none;
+  cursor: text;
+}
+
+.page-slug-news .taxonomy-category.wp-block-post-terms {
+  pointer-events: none;
+  cursor: text;
+}
+
+.single-post .taxonomy-category.wp-block-post-terms {
+  display: none !important;
+}
