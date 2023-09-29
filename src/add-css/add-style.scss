@@ -1057,3 +1057,30 @@ div.sharedaddy {
 .wp-block-button__link[href^='#']::after {
   content: "▼" !important;
 }
+
+/**
+ * カテゴリーのリンクを削除 20230929
+ */
+
+// トップページ（ただしティザーデザイン）
+.teaser-home--latest--about {
+  .taxonomy-category.wp-block-post-terms {
+    pointer-events: none;
+    cursor: text;
+  }
+}
+
+// お知らせ一覧ページ
+.page-slug-news {
+  .taxonomy-category.wp-block-post-terms {
+    pointer-events: none;
+    cursor: text;
+  }
+}
+
+// お知らせ記事
+.single-post {
+  .taxonomy-category.wp-block-post-terms {
+    display: none !important;
+  }
+}
