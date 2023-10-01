@@ -14,6 +14,14 @@ input[type=submit] {
 }
 
 /**
+ * ページ内リンクのスクロール量を調整
+ */
+@media (min-width: 601px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+}
+/**
  * 【最重要】Heading の上マージンの修正
  *
  * 全体のバランスを要確認
@@ -239,47 +247,6 @@ article {
 }
 
 /**
- * タイムテーブル 20230817
- *
- * ティザーサイトでのみ有効にするスタイル
- */
-.page-slug-timetable .wp-block-post-content .has-slug-lunch-time,
-.page-slug-timetable .wp-block-post-content .has-slug-after-party-open {
-  background: #e7e7e7;
-}
-.page-slug-timetable .wp-block-post-content .has-slug-break-time1,
-.page-slug-timetable .wp-block-post-content .has-slug-break-time2,
-.page-slug-timetable .wp-block-post-content .has-slug-break-time3,
-.page-slug-timetable .wp-block-post-content .has-slug-close,
-.page-slug-timetable .wp-block-post-content .has-slug-close-2 {
-  background: #ccc;
-}
-.page-slug-timetable .wp-block-post-content h4.wordcamp-schedule__session-title {
-  cursor: text;
-}
-.page-slug-timetable .wp-block-post-content h4.wordcamp-schedule__session-title a:where(:not(.wp-element-button)) {
-  color: #231815;
-  pointer-events: none;
-  text-decoration: none;
-}
-.page-slug-timetable .wp-block-post-content h4.wordcamp-schedule__session-title .wcb-session-favourite-icon {
-  display: none !important;
-}
-.page-slug-timetable .wordcamp-schedule__session-speakers {
-  display: none !important;
-}
-
-@media screen and (min-width: 550px) {
-  @supports (display: grid) {
-    body.page-slug-timetable:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__time-slot-header {
-      background-color: #eff1f4 !important;
-    }
-    body.page-slug-timetable:not(.block-editor-page) .wordcamp-schedule:not(.is-style-single-column-layout) .wordcamp-schedule__session.is-spanning-some-tracks {
-      text-align: left !important;
-    }
-  }
-}
-/**
  * スポンサーページ 20230822
  *
  * ティザーサイトでの緊急対応
@@ -335,8 +302,6 @@ article {
 }
 /**
  * スピーカー詳細ページ 20230914
- *
- * 公開向け対応
  */
 .single-wcb_speaker .entry-content + div,
 .single-wcb_speaker .wp-block-post-date {
@@ -353,8 +318,15 @@ article {
   padding-top: 0 !important;
 }
 .single-wcb_speaker .entry-content .wp-block-group.speaker-pattern .wp-block-group > p {
+  margin-top: 1.5rem !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+@media (min-width: 64rem) {
+  .single-wcb_speaker .entry-content .wp-block-group.speaker-pattern .wp-block-group > p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
 }
 .single-wcb_speaker .entry-content .speaker-avatar {
   display: none;
@@ -372,6 +344,7 @@ article {
   padding-left: 0;
 }
 .single-wcb_speaker .entry-content #speaker-session-names li {
+  padding: 0 1rem;
   border: 1px solid #4041e4;
   border-radius: 100vh;
 }
@@ -399,14 +372,16 @@ article {
 
 /**
  * セッション詳細ページ 20230914
- *
- * 公開向け対応
  */
 .single-wcb_session .entry-content + div,
 .single-wcb_session .wp-block-post-date {
   display: none;
 }
-.single-wcb_session .wp-block-group.group-track {
+.single-wcb_session .entry-content > ul {
+  margin-top: 0 !important;
+}
+.single-wcb_session .wp-block-group.group-track,
+.single-wcb_session .wp-block-group.group-time {
   padding-top: 0 !important;
 }
 .single-wcb_session .wp-block-group.speaker-group {
@@ -476,21 +451,6 @@ div.sharedaddy h3.sd-title {
   padding-left: 0 !important;
 }
 div.sharedaddy h3.sd-title::before {
-  display: none !important;
-}
-
-/**
- * タイムテーブル 20230915
- *
- * スタイルの修正
- */
-.page-slug-timetable .wordcamp-schedule__date {
-  display: none !important;
-}
-.page-slug-timetable .page_contents-box .contents_box h3 {
-  padding-left: 14px !important;
-}
-.page-slug-timetable .page_contents-box .contents_box h3::before {
   display: none !important;
 }
 
@@ -596,12 +556,57 @@ div.sharedaddy h3.sd-title::before {
 }
 
 /**
- * タイムテーブル 20230916
- *
- * テストページに反映しているスタイル
- * 公開時に要書き換え
+ * 登壇者・セッションのスタイル 20230918
  */
-.page-slug-test-timetable {
+.single-wcb_speaker .wp-block-post-title + .wp-block-template-part,
+.single-wcb_session .wp-block-post-title + .wp-block-template-part {
+  display: none;
+}
+
+/**
+  * セッション詳細 立ち見フラグのスタイル 20230918
+  */
+/** 立ち見NG **/
+.session-categories-links a {
+  display: inline-block;
+  font-style: normal;
+  font-size: 14px !important;
+  padding: 2px 8px;
+  color: #fff !important;
+  text-decoration: none !important;
+  pointer-events: none;
+  background-color: #a31e36;
+  border-radius: 4px;
+}
+
+/** 立ち見OK **/
+.single-wcb_session.postid-1297 .session-categories-links a,
+.single-wcb_session.postid-1321 .session-categories-links a,
+.single-wcb_session.postid-1319 .session-categories-links a {
+  background-color: #1e756d;
+}
+
+/** 要事前申込 **/
+.single-wcb_session.postid-1338 .session-categories-links a {
+  background-color: #e67823;
+}
+
+/**
+ * オーガナイザー一覧のスタイル 20230918
+ */
+.page-slug-organizers .wordcamp-post-list.wordcamp-organizers {
+  padding-left: 0;
+}
+.page-slug-organizers .wordcamp-organizer.wordcamp-organizers__post .wordcamp-image__avatar-container img {
+  border-radius: 100vh;
+}
+
+/**
+ * タイムテーブル 20230916 - 20230918
+ *
+ * 本公開向け
+ */
+.page-slug-timetable {
   /** 開会式・閉会式 **/
   /** WordPressコアやGutenbergでは今何が開発されているか **/
   /** 大規模言語モデルではじめる自動化 – LLMはWordPress制作・運用をどう変えるのか？ **/
@@ -610,88 +615,179 @@ div.sharedaddy h3.sd-title::before {
   /** これからのWordPressテーマとの付き合い方 **/
   /** 私たちが WordPress を使い続けられる理由 **/
   /** WordPressはいったいどこにいくのか 〜仕事・AI・サステナビリティ〜 **/
+  /**
+   * 立ち見フラグのスタイル
+   */
+  /** 立ち見NG **/
+  /** 立ち見OK **/
+  /** 要事前申込 **/
 }
-.page-slug-test-timetable .timetable-nav {
+.page-slug-timetable .timetable-nav {
   margin-bottom: 4rem !important;
 }
-.page-slug-test-timetable .timetable-nav .wp-block-button__link {
+.page-slug-timetable .timetable-nav .wp-block-button__link {
   min-width: auto !important;
 }
-.page-slug-test-timetable .wordcamp-schedule__date {
+.page-slug-timetable .wordcamp-schedule__date {
   display: none !important;
 }
-.page-slug-test-timetable .wp-block-post-content .has-slug-lunch-time,
-.page-slug-test-timetable .wp-block-post-content .has-slug-after-party-open {
+.page-slug-timetable .wp-block-post-content .has-slug-lunch-time,
+.page-slug-timetable .wp-block-post-content .has-slug-after-party-open {
   background: #d1d7df;
 }
-.page-slug-test-timetable .wp-block-post-content .has-slug-break-time1,
-.page-slug-test-timetable .wp-block-post-content .has-slug-break-time2,
-.page-slug-test-timetable .wp-block-post-content .has-slug-break-time3,
-.page-slug-test-timetable .wp-block-post-content .has-slug-close,
-.page-slug-test-timetable .wp-block-post-content .has-slug-close-2 {
+.page-slug-timetable .wp-block-post-content .has-slug-break-time1,
+.page-slug-timetable .wp-block-post-content .has-slug-break-time2,
+.page-slug-timetable .wp-block-post-content .has-slug-break-time3,
+.page-slug-timetable .wp-block-post-content .has-slug-close,
+.page-slug-timetable .wp-block-post-content .has-slug-close-2 {
   background: #b3bcca;
 }
-.page-slug-test-timetable .wordcamp-schedule__session-speakers::after {
+.page-slug-timetable .wordcamp-schedule__session-speakers::after {
   display: block;
   font-size: 14px;
-  background-color: #e0e4ea;
+  background-color: #f3eee8;
   border-radius: 4px;
   white-space: pre-wrap;
   padding: 0.5em 0.75em;
   margin-top: 1em;
 }
-.page-slug-test-timetable #wordcamp-schedule__session-1297 .wordcamp-schedule__session-speakers,
-.page-slug-test-timetable #wordcamp-schedule__session-1321 .wordcamp-schedule__session-speakers {
+.page-slug-timetable #wordcamp-schedule__session-1297 .wordcamp-schedule__session-speakers,
+.page-slug-timetable #wordcamp-schedule__session-1321 .wordcamp-schedule__session-speakers {
   display: none;
 }
-.page-slug-test-timetable #wordcamp-schedule__session-1299 .wordcamp-schedule__session-speakers::after {
+.page-slug-timetable #wordcamp-schedule__session-1299 .wordcamp-schedule__session-speakers::after {
   content: "スピーカー・パネリスト：浜野 哲明\aパネリスト：Toro_Unit / 占部 紘、Mike Schroder\aファシリテーター：Toru Miki";
 }
-.page-slug-test-timetable #wordcamp-schedule__session-1301 .wordcamp-schedule__session-speakers::after {
+.page-slug-timetable #wordcamp-schedule__session-1301 .wordcamp-schedule__session-speakers::after {
   content: "スピーカー：岡本 秀高\a参加者によるグループディスカッション";
 }
-.page-slug-test-timetable #wordcamp-schedule__session-1311 .wordcamp-schedule__session-speakers::after {
+.page-slug-timetable #wordcamp-schedule__session-1311 .wordcamp-schedule__session-speakers::after {
   content: "スピーカー・パネリスト：石川 栄和\aパネリスト：了、アクツ ユミ\aファシリテーター：Shusei Toda";
 }
-.page-slug-test-timetable #wordcamp-schedule__session-1313 .wordcamp-schedule__session-speakers::after {
+.page-slug-timetable #wordcamp-schedule__session-1313 .wordcamp-schedule__session-speakers::after {
   content: "スピーカー・パネリスト：遠藤 進悟\aパネリスト：小島 健司、川井 昌彦\aファシリテーター：コスギ サヤカ";
 }
-.page-slug-test-timetable #wordcamp-schedule__session-1315 .wordcamp-schedule__session-speakers::after {
+.page-slug-timetable #wordcamp-schedule__session-1315 .wordcamp-schedule__session-speakers::after {
   content: "スピーカー・パネリスト：久野 晃司\aパネリスト：キタジマ タカシ、タカミ アラタ\aファシリテーター：齋木 弘樹";
 }
-.page-slug-test-timetable #wordcamp-schedule__session-1317 .wordcamp-schedule__session-speakers::after {
+.page-slug-timetable #wordcamp-schedule__session-1317 .wordcamp-schedule__session-speakers::after {
   content: "スピーカー・ファシリテーター：額賀 順子\aパネリスト：立花 明、三宅 伊都子、Ben、Ryo Tsugawa";
 }
-.page-slug-test-timetable #wordcamp-schedule__session-1319 .wordcamp-schedule__session-speakers::after {
-  content: "パネリスト：高野 直子、高橋 文樹、大串 肇";
+.page-slug-timetable #wordcamp-schedule__session-1319 .wordcamp-schedule__session-speakers::after {
+  content: "パネリスト：高野 直子、高橋 文樹、大串 めがね 肇";
 }
 @media (min-width: 550px) {
-  .page-slug-test-timetable .wordcamp-schedule__column-header {
+  .page-slug-timetable .wordcamp-schedule__column-header {
     color: #fff;
     padding: 10px 5px !important;
     margin: 0;
   }
-  .page-slug-test-timetable .wordcamp-schedule__column-header + .wordcamp-schedule__column-header {
+  .page-slug-timetable .wordcamp-schedule__column-header + .wordcamp-schedule__column-header {
     border-left: 1px solid #fbfbfc;
   }
-  .page-slug-test-timetable .wordcamp-schedule.session-area .wordcamp-schedule__column-header {
+  .page-slug-timetable .wordcamp-schedule.session-area .wordcamp-schedule__column-header {
     background-color: #1e756d !important;
   }
-  .page-slug-test-timetable .wordcamp-schedule.mingle-area .wordcamp-schedule__column-header {
+  .page-slug-timetable .wordcamp-schedule.mingle-area .wordcamp-schedule__column-header {
     background-color: #4041e4 !important;
   }
-  .page-slug-test-timetable .wordcamp-schedule__time-slot-header {
+  .page-slug-timetable .wordcamp-schedule__time-slot-header {
     min-width: auto;
     background-color: #eff1f4 !important;
   }
 }
 @media (min-width: 601px) {
-  .page-slug-test-timetable .wordcamp-schedule__session-title + p {
+  .page-slug-timetable .wordcamp-schedule__session-title + p {
     margin-bottom: 1em !important;
   }
 }
 @media (min-width: 1240px) {
-  .page-slug-test-timetable .wordcamp-schedule__column-header {
+  .page-slug-timetable .wordcamp-schedule__column-header {
     font-size: 0.875em;
   }
+}
+.page-slug-timetable .wordcamp-schedule__session-category dd {
+  display: inline-block;
+  font-style: normal;
+  font-size: 12px;
+  padding: 2px 8px;
+  color: #fff !important;
+  background-color: #a31e36;
+  border-radius: 4px;
+}
+.page-slug-timetable #wordcamp-schedule__session-1297 .wordcamp-schedule__session-category dd,
+.page-slug-timetable #wordcamp-schedule__session-1321 .wordcamp-schedule__session-category dd,
+.page-slug-timetable #wordcamp-schedule__session-1319 .wordcamp-schedule__session-category dd {
+  background-color: #1e756d;
+}
+.page-slug-timetable #wordcamp-schedule__session-1338 .wordcamp-schedule__session-category dd {
+  background-color: #e67823;
+}
+
+/**
+ * フロアマップページ 20230921
+ */
+.page-slug-floor-map figure {
+  text-align: center;
+}
+.page-slug-floor-map figure + p > strong {
+  background: none !important;
+}
+.page-slug-floor-map figure + p + ul {
+  margin-top: 0 !important;
+}
+.page-slug-floor-map figure + p + ul > li > ul {
+  margin-bottom: 0 !important;
+}
+@media (min-width: 600px) {
+  .page-slug-floor-map figure + p {
+    margin-bottom: 1rem !important;
+  }
+  .page-slug-floor-map figure + p + ul {
+    margin-bottom: 48px !important;
+  }
+}
+
+/**
+ * ボランティアページ レイアウト崩れ修正 20230921
+ */
+.page-slug-volunteers .page_contents-box .contents_box ul {
+  margin-bottom: 0 !important;
+}
+
+/**
+ * リードチーム 開会式と閉会式のリンクを削除 20230921
+ */
+.postid-2336 .page_contents #speaker-session-names li:not(:first-child),
+.postid-2812 .page_contents #speaker-session-names li:not(:first-child) {
+  display: none;
+}
+
+/**
+ * タイムテーブル セッションメインスピーカーのみスタイル変更
+ */
+#wordcamp-schedule__session-1299 .wordcamp-schedule__session-speakers dd:first-of-type a,
+#wordcamp-schedule__session-1301 .wordcamp-schedule__session-speakers dd:first-of-type a,
+#wordcamp-schedule__session-1311 .wordcamp-schedule__session-speakers dd:first-of-type a,
+#wordcamp-schedule__session-1313 .wordcamp-schedule__session-speakers dd:first-of-type a,
+#wordcamp-schedule__session-1315 .wordcamp-schedule__session-speakers dd:first-of-type a,
+#wordcamp-schedule__session-1317 .wordcamp-schedule__session-speakers dd:first-of-type a {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/**
+ * フロアマップ 注意書き
+ */
+.floor-notice p {
+  margin-bottom: 0 !important;
+}
+.floor-notice p > strong {
+  background: none !important;
+}
+.floor-notice ul {
+  margin-top: 0;
+}
+.floor-notice li > ul {
+  margin-bottom: 0 !important;
 }
