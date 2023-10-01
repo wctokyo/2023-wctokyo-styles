@@ -157,9 +157,16 @@
 .linkarea{
   position: relative;
   background-color: g.$wp--preset--color--wc-23-azure;
+  padding: 140px 0 130px !important;
+  @include v.mq(tab){
+    padding: 10vw 0 16.25vw !important;
+  }
+  @include v.mq(){
+    padding: 6% 0 13% !important;
+  }
   &:before{
     content: '';
-    background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/08decca5304ebb62c6f389860994e2ea4ef0d38b/images/link_bg-top.svg") repeat-x bottom right / auto 100%;
+    background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_88/images/link_bg-top.svg") repeat-x bottom right / auto 100%;
     width: 100vw;
     height: 164px;
     position: absolute;
@@ -173,7 +180,7 @@
   }
   &:after{
     content: '';
-    background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/08decca5304ebb62c6f389860994e2ea4ef0d38b/images/link_bg-bottom.svg") repeat-x top right / auto 100%;
+    background: url("https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/main/images/what_bg-bottom.svg") repeat-x top right / auto 100%;
     width: 100vw;
     height: 148px;
     position: absolute;
@@ -184,6 +191,113 @@
       height: 14vw;
       bottom: -13.8vw;
       background-position-x: -65%;
+    }
+  }
+  &_list{
+      display: flex;
+      column-gap: 40px;
+      position: relative;
+      z-index: 2;
+      width: 920px;
+      margin: 0 auto;
+    @include v.mq(wide){
+      width: 83.636364vw;
+      column-gap: 3.636364vw;
+    }
+    &-box{
+      width: 280px;
+      height: 280px;
+      background: g.$wp--preset--color--wc-23-milk;
+      box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 32px 16px;
+      @include v.mq(wide){
+        width: 25.454545vw;
+        height: 25.454545vw;
+        padding: 2.909091vw 1.454545vw;
+      }
+      @include v.mq(){
+        box-shadow: 1.25vw 1.25vw 0px 0px rgba(0, 0, 0, 0.25);
+      }
+      figure{
+        margin: 20px auto 0;
+        @include v.mq(wide){
+          margin: 1.818182vw auto 0;
+        }
+      }
+      p{
+        margin: auto 0 0;
+        font-size: 24px;
+        @include v.mq(tab){
+          font-size: 16px;
+        }
+        @include v.mq(){
+          font-size: 12px;
+        }
+      }
+      &.timetable{
+        figure{
+          margin: 26px auto 0;
+          @include v.mq(wide){
+            margin: 2.363636vw auto 0;
+            img{
+              width: 13.272727vw;
+            }
+          }
+        }
+      }
+      &.floormap{
+        figure{
+          @include v.mq(wide){
+            img{
+              width: 11.818182vw;
+            }
+          }
+        }
+      }
+      &.access{
+        figure{
+          @include v.mq(wide){
+            img{
+              width: 10.818182vw;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_box{
+    &:after{
+      content: '';
+      background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_88/images/link_mark.svg) no-repeat bottom right / contain;
+      width: 600px;
+      height: 402px;
+      position: absolute;
+      right: 0;
+      bottom: -24px;
+      z-index: 1;
+      @include v.mq(tab){
+        width: 52.5vw;
+        height: 35.125vw;
+        bottom: -1vw;
+      }
+    }
+  }
+  &_wapuu{
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: -330px;
+    @include v.mq(tab){
+      width: 46.375vw;
+      bottom: -28vw;
+    }
+    @include v.mq(){
+      bottom: -30vw;
     }
   }
 }
