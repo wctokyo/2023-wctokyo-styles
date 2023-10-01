@@ -224,10 +224,6 @@
         box-shadow: 1.25vw 1.25vw 0px 0px rgba(0, 0, 0, 0.25);
       }
       figure{
-        margin: 20px auto 0;
-        @include v.mq(wide){
-          margin: 1.818182vw auto 0;
-        }
         img{
           filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
         }
@@ -258,7 +254,9 @@
       }
       &.floormap{
         figure{
+          margin: 20px auto 0;
           @include v.mq(wide){
+            margin: 1.818182vw auto 0;
             img{
               width: 11.818182vw;
             }
@@ -267,7 +265,9 @@
       }
       &.access{
         figure{
+          margin: 20px auto 0;
           @include v.mq(wide){
+            margin: 1.818182vw auto 0;
             img{
               width: 10.818182vw;
             }
