@@ -241,6 +241,9 @@
         @include v.mq(){
           font-size: 12px;
         }
+        @include v.mq(sp){
+          font-size: 10px;
+        }
       }
       &.timetable{
         figure{
