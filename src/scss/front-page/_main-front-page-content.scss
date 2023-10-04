@@ -66,12 +66,15 @@
  .dot_ttl{
    margin: 0 auto 24px;
    text-align: center;
+   font-size: 32px;
+   font-weight: bold;
    &:after{
      content: '';
      display: block;
      margin: 10px auto 0;
      height: 12px;
      width: 68px;
+     background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_89%2B90/images/dot_ttl.svg) no-repeat center center / contain;
    }
  }
  
@@ -320,8 +323,12 @@
    }
  }
  
+.infoarea{
+  padding: 270px 0 330px !important;
+}
+
  .news{
-   padding: 240px 0 120px;
+  margin-bottom: 120px;
    .main_ttl{
      margin:0 auto 40px;
    }
@@ -365,7 +372,7 @@
      border: 6px solid g.$wp--preset--color--wc-23-black;
      border-radius: 20px;
      background: g.$wp--preset--color--wc-23-white;
-     padding: 80px;
+     padding: 74px;
      &-inner{
        padding-bottom: 80px;
        border-bottom: 1px solid g.$wp--preset--color--wc-23-black;
@@ -375,9 +382,54 @@
          margin-bottom: 0;
          border-bottom: none;
        }
+       &.whats{
+        .whats_text{
+            column-gap: 30px;
+            .wp-block-media-text__content{
+              padding: 0;
+              width: 457px;
+              p{
+                margin: 0;
+              }
+              ol{
+                font-size: 12px;
+                margin: 0;
+                padding-left: 1em;
+              }
+            }
+            .wp-block-media-text__media{
+              width: 273px;
+            }
+          }
+       }
+       &.info{
+          .info_day{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 13px;
+          }
+          .info_price{
+            text-align: center;
+            line-height: 160%;
+            list-style-position: inside;
+            margin: 0 0 24px;
+          }
+          .info_list{
+            margin: 0 0 24px;
+          }
+       }
+       &.kids{
+        .kids_text{
+          margin: 0 0 24px;
+        }
+       }
+       .wp-block-buttons{
+        justify-content: center;
+       }
      }
    }
- }
+  }
  
  .wp-block-buttons{
    margin-bottom: 10px;
