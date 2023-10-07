@@ -229,7 +229,7 @@
                         }
                     }
                 }
-                h3:not(.wordcamp-schedule__time-slot-header){
+                h3:not(.wordcamp-schedule__time-slot-header):not(.no-style){
                     font-size: 24px;
                     font-weight: bold;
                     color: g.$wp--preset--color--wc-23-jackolantern;
@@ -256,7 +256,7 @@
                         }
                     }
                 }
-                h4:not(.wordcamp-schedule__session-title){
+                h4:not(.wordcamp-schedule__session-title):not(.no-style){
                     font-size: 18px;
                     font-weight: bold;
                     color: g.$wp--preset--color--wc-23-white;
@@ -307,8 +307,9 @@
                     }
                 }
                 a{
-                    color: g.$wp--preset--color--wc-23-azure;
+                    color: g.$wp--preset--color--wc-23-jackolantern;
                     text-decoration: underline;
+                    text-underline-offset: .2em;
                     &:hover{
                         text-decoration: none;
                     }
