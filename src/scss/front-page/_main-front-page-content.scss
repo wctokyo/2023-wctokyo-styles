@@ -128,6 +128,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: -50px;
     @include v.mq(tab){
       width: auto;
       height: auto;
