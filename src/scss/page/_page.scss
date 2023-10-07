@@ -310,10 +310,11 @@
             padding: 0 !important;
             gap: 1rem;
         }
-        .faq-q .wp-block-heading{
+        .faq-q .wp-block-heading::before{
             content: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/32ee8e6…/images/icon_q.svg) !important;
             height: 61px !important;
             width: 61px !important;
+            display: block;
             position: static !important;
         }
         .faq-a{
