@@ -483,7 +483,7 @@ div.sharedaddy h3.sd-title::before {
 }
 
 .wp-block-group.wp-block-group {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 /**
