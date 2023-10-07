@@ -482,28 +482,8 @@ div.sharedaddy h3.sd-title::before {
   display: none !important;
 }
 
-/**
- * 緊急対応 20230915
- *
- * .wp-block-group の padding-top
- */
-/**
- * 共通パーツ 20230915
- */
-.wp-block-group.common--footer,
-.wp-block-group.common--footer--copyright {
-  padding-top: 0 !important;
-}
-
-/**
- * トップページ 20230915
- */
-.wp-block-group.teaser-home--about--content,
-.wp-block-group.teaser-home--about--content,
-.wp-block-group.teaser-home--abstruct--content,
-.wp-block-group.teaser-home--sponsors--content,
-.teaser-home--latest--about .wp-block-post .wp-block-columns .wp-block-column > .wp-block-group {
-  padding-top: 0 !important;
+.wp-block-group.wp-block-group {
+  padding-top: 0;
 }
 
 /**
