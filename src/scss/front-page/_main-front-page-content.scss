@@ -123,7 +123,7 @@
     z-index: 2;
     width: 460px;
     margin: 0 auto;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,7 +282,7 @@
       }
       &.floormap{
         figure{
-          margin: 20px auto 0;
+          margin: 40px auto 0;
           @include v.mq(wide){
             margin: 1.818182vw auto 0;
             img{
