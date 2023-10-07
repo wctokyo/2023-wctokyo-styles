@@ -4,6 +4,11 @@
  @use '../global-styles-inline-css' as g;
  @use '../_variables' as v;
 
+body.admin-bar .header_area{
+    margin-top: 32px;
+    margin-block-start: 32px !important;
+}
+
 .header_area{
     .wp-block-navigation{
         margin: 0 auto;
