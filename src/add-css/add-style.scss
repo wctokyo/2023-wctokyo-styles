@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /**
- * common class
+ * NOTE: common class
  */
 
 input[type="submit"] {
@@ -17,14 +17,14 @@ input[type="submit"] {
 }
 
 /**
- * ページ内スクロール
+ * NOTE: ページ内スクロール
  */
 html {
 	scroll-behavior: smooth;
 }
 
 /**
- * ページ内リンクのスクロール量を調整
+ * NOTE: ページ内リンクのスクロール量を調整
  */
 @media (min-width: 601px) {
   html {
@@ -33,13 +33,13 @@ html {
 }
 
 /**
- * 【最重要】Heading の上マージンの修正
+ * NOTE: 【最重要】Heading の上マージンの修正
  *
  * 全体のバランスを要確認
  */
 
 /**
- * Heading level 2
+ * NOTE: Heading level 2
  */
 .page_contents-box .contents_box h2 {
   line-height: 1.5;
@@ -58,7 +58,7 @@ html {
 }
 
 /**
- * Heading level 3
+ * NOTE: Heading level 3
  */
 .page_contents-box .contents_box h3:not(.wordcamp-schedule__time-slot-header) {
   margin: 40px 0 30px !important;
@@ -74,7 +74,7 @@ html {
 }
 
 /**
- * Heading level 4 / 左パディング
+ * NOTE: Heading level 4 / 左パディング
  */
 .page_contents-box .contents_box h4:not(.wordcamp-schedule__session-title) {
   padding: 16px 42px 16px 80px !important;
@@ -92,7 +92,7 @@ html {
 }
 
 /**
- * サイト全体の footer のスタイル
+ * NOTE: サイト全体の footer のスタイル
  */
 .common--footer {
   .wp-block-navigation-item__label {
@@ -130,7 +130,7 @@ article {
 	line-height: 1.8;
 }
 
-/* トップページ ticket 20230726 */
+/* NOTE: トップページ ticket 20230726 */
 .teaser-home--tickets--buttons {
 	padding: 50px 0;
 }
@@ -142,7 +142,7 @@ article {
 }
 
 
-/* トップページ ABOUT 20230726 */
+/* NOTE: トップページ ABOUT 20230726 */
 .teaser-home--abstruct.teaser-home--info {
 	margin-top: 0;
 }
@@ -157,7 +157,7 @@ article {
   }
 }
 
-/* トップページ ABOUT・NEWS 20230726*/
+/* NOTE: トップページ ABOUT・NEWS 20230726*/
 .teaser-home--abstruct.teaser-home--info,
 .teaser-home--abstruct.teaser-home--news {
     padding: 60px 0 120px;
@@ -178,7 +178,7 @@ article {
   }
 }
 
-/* チケットページ 20230723 */
+/* NOTE: チケットページ 20230723 */
 .page-slug-tickets .tix-tickets-list thead tr {
 	color: white;
 }
@@ -204,7 +204,7 @@ article {
 	}
 }
 
-/* チケット情報登録 20230723 */
+/* NOTE: チケット情報登録 20230723 */
 .page-slug-tickets .tix-column-per-ticket {
 	text-align: center;
 }
@@ -278,7 +278,7 @@ article {
 	}
 }
 
-/* 参加者一覧 20230726 */
+/* NOTE: 参加者一覧 20230726 */
 #tix-attendees {
   ul {
     display: flex;
@@ -312,9 +312,9 @@ article {
 }
 
 /**
- * スポンサーページ 20230822
+ * NOTE: スポンサーページ 20230822
  *
- * ティザーサイトでの緊急対応
+ * FIXME: ティザーサイトでの緊急対応
  */
 .page-slug-sponsors {
   .wordcamp-sponsors {
@@ -327,9 +327,9 @@ article {
 }
 
 /**
- * お知らせ一覧 ページネーション 20230831
+ * NOTE: お知らせ一覧 ページネーション 20230831
  *
- * ティザーサイトでの緊急対応
+ * FIXME: ティザーサイトでの緊急対応
  */
 .wp-block-query-pagination-numbers {
   .page-numbers {
@@ -376,7 +376,7 @@ article {
 }
 
 /**
- * スピーカー詳細ページ 20230914
+ * NOTE: スピーカー詳細ページ 20230914
  */
 .single-wcb_speaker {
   .entry-content + div,
@@ -460,7 +460,7 @@ article {
 }
 
 /**
- * セッション詳細ページ 20230914
+ * NOTE: セッション詳細ページ 20230914
  */
 .single-wcb_session {
   .entry-content + div,
@@ -547,7 +547,7 @@ article {
 }
 
 /**
- * footer 共有 20230915
+ * NOTE: footer 共有 20230915
  *
  * jetpack が出力しているスタイルに対応
  */
@@ -565,14 +565,14 @@ div.sharedaddy {
 
 
 
-.wp-block-group.wp-block-group{
+body .wp-block-group{
   padding-top: 0 !important;
 }
 
 // /**
 //  * 緊急対応 20230915
 //  *
-//  * .wp-block-group の padding-top
+//  * NOTE: .wp-block-group の padding-top
 //  */
 
 // /**
@@ -606,7 +606,7 @@ div.sharedaddy {
 }
 
 /**
- * チケット購入ボタン 20230916
+ * NOTE: チケット購入ボタン 20230916
  *
  * スタイルの反映
  */
@@ -634,7 +634,7 @@ div.sharedaddy {
 }
 
 /**
- * スマホナビゲーション 子要素のスタイル 20230916
+ * NOTE: スマホナビゲーション 子要素のスタイル 20230916
  */
 .has-modal-open {
   li.has-child {
@@ -649,7 +649,7 @@ div.sharedaddy {
 }
 
 /**
- * 投稿 post-meta のスタイル 20230917
+ * NOTE: 投稿 post-meta のスタイル 20230917
  */
 .single-post {
   @media screen and (max-width: 600px) {
@@ -690,7 +690,7 @@ div.sharedaddy {
 }
 
 /**
- * 登壇者・セッションのスタイル 20230918
+ * NOTE: 登壇者・セッションのスタイル 20230918
  */
 .single-wcb_speaker,
 .single-wcb_session {
@@ -700,7 +700,7 @@ div.sharedaddy {
 }
 
 /**
-  * セッション詳細 立ち見フラグのスタイル 20230918
+  * NOTE: セッション詳細 立ち見フラグのスタイル 20230918
   */
 
 /** 立ち見NG **/
@@ -716,7 +716,7 @@ div.sharedaddy {
   border-radius: 4px;
 }
 
-/** 立ち見OK **/
+/** NOTE: 立ち見OK **/
 .single-wcb_session.postid-1297,
 .single-wcb_session.postid-1321,
 .single-wcb_session.postid-1319 {
@@ -725,7 +725,7 @@ div.sharedaddy {
   }
 }
 
-/** 要事前申込 **/
+/** NOTE: 要事前申込 **/
 .single-wcb_session.postid-1338 {
   .session-categories-links a {
     background-color: #e67823;
@@ -733,7 +733,7 @@ div.sharedaddy {
 }
 
 /**
- * オーガナイザー一覧のスタイル 20230918
+ * NOTE: オーガナイザー一覧のスタイル 20230918
  */
 .page-slug-organizers {
   .wordcamp-post-list.wordcamp-organizers {
@@ -748,7 +748,7 @@ div.sharedaddy {
 }
 
 /**
- * タイムテーブル 20230916 - 20230918
+ * NOTE: タイムテーブル 20230916 - 20230918
  *
  * 本公開向け
  */

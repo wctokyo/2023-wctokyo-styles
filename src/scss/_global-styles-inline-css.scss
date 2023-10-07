@@ -107,3 +107,7 @@ body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alig
 body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull):not(.alignwide)){
     max-width: 920px !important;
 }
+
+.wp-block-group{
+    padding-top: 0 !important;
+}
