@@ -304,13 +304,13 @@
             }
         }
         // NOTE: FAQ ---------
-        .faq-q .wp-block-heading,.faq-a{
+        .faq-q .wp-block-heading, .faq-q.wp-block-heading,.faq-a{
             display: flex;
             align-items: center;
             padding: 0 !important;
             gap: 1rem;
         }
-        .faq-q .wp-block-heading::before{
+        .faq-q .wp-block-heading::before, .faq-q.wp-block-heading::before{
             content: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/32ee8e67bdf9603b980c62c74b070a6b745e1843/images/icon_q.svg) !important;
             height: 61px !important;
             width: 61px !important;
@@ -318,15 +318,15 @@
             position: static !important;
         }
         .faq-a{
-            display: flex;
-            gap: 1rem;
-            align-items: flex-start;
+            padding-left: calc(61px + 1rem);
             &::before{
                 content: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/32ee8e67bdf9603b980c62c74b070a6b745e1843/images/icon_a.svg) !important;
                 height: 61px !important;
                 width: 61px !important;
-                position: static !important;
+                position: absolute !important;
                 display: block;
+                left: 0;
+                top: 0;
             }
             p{
                 margin-left: 0 !important;
