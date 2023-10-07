@@ -68,6 +68,7 @@
   position: relative;
   background-color: g.$wp--preset--color--wc-23-milk;
   padding-bottom: 190px !important;
+  margin-bottom: -100px;
   @include v.mq(){
     padding-bottom: 100px !important;
   }
@@ -127,7 +128,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: -150px;
+    margin-bottom: -50px;
     @include v.mq(tab){
       width: auto;
       height: auto;
