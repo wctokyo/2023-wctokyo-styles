@@ -525,6 +525,11 @@
                     }
                 }
                 .post-list{
+                    &-info{
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                    }
                     .taxonomy-category{
                         padding-left: 0;
                         &:before{
@@ -533,7 +538,7 @@
                     }
                     h2{
                         padding: 0 !important;
-                        margin: 10px 0 0 0 !important;
+                        margin: 10px 0 !important;
                         &:before,
                         &:after{
                             content: none;
