@@ -35,7 +35,7 @@ html {
 /**
  * NOTE: 【最重要】Heading の上マージンの修正
  *
- * 全体のバランスを要確認
+ * FIXME: 全体のバランスを要確認
  */
 
 /**
@@ -115,7 +115,7 @@ html {
  */
 
 /**
- * Home
+ * NOTE: Home
  */
 .home .wp-site-blocks {
 	padding-top: 0 !important;
@@ -130,7 +130,9 @@ article {
 	line-height: 1.8;
 }
 
-/* NOTE: トップページ ticket 20230726 */
+/**
+ * NOTE: トップページ ticket 20230726
+ */
 .teaser-home--tickets--buttons {
 	padding: 50px 0;
 }
@@ -142,7 +144,9 @@ article {
 }
 
 
-/* NOTE: トップページ ABOUT 20230726 */
+/**
+ * NOTE: トップページ ABOUT 20230726
+ */
 .teaser-home--abstruct.teaser-home--info {
 	margin-top: 0;
 }
@@ -157,7 +161,9 @@ article {
   }
 }
 
-/* NOTE: トップページ ABOUT・NEWS 20230726*/
+/**
+ * NOTE: トップページ ABOUT・NEWS 20230726
+ */
 .teaser-home--abstruct.teaser-home--info,
 .teaser-home--abstruct.teaser-home--news {
     padding: 60px 0 120px;
@@ -178,7 +184,9 @@ article {
   }
 }
 
-/* NOTE: チケットページ 20230723 */
+/**
+ * NOTE: チケットページ 20230723
+ */
 .page-slug-tickets .tix-tickets-list thead tr {
 	color: white;
 }
@@ -204,7 +212,9 @@ article {
 	}
 }
 
-/* NOTE: チケット情報登録 20230723 */
+/**
+ * NOTE: チケット情報登録 20230723
+ */
 .page-slug-tickets .tix-column-per-ticket {
 	text-align: center;
 }
@@ -278,7 +288,9 @@ article {
 	}
 }
 
-/* NOTE: 参加者一覧 20230726 */
+/**
+ * NOTE: 参加者一覧 20230726
+ */
 #tix-attendees {
   ul {
     display: flex;
@@ -563,39 +575,33 @@ div.sharedaddy {
 	}
 }
 
+/**
+ * EMG: 緊急対応 20230915
+ *
+ * NOTE: .wp-block-group の padding-top
+ */
 
-
-body .wp-block-group{
+/**
+ * 共通パーツ 20230915
+ */
+.wp-block-group.common--footer,
+.wp-block-group.common--footer--copyright {
   padding-top: 0 !important;
 }
 
-// /**
-//  * 緊急対応 20230915
-//  *
-//  * NOTE: .wp-block-group の padding-top
-//  */
-
-// /**
-//  * 共通パーツ 20230915
-//  */
-// .wp-block-group.common--footer,
-// .wp-block-group.common--footer--copyright {
-// 	padding-top: 0 !important;
-// }
-
-// /**
-//  * トップページ 20230915
-//  */
-// .wp-block-group.teaser-home--about--content,
-// .wp-block-group.teaser-home--about--content,
-// .wp-block-group.teaser-home--abstruct--content,
-// .wp-block-group.teaser-home--sponsors--content,
-// .teaser-home--latest--about .wp-block-post .wp-block-columns .wp-block-column>.wp-block-group {
-//   padding-top: 0 !important;
-// }
+/**
+* トップページ 20230915
+*/
+.wp-block-group.teaser-home--about--content,
+.wp-block-group.teaser-home--about--content,
+.wp-block-group.teaser-home--abstruct--content,
+.wp-block-group.teaser-home--sponsors--content,
+.teaser-home--latest--about .wp-block-post .wp-block-columns .wp-block-column>.wp-block-group {
+  padding-top: 0 !important;
+}
 
 /**
- * チケットページ チケット購入テーブルのスタイル 20230916
+ * NOTE: チケットページ チケット購入テーブルのスタイル 20230916
  */
 .page-slug-tickets {
   .tix_tickets_table.tix-tickets-list {
@@ -703,7 +709,7 @@ body .wp-block-group{
   * NOTE: セッション詳細 立ち見フラグのスタイル 20230918
   */
 
-/** 立ち見NG **/
+// 立ち見NG
 .session-categories-links a {
   display: inline-block;
   font-style: normal;
@@ -716,7 +722,7 @@ body .wp-block-group{
   border-radius: 4px;
 }
 
-/** NOTE: 立ち見OK **/
+// 立ち見OK
 .single-wcb_session.postid-1297,
 .single-wcb_session.postid-1321,
 .single-wcb_session.postid-1319 {
@@ -725,7 +731,7 @@ body .wp-block-group{
   }
 }
 
-/** NOTE: 要事前申込 **/
+// 要事前申込
 .single-wcb_session.postid-1338 {
   .session-categories-links a {
     background-color: #e67823;
@@ -790,7 +796,7 @@ body .wp-block-group{
     margin-top: 1em;
   }
 
-  /** 開会式・閉会式 **/
+  // 開会式・閉会式
   #wordcamp-schedule__session-1297,
   #wordcamp-schedule__session-1321 {
     .wordcamp-schedule__session-speakers {
@@ -798,49 +804,49 @@ body .wp-block-group{
     }
   }
 
-  /** WordPressコアやGutenbergでは今何が開発されているか **/
+  // WordPressコアやGutenbergでは今何が開発されているか
   #wordcamp-schedule__session-1299 {
     .wordcamp-schedule__session-speakers::after {
       content: "スピーカー・パネリスト：浜野 哲明\Aパネリスト：Toro_Unit / 占部 紘、Mike Schroder\Aファシリテーター：Toru Miki";
     }
   }
 
-  /** 大規模言語モデルではじめる自動化 – LLMはWordPress制作・運用をどう変えるのか？ **/
+  // 大規模言語モデルではじめる自動化 – LLMはWordPress制作・運用をどう変えるのか？
   #wordcamp-schedule__session-1301 {
     .wordcamp-schedule__session-speakers::after {
       content: "スピーカー：岡本 秀高\A参加者によるグループディスカッション";
     }
   }
 
-  /** これからのテーマ・プラグイン販売を考える **/
+  // これからのテーマ・プラグイン販売を考える
   #wordcamp-schedule__session-1311 {
     .wordcamp-schedule__session-speakers::after {
       content: "スピーカー・パネリスト：石川 栄和\Aパネリスト：了、アクツ ユミ\Aファシリテーター：Shusei Toda";
     }
   }
 
-  /** 環境変化の激しいWordPressのメンテナンスをどう考えるか **/
+  // 環境変化の激しいWordPressのメンテナンスをどう考えるか
   #wordcamp-schedule__session-1313 {
     .wordcamp-schedule__session-speakers::after {
       content: "スピーカー・パネリスト：遠藤 進悟\Aパネリスト：小島 健司、川井 昌彦\Aファシリテーター：コスギ サヤカ";
     }
   }
 
-  /** これからのWordPressテーマとの付き合い方 **/
+  // これからのWordPressテーマとの付き合い方
   #wordcamp-schedule__session-1315 {
     .wordcamp-schedule__session-speakers::after {
       content: "スピーカー・パネリスト：久野 晃司\Aパネリスト：キタジマ タカシ、タカミ アラタ\Aファシリテーター：齋木 弘樹";
     }
   }
 
-  /** 私たちが WordPress を使い続けられる理由 **/
+  // 私たちが WordPress を使い続けられる理由
   #wordcamp-schedule__session-1317 {
     .wordcamp-schedule__session-speakers::after {
       content: "スピーカー・ファシリテーター：額賀 順子\Aパネリスト：立花 明、三宅 伊都子、Ben、Ryo Tsugawa";
     }
   }
 
-  /** WordPressはいったいどこにいくのか 〜仕事・AI・サステナビリティ〜 **/
+  // WordPressはいったいどこにいくのか 〜仕事・AI・サステナビリティ〜
   #wordcamp-schedule__session-1319 {
     .wordcamp-schedule__session-speakers::after {
       content: "パネリスト：高野 直子、高橋 文樹、大串 めがね 肇";
@@ -889,10 +895,10 @@ body .wp-block-group{
   }
 
   /**
-   * 立ち見フラグのスタイル
+   * NOTE: 立ち見フラグのスタイル
    */
 
-  /** 立ち見NG **/
+  // 立ち見NG
   .wordcamp-schedule__session-category dd {
     display: inline-block;
     font-style: normal;
@@ -903,7 +909,7 @@ body .wp-block-group{
     border-radius: 4px;
   }
 
-  /** 立ち見OK **/
+  // 立ち見OK
   #wordcamp-schedule__session-1297,
   #wordcamp-schedule__session-1321,
   #wordcamp-schedule__session-1319 {
@@ -912,7 +918,7 @@ body .wp-block-group{
     }
   }
 
-  /** 要事前申込 **/
+  // 要事前申込
   #wordcamp-schedule__session-1338 {
     .wordcamp-schedule__session-category dd {
       background-color: #e67823;
@@ -921,7 +927,7 @@ body .wp-block-group{
 }
 
 /**
- * フロアマップページ 20230921
+ * NOTE: フロアマップページ 20230921
  */
 .page-slug-floor-map {
   figure {
@@ -952,7 +958,7 @@ body .wp-block-group{
 }
 
 /**
- * ボランティアページ レイアウト崩れ修正 20230921
+ * NOTE: ボランティアページ レイアウト崩れ修正 20230921
  */
 .page-slug-volunteers {
   .page_contents-box .contents_box ul {
@@ -961,7 +967,7 @@ body .wp-block-group{
 }
 
 /**
- * リードチーム 開会式と閉会式のリンクを削除 20230921
+ * NOTE: リードチーム 開会式と閉会式のリンクを削除 20230921
  */
 .postid-2336,
 .postid-2812 {
@@ -975,7 +981,7 @@ body .wp-block-group{
 }
 
 /**
- * タイムテーブル セッションメインスピーカーのみスタイル変更
+ * NOTE: タイムテーブル セッションメインスピーカーのみスタイル変更
  */
 #wordcamp-schedule__session-1299,
 #wordcamp-schedule__session-1301,
@@ -992,7 +998,7 @@ body .wp-block-group{
 }
 
 /**
- * フロアマップ 注意書き
+ * NOTE: フロアマップ 注意書き
  */
 .floor-notice {
   p {
@@ -1013,7 +1019,7 @@ body .wp-block-group{
 }
 
 /**
- * メディアキットページ 20230928
+ * NOTE: メディアキットページ 20230928
  */
 .page-slug-media-kit {
   .media-download {
@@ -1065,14 +1071,14 @@ body .wp-block-group{
 }
 
 /**
- * ページ内リンクの場合のボタンのアイコン 20230928
+ * NOTE: ページ内リンクの場合のボタンのアイコン 20230928
  */
 .wp-block-button__link[href^='#']::after {
   content: "▼" !important;
 }
 
 /**
- * カテゴリーのリンクを削除 20230929
+ * NOTE: カテゴリーのリンクを削除 20230929
  */
 
 // トップページ（ただしティザーデザイン）
@@ -1099,7 +1105,7 @@ body .wp-block-group{
 }
 
 /**
- * 下層ページヘッダーロゴへリンク付与 20230929
+ * NOTE: 下層ページヘッダーロゴへリンク付与 20230929
  */
 .under_mv_box::before {
   z-index: 1;
@@ -1109,5 +1115,50 @@ body .wp-block-group{
   .under_mv_ttl {
     position: relative;
     z-index: 2;
+  }
+}
+
+/**
+ * NOTE: トップページ ボタンスタイル 20231008
+ */
+.wp-block-group.linkarea_list-box {
+  position: relative;
+	transition: filter .2s ease-in-out;
+}
+
+@media(hover: hover) {
+  .wp-block-group.linkarea_list-box:hover {
+    filter: brightness(0.7) contrast(1.4);
+    transition: filter .2s ease-in-out;
+  }
+}
+
+.wp-block-group.linkarea_list-box a::before {
+	content: '';
+	display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.linkarea_list-box:not(.timetable) figure {
+    margin: 43px auto 0 !important;
+}
+
+.linkarea_list-box.timetable figure {
+  margin: 48px auto 0 !important;
+}
+
+@media screen and (max-width: 1100px) {
+  .linkarea_list-box:not(.timetable) figure {
+      margin: 3.909091vw auto 0 !important;
+  }
+
+  .linkarea_list-box.timetable figure {
+    margin: 4.409091vw auto 0 !important;
   }
 }
