@@ -1267,17 +1267,28 @@ div.sharedaddy {
 }
 
 /**
- * リンクエリア 20231009
+ * トップページ リンクエリア 20231009
  */
-.linkarea {
-  margin-top: 15vw;
-  margin-bottom: 30vw;
+.home {
+  .linkarea {
+    margin-top: 15vw;
+    margin-bottom: 30vw;
 
-  @media (min-width: 600px) {
-    margin-top: 0;
+    @media (min-width: 600px) {
+      margin-top: 0;
+    }
+
+    @media (min-width: 801px) {
+      margin-bottom: 300px;
+    }
   }
+}
 
-  @media (min-width: 801px) {
-    margin-bottom: 300px;
+/**
+ * トップページ スポンサーエリア 20231009
+ */
+.home {
+  .sponsors_silver-list {
+    justify-content: center;
   }
 }
