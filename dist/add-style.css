@@ -1034,3 +1034,21 @@ div.sharedaddy h3.sd-title::before {
 .page-slug-faq strong {
   background: transparent !important;
 }
+
+/**
+ * リンクエリア 20231009
+ */
+.linkarea {
+  margin-top: 15vw;
+  margin-bottom: 30vw;
+}
+@media (min-width: 600px) {
+  .linkarea {
+    margin-top: 0;
+  }
+}
+@media (min-width: 801px) {
+  .linkarea {
+    margin-bottom: 300px;
+  }
+}
