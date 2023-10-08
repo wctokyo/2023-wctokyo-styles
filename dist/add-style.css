@@ -576,7 +576,7 @@ div.sharedaddy h3.sd-title::before {
   margin-right: 0 !important;
 }
 .single-post .page_contents-box .contents_box .wp-block-post-date time {
-  font-family: josefin sans, sans-serif !important;
+  font-family: "Josefin Sans", josefin-sans, sans-serif !important;
   font-size: 16px !important;
 }
 @media screen and (max-width: 600px) {
@@ -588,10 +588,10 @@ div.sharedaddy h3.sd-title::before {
   display: flex;
 }
 .single-post .page_contents-box .contents_box .wp-block-post-author-name.has-noto-sans-jp-font-family {
-  font-family: josefin sans, sans-serif !important;
+  font-family: "Josefin Sans", josefin-sans, sans-serif !important;
 }
 .single-post .page_contents-box .contents_box .wp-block-post-author-name.has-noto-sans-jp-font-family::before {
-  font-family: josefin sans, sans-serif !important;
+  font-family: "Josefin Sans", josefin-sans, sans-serif !important;
   content: "posted by: ";
 }
 
