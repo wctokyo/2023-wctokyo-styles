@@ -1162,3 +1162,106 @@ div.sharedaddy {
     margin: 4.409091vw auto 0 !important;
   }
 }
+
+/**
+ * NOTE: FAQ 20231008
+ */
+.page-slug-faq {
+  .faq-toc {
+    background-color: #f0e5e4;
+    border-radius: 8px;
+
+    ul {
+      padding: 20px 20px 20px 40px;
+
+      li {
+        line-height: 2.5;
+      }
+    }
+  }
+
+  h3 {
+    padding-top: 12px;
+
+    @media screen and (max-width: 599px) {
+      padding-top: 3px;
+    }
+  }
+
+  h3::before,
+  h3 + p::before,
+  h3 + ul::before {
+    height: 61px !important;
+    width: 61px !important;
+    display: block;
+
+    @media screen and (max-width: 599px) {
+      height: 32px !important;
+      width: 32px !important;
+    }
+  }
+
+  h3::before {
+    background-image: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/32ee8e67bdf9603b980c62c74b070a6b745e1843/images/icon_q.svg) !important;
+  }
+
+  h3 + p,
+  h3 + ul {
+    position: relative;
+    padding-top: 12px;
+
+    @media (max-width: 599px) {
+      padding-top: 3px;
+    }
+  }
+
+  h3 + p::before,
+  h3 + ul::before {
+    background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/32ee8e67bdf9603b980c62c74b070a6b745e1843/images/icon_a.svg)  no-repeat center center/contain;
+    content: "";
+    padding-top: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 599px) {
+      padding-top: 3px;
+    }
+  }
+
+  .entry-content.wp-block-post-content {
+    *:not(p:first-of-type):not(.faq-toc):not(h3):not(li):not(a):not(s):not(strong):not(div):not(span):not(iframe):not(xdoor-icon):not(svg) {
+      padding-left: 70px;
+
+      @media screen and (max-width: 599px) {
+        padding-left: 35px;
+      }
+    }
+  }
+
+  .entry-content.wp-block-post-content > ul {
+    padding-left: 90px !important;
+
+    @media screen and (max-width: 599px) {
+      padding-left: 52px !important;
+    }
+  }
+
+  p:has(+ h3),
+  ul:has(+ h3),
+  h3::before {
+    margin-bottom: 60px;
+
+    @media (max-width: 599px) {
+      margin-bottom: 6%;
+    }
+  }
+
+  p > a {
+    word-break: break-all;
+  }
+
+  strong {
+    background: transparent !important;
+  }
+}
