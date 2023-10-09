@@ -1409,3 +1409,16 @@ div.sharedaddy {
 		}
 	}
 }
+
+/**
+ * フロアマップ 20231009
+ */
+.page-slug-floor-map {
+  .wp-block-group.floor-notice {
+    padding-top: 2rem !important;
+
+    ul:last-of-type {
+      margin-bottom: 0 !important;
+    }
+  }
+}

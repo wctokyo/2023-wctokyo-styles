@@ -1158,3 +1158,13 @@ div.sharedaddy h3.sd-title::before {
   border-top: 1px dotted #573531;
   margin-top: 1rem !important;
 }
+
+/**
+ * フロアマップ 20231009
+ */
+.page-slug-floor-map .wp-block-group.floor-notice {
+  padding-top: 2rem !important;
+}
+.page-slug-floor-map .wp-block-group.floor-notice ul:last-of-type {
+  margin-bottom: 0 !important;
+}
