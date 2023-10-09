@@ -1435,3 +1435,39 @@ div.sharedaddy {
 		}
 	}
 }
+
+/**
+ * スピーカーページ 20231009
+ */
+.page-slug-speakers {
+	.wordcamp-speakers {
+    padding-left: 0;
+
+    .wordcamp-speaker.wordcamp-speakers__post {
+      display: flex;
+      flex-flow: column-reverse;
+
+      h3 {
+        padding-left: 0 !important;
+        margin-top: 0 !important;
+
+        @media (min-width: 600px) {
+          font-size: 16px;
+        }
+
+        @media (min-width: 1024px) {
+          font-size: 20px;
+        }
+      }
+
+      h3::before {
+        display: none;;
+      }
+
+      .wordcamp-image__avatar-container img {
+        max-width: 100%;
+        border-radius: 100vh;
+      }
+    }
+	}
+}
