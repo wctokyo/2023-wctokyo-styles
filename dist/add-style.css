@@ -1177,3 +1177,35 @@ div.sharedaddy h3.sd-title::before {
   font-weight: 700 !important;
   margin: 0 0 1em !important;
 }
+
+/**
+ * スピーカーページ 20231009
+ */
+.page-slug-speakers .wordcamp-speakers {
+  padding-left: 0;
+}
+.page-slug-speakers .wordcamp-speakers .wordcamp-speaker.wordcamp-speakers__post {
+  display: flex;
+  flex-flow: column-reverse;
+}
+.page-slug-speakers .wordcamp-speakers .wordcamp-speaker.wordcamp-speakers__post h3 {
+  padding-left: 0 !important;
+  margin-top: 0 !important;
+}
+@media (min-width: 600px) {
+  .page-slug-speakers .wordcamp-speakers .wordcamp-speaker.wordcamp-speakers__post h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-slug-speakers .wordcamp-speakers .wordcamp-speaker.wordcamp-speakers__post h3 {
+    font-size: 20px;
+  }
+}
+.page-slug-speakers .wordcamp-speakers .wordcamp-speaker.wordcamp-speakers__post h3::before {
+  display: none;
+}
+.page-slug-speakers .wordcamp-speakers .wordcamp-speaker.wordcamp-speakers__post .wordcamp-image__avatar-container img {
+  max-width: 100%;
+  border-radius: 100vh;
+}
