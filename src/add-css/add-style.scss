@@ -1271,6 +1271,8 @@ div.sharedaddy {
  */
 .home {
   .linkarea {
+    position: relative;
+    z-index: 50;
     margin-top: 15vw;
     margin-bottom: 30vw;
 
@@ -1468,6 +1470,19 @@ div.sharedaddy {
         max-width: 100%;
         border-radius: 100vh;
       }
+    }
+  }
+}
+
+/**
+ * メインビジュアル 20231009
+ */
+.home {
+  .mainvisual_box {
+    height: 800px;
+
+    @media (max-width: 800px) {
+      height: auto;
     }
   }
 }

@@ -1039,6 +1039,8 @@ div.sharedaddy h3.sd-title::before {
  * トップページ リンクエリア 20231009
  */
 .home .linkarea {
+  position: relative;
+  z-index: 50;
   margin-top: 15vw;
   margin-bottom: 30vw;
 }
@@ -1208,4 +1210,16 @@ div.sharedaddy h3.sd-title::before {
 .page-slug-speakers .wordcamp-speakers .wordcamp-speaker.wordcamp-speakers__post .wordcamp-image__avatar-container img {
   max-width: 100%;
   border-radius: 100vh;
+}
+
+/**
+ * メインビジュアル 20231009
+ */
+.home .mainvisual_box {
+  height: 800px;
+}
+@media (max-width: 800px) {
+  .home .mainvisual_box {
+    height: auto;
+  }
 }
