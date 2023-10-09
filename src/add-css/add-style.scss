@@ -1396,3 +1396,16 @@ div.sharedaddy {
     }
   }
 }
+
+/**
+ * お知らせ一覧 20231009
+ */
+.page-slug-news {
+	.post-list {
+		li:not(:first-child) {
+			padding-top: 1rem;
+			border-top: 1px dotted #573531;
+			margin-top: 1rem !important;
+		}
+	}
+}
