@@ -1422,3 +1422,16 @@ div.sharedaddy {
     }
   }
 }
+
+/**
+ * sharedaddy 20231009
+ */
+.sharedaddy.sd-sharing-enabled {
+	.sd-social-official {
+		h3 {
+			font-size: 9pt !important;
+			font-weight: 700 !important;
+			margin: 0 0 1em !important;
+		}
+	}
+}

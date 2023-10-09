@@ -1168,3 +1168,12 @@ div.sharedaddy h3.sd-title::before {
 .page-slug-floor-map .wp-block-group.floor-notice ul:last-of-type {
   margin-bottom: 0 !important;
 }
+
+/**
+ * sharedaddy 20231009
+ */
+.sharedaddy.sd-sharing-enabled .sd-social-official h3 {
+  font-size: 9pt !important;
+  font-weight: 700 !important;
+  margin: 0 0 1em !important;
+}
