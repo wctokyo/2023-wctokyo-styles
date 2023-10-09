@@ -1359,7 +1359,6 @@ div.sharedaddy {
   @media (min-width: 600px) {
     .sponsor-page-bronze {
       grid-template-columns: repeat(6, 1fr) !important;
-      max-width: 632px !important;
 
       li:first-child {
         grid-area: 1 / 1 / 2 / 3;

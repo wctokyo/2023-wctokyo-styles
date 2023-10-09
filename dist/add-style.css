@@ -1114,7 +1114,6 @@ div.sharedaddy h3.sd-title::before {
 @media (min-width: 600px) {
   .page-slug-sponsors .sponsor-page-bronze {
     grid-template-columns: repeat(6, 1fr) !important;
-    max-width: 632px !important;
   }
   .page-slug-sponsors .sponsor-page-bronze li:first-child {
     grid-area: 1/1/2/3;
