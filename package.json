@@ -1,6 +1,6 @@
 {
   "name": "2023-wctokyo-styles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "css development environment for WordCamp Tokyo 2023",
   "main": "index.js",
   "author": "WordCamp Tokyo 2023 website development team",
@@ -8,7 +8,7 @@
   "scripts": {
     "css:wordcamp": "sass src/scss/:dist/ --style compressed",
     "css:fonts": "sass src/fonts-css/:dist/ --style expanded",
-    "css:add": "sass src/add-css/:dist/ --style expanded",
+    "css:add": "sass src/add-css/:dist/ --style compressed",
     "css": "npm run css:fonts && npm run css:wordcamp && npm run css:add",
     "autoprefixer": "postcss --use autoprefixer --no-map dist/*.css -d dist/",
     "build": "npm run css && npm run autoprefixer",

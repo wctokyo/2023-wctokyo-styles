@@ -1486,3 +1486,16 @@ div.sharedaddy {
     }
   }
 }
+
+/**
+ * 参加者情報編集ページ
+ */
+.page-slug-tickets {
+  .entry-content {
+    input[type="submit"] {
+      color: #000;
+      background: #c2e7ff;
+      border: 1px solid #777;
+    }
+  }
+}
