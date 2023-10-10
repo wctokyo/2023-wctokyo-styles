@@ -68,6 +68,10 @@
    text-align: center;
    font-size: 32px;
    font-weight: bold;
+   @include v.mq(){
+    margin: 0 auto 3%;
+    font-size: 26px;
+   }
    &:after{
      content: '';
      display: block;
@@ -75,6 +79,11 @@
      height: 12px;
      width: 68px;
      background: url(https://raw.githubusercontent.com/wctokyo/2023-wctokyo-styles/feature/Issue_89%2B90/images/dot_ttl.svg) no-repeat center center / contain;
+     @include v.mq(){
+      height: 10px;
+      width: 56px;
+      margin: 1% auto 0;
+     }
    }
  }
  
@@ -325,12 +334,24 @@
  
 .infoarea{
   padding: 270px 0 330px !important;
+  @include v.mq(){
+    padding: 30% 0 35% !important;
+  }
 }
 
  .news{
   margin-bottom: 120px;
+  @include v.mq(wide){
+    padding: 0 20px;
+  }
+  @include v.mq(){
+    margin-bottom: 12%;
+  }
    .main_ttl{
      margin:0 auto 40px;
+     @include v.mq(){
+      margin: 0 auto 4%;
+     }
    }
    &_box{
      margin: 0 auto;
@@ -340,24 +361,64 @@
        display: flex;
        column-gap: 40px;
        margin-bottom: 40px;
+       @include v.mq(tab){
+        column-gap: 20px;
+        margin-bottom: 30px;
+       }
+       @include v.mq(){
+        display: block;
+        margin-bottom: 5%;
+       }
        > li{
          width: calc((100% - 80px) / 3);
+         @include v.mq(tab){
+          width: calc((100% - 40px) / 3);
+         }
+         @include v.mq(){
+          width: 100%;
+          display: flex;
+          column-gap: 2%;
+          align-items: center;
+          margin-bottom: 3%;
+         }
          .wp-block-post-featured-image{
            margin-bottom: 10px;
+           @include v.mq(){
+            margin-bottom: 0;
+            width: 40%;
+           }
            a{
              border: 3px solid g.$wp--preset--color--wc-23-black;
              border-radius: 10px;
              display: block;
              overflow: hidden;
+             @include v.mq(){
+              border: 1.5px solid g.$wp--preset--color--wc-23-black;
+             }
            }
+         }
+         .sp_info{
+          @include v.mq(){
+            width: 58%;
+            margin-top: 0;
+          }
          }
          .cat-day{
            margin: 0 0 13px;
+           @include v.mq(){
+            margin: 0 0 2%;
+           }
+           .taxonomy-category{
+              pointer-events: none;
+           }
          }
          .news-ttl{
            margin: 0;
            font-size: 20px;
            line-height: 128%;
+           @include v.mq(){
+            font-size: 16px;
+           }
          }
        }
      }
@@ -365,18 +426,32 @@
  }
  
  .about{
+    @include v.mq(wide){
+      padding: 0 20px;
+    }
    .main_ttl{
      margin: 0 auto 40px;
+     @include v.mq(){
+      margin: 0 auto 4%;
+     }
    }
    &_box{
      border: 6px solid g.$wp--preset--color--wc-23-black;
      border-radius: 20px;
      background: g.$wp--preset--color--wc-23-white;
      padding: 74px;
+     @include v.mq(){
+      padding: 7%;
+      border: 3px solid g.$wp--preset--color--wc-23-black;
+     }
      &-inner{
        padding-bottom: 80px;
        border-bottom: 1px solid g.$wp--preset--color--wc-23-black;
        margin-bottom: 80px;
+       @include v.mq(){
+        padding-bottom: 8%;
+        margin-bottom: 8%;
+       }
        &:last-of-type{
          padding-bottom: 0;
          margin-bottom: 0;
@@ -388,6 +463,12 @@
             .wp-block-media-text__content{
               padding: 0;
               width: 457px;
+              @include v.mq(wide){
+                width: 49vw;
+              }
+              @include v.mq(){
+                width: auto;
+              }
               p{
                 margin: 0;
               }
@@ -399,6 +480,12 @@
             }
             .wp-block-media-text__media{
               width: 273px;
+              @include v.mq(wide){
+                width: 25vw;
+              }
+              @include v.mq(){
+                margin: 0 auto 3%;
+              }
             }
           }
        }
@@ -408,20 +495,33 @@
             font-weight: bold;
             text-align: center;
             margin-bottom: 13px;
+            @include v.mq(){
+              font-size: 16px;
+              margin-bottom: 2%;
+            }
           }
           .info_price{
             text-align: center;
             line-height: 160%;
             list-style-position: inside;
             margin: 0 0 24px;
+            @include v.mq(){
+              margin: 0 0 3%;
+            }
           }
           .info_list{
             margin: 0 0 24px;
+            @include v.mq(){
+              margin: 0 0 3%;
+            }
           }
        }
        &.kids{
         .kids_text{
           margin: 0 0 24px;
+          @include v.mq(){
+            margin: 0 0 3%;
+          }
         }
        }
        .wp-block-buttons{
@@ -461,7 +561,7 @@
            position: relative;
            @include v.mq(){
                padding: 7px 20px;
-               min-width: 80%;
+               min-width: 280px;
                filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.25));
                font-size: 15px;
            }
@@ -481,7 +581,7 @@
                color: g.$wp--preset--color--wc-23-white;
                @include v.mq(){
                    font-size: 10px;
-                   right: 5px;
+                   right: 3%;
                }
            }
        }
