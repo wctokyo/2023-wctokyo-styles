@@ -31,6 +31,8 @@
         right: 0;
         display: block;
         @include v.mq(){
+            width: 103vw;
+            right: -3px;
             height: 18vw;
             bottom: -10vw;
         }
